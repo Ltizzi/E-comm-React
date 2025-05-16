@@ -17,7 +17,7 @@ const BaseButton = (props) => {
   return (
     <button
       onClick={btnAction}
-      className={`py-1.5  transition-all duration-75 ease-in-out px-3 font-semibold text-white rounded-md text-sm hover:cursor-pointer btn ${bgClass} w-fit`}
+      className={`  font-semibold   text-sm hover:cursor-pointer btn ${bgClass} w-fit`}
     >
       {btnLabel}
     </button>

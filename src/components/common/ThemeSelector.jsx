@@ -8,7 +8,7 @@ const ThemeSelector = () => {
     setIsDark(darkMode);
     document.documentElement.setAttribute(
       "data-theme",
-      isDark ? "dim" : "retro"
+      isDark ? "dracula" : "retro"
     );
     localStorage.setItem("dark-mode", JSON.stringify(isDark));
   }

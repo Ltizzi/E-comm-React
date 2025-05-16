@@ -25,7 +25,7 @@ function App() {
 
   return (
     <>
-      <div className="bg-gradient-to-br from-base-100 to-base-300 min-h-screen">
+      <div className="bg-gradient-to-br from-base-200 to-base-300 min-h-screen">
         <Nav />
         <BaseButton
           btnLabel={"test"}
