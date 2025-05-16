@@ -18,7 +18,7 @@ const ThemeSelector = () => {
       const darkMode = JSON.parse(localStorage.getItem("dark-mode"));
       setIsDark(darkMode);
     } else setIsDark(false);
-  });
+  }, []);
 
   return (
     <label className="swap swap-rotate">
