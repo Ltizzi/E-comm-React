@@ -1,7 +1,8 @@
 import React from "react";
 import ThemeSelector from "./common/ThemeSelector";
 
-const Nav = () => {
+const Nav = (props) => {
+  const { cart } = props;
   return (
     <div className="navbar bg-base-100  shadow-sm fixed top-0">
       <div className="flex-1">
@@ -28,7 +29,7 @@ const Nav = () => {
               </svg>
               {/* TODO: FIX BADGE TEXT COLOR */}
               <span className={"badge badge-md indicator-item badge-error"}>
-                8
+                {cart.length}
               </span>
             </div>
           </div>
@@ -37,7 +38,7 @@ const Nav = () => {
             className="card card-compact dropdown-content bg-base-100 z-1 mt-3 w-52 shadow"
           >
             <div className="card-body">
-              <span className="text-lg font-bold">8 Items</span>
+              <span className="text-lg font-bold">{cart.length} Items</span>
               <span className="text-info">Subtotal: $999</span>
               <div className="card-actions">
                 <button className="btn btn-primary btn-block">View cart</button>

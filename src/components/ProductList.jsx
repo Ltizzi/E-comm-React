@@ -2,14 +2,24 @@ import React from "react";
 import ProductCard from "./ProductCard";
 
 const ProductList = (props) => {
-  const { products } = props;
+  const { products, addProductToCart } = props;
+  if (!Array.isArray(products)) {
+    console.error("no products in products");
+    return (
+      <div className="flex flex-col justify-center items-center align-middle ">
+        <div className="bg-red-400 rounded-lg py-5 px-3 text-center">
+          <p className="text-red-950">
+            Error: There is no products avaible to show
+          </p>
+        </div>
+      </div>
+    );
+  }
   return (
     <div className="flex flex-row gap-5 2xl:gap-y-5 gap-y-10 justify-start items-center 2xl:mx-9 mx-20 align-middle w-full flex-wrap py-12">
-      {products ? (
-        products.map((p) => <ProductCard prod={p} key={p.id} />)
-      ) : (
-        <p>ERROR!</p>
-      )}
+      {products.map((p) => (
+        <ProductCard prod={p} key={p.id} addProductToCart={addProductToCart} />
+      ))}
     </div>
   );
 };

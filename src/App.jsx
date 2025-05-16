@@ -3,9 +3,34 @@ import "./App.css";
 import BaseButton from "./components/common/BaseButton";
 import Nav from "./components/Nav";
 import ProductList from "./components/ProductList";
+import Footer from "./components/Footer";
 
 function App() {
   const [products, setProducts] = useState([]);
+  const [cart, setCart] = useState([]);
+
+  function addProductToCart(prod) {
+    console.log("Agregando a carrito..." + prod.title);
+
+    setCart([...cart, prod]);
+  }
+
+  function clearCart() {
+    setCart([]);
+  }
+
+  function removeProdFromCart(prod) {
+    let found = false;
+    setCart(
+      cart.filter((p) => {
+        if (!found && p.id == prod.id) {
+          found = true;
+          return false;
+        }
+        return true;
+      })
+    );
+  }
 
   useEffect(() => {
     //return await fetch("/data/albums.json");
@@ -26,23 +51,14 @@ function App() {
   return (
     <>
       <div className="bg-gradient-to-br from-base-200 to-base-300 min-h-screen">
-        <Nav />
+        <Nav cart={cart} />
         <BaseButton
           btnLabel={"test"}
           btnType={"primary"}
           btnAction={() => null}
         />
-        <ProductList products={products} />
-        {/* {products ? (
-          products.map((prod) => (
-            <p className="flex flex-row justify-start gap-3">
-              <span>{prod.artist}</span>
-              <span>{prod.title}</span>
-            </p>
-          ))
-        ) : (
-          <p>Error</p>
-        )} */}
+        <ProductList products={products} addProductToCart={addProductToCart} />
+        <Footer />
       </div>
     </>
   );

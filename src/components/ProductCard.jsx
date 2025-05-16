@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import BaseButton from "./common/BaseButton";
 
 const ProductCard = (props) => {
-  const { prod } = props;
+  const { prod, addProductToCart } = props;
   const [isHover, setIsHover] = useState(false);
 
   function getFront(imgs) {
@@ -55,7 +55,7 @@ const ProductCard = (props) => {
               />
               <BaseButton
                 btnLabel={"Add to cart"}
-                btnAction={() => null}
+                btnAction={() => addProductToCart(prod)}
                 btnType={"accent"}
               />
             </div>
