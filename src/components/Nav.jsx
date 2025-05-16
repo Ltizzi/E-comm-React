@@ -1,13 +1,17 @@
 import React from "react";
 import ThemeSelector from "./common/ThemeSelector";
+import { Link } from "react-router-dom";
 
 const Nav = (props) => {
   const { cart } = props;
   return (
     <div className="navbar bg-base-100  shadow-sm fixed top-0">
       <div className="flex-1">
-        <a className="btn btn-ghost text-xl">E-Commerce</a>
+        <Link to="/">
+          <a className="btn btn-ghost text-xl">E-Commerce</a>
+        </Link>
       </div>
+
       <div className="flex flex-row gap-3">
         <div className="dropdown dropdown-end">
           <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
@@ -41,7 +45,11 @@ const Nav = (props) => {
               <span className="text-lg font-bold">{cart.length} Items</span>
               <span className="text-info">Subtotal: $999</span>
               <div className="card-actions">
-                <button className="btn btn-primary btn-block">View cart</button>
+                <Link to="/cart">
+                  <button className="btn btn-primary btn-block">
+                    View cart
+                  </button>
+                </Link>
               </div>
             </div>
           </div>

@@ -2,7 +2,7 @@ import React from "react";
 import ProductCard from "./ProductCard";
 
 const ProductList = (props) => {
-  const { products, addProductToCart } = props;
+  const { products, addProductToCart, goToProd } = props;
   if (!Array.isArray(products)) {
     console.error("no products in products");
     return (
@@ -18,7 +18,13 @@ const ProductList = (props) => {
   return (
     <div className="flex flex-row gap-5 2xl:gap-y-5 gap-y-10 justify-start items-center 2xl:mx-9 mx-20 align-middle w-full flex-wrap py-12">
       {products.map((p) => (
-        <ProductCard prod={p} key={p.id} addProductToCart={addProductToCart} />
+        <ProductCard
+          prod={p}
+          key={p.id}
+          addProductToCart={addProductToCart}
+          goToProd={goToProd}
+          fromCart={false}
+        />
       ))}
     </div>
   );

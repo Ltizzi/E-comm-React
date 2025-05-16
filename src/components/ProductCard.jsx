@@ -1,22 +1,11 @@
 import React, { useState } from "react";
 import BaseButton from "./common/BaseButton";
+import { getFront } from "../utils/utils";
 
 const ProductCard = (props) => {
-  const { prod, addProductToCart } = props;
+  const { prod, addProductToCart, fromCart, removeProdFromCart, goToProd } =
+    props;
   const [isHover, setIsHover] = useState(false);
-
-  function getFront(imgs) {
-    if (imgs) {
-      const img = imgs.find(
-        (img) => img.url && img.types.find((t) => t === "Front")
-      );
-      return img ? img.url : null;
-    } else return null;
-  }
-
-  // function checkIsFront() {
-  //   return getFront(prod.coverImages) != null;
-  // }
 
   return (
     <div
@@ -50,14 +39,22 @@ const ProductCard = (props) => {
             <div className="flex flex-row justify-around pt-4 gap-3">
               <BaseButton
                 btnLabel={"See more"}
-                btnAction={() => null}
+                btnAction={() => goToProd(prod)}
                 btnType={"success"}
               />
-              <BaseButton
-                btnLabel={"Add to cart"}
-                btnAction={() => addProductToCart(prod)}
-                btnType={"accent"}
-              />
+              {fromCart ? (
+                <BaseButton
+                  btnLabel={"Remove"}
+                  btnAction={() => removeProdFromCart(prod)}
+                  btnType={"error"}
+                />
+              ) : (
+                <BaseButton
+                  btnLabel={"Add to cart"}
+                  btnAction={() => addProductToCart(prod)}
+                  btnType={"accent"}
+                />
+              )}
             </div>
           </div>
         )}

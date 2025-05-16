@@ -1,13 +1,19 @@
 import { useEffect, useState } from "react";
 import "./App.css";
-import BaseButton from "./components/common/BaseButton";
 import Nav from "./components/Nav";
 import ProductList from "./components/ProductList";
 import Footer from "./components/Footer";
+import { Routes, Route, useNavigate } from "react-router-dom";
+import Cart from "./components/Cart";
+import ProductInfo from "./components/ProductInfo";
+import NotFound from "./components/NotFound";
 
 function App() {
   const [products, setProducts] = useState([]);
   const [cart, setCart] = useState([]);
+  const [productToShow, setProductToShow] = useState({});
+
+  const navigate = useNavigate();
 
   function addProductToCart(prod) {
     console.log("Agregando a carrito..." + prod.title);
@@ -23,13 +29,18 @@ function App() {
     let found = false;
     setCart(
       cart.filter((p) => {
-        if (!found && p.id == prod.id) {
+        if (!found && p.id === prod.id) {
           found = true;
           return false;
         }
         return true;
       })
     );
+  }
+
+  function goToProd(prod) {
+    setProductToShow(prod);
+    navigate(`/product/${prod.id}`);
   }
 
   useEffect(() => {
@@ -50,16 +61,44 @@ function App() {
 
   return (
     <>
-      <div className="bg-gradient-to-br from-base-200 to-base-300 min-h-screen">
-        <Nav cart={cart} />
-        <BaseButton
-          btnLabel={"test"}
-          btnType={"primary"}
-          btnAction={() => null}
-        />
-        <ProductList products={products} addProductToCart={addProductToCart} />
-        <Footer />
+      <Nav cart={cart} />
+
+      <div className="bg-gradient-to-br from-base-200 to-base-300 min-h-screen pt-10">
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <ProductList
+                products={products}
+                addProductToCart={addProductToCart}
+                goToProd={goToProd}
+              />
+            }
+          />
+          <Route
+            path="/cart"
+            element={
+              <Cart
+                cart={cart}
+                removeProdFromCart={removeProdFromCart}
+                clearCart={clearCart}
+              />
+            }
+          />
+          <Route
+            path="/product/:id"
+            element={
+              <ProductInfo
+                prod={productToShow}
+                addProductToCart={addProductToCart}
+                removeProdFromCart={removeProdFromCart}
+              />
+            }
+          />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
       </div>
+      <Footer />
     </>
   );
 }
