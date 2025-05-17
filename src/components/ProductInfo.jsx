@@ -38,10 +38,10 @@ const ProductInfo = (props) => {
   }, [prod, id, productToShow]);
 
   return (
-    <div className="pt-12 flex flex-col justify-center h-screen">
+    <div className="pt-12 flex flex-col justify-center h-screen items-center">
       {loaded && productToShow ? (
-        <div className="flex flex-row justify-evenly bg-gradient-to-r from-base-100 to-base-300 px-10 py-5">
-          <div className="flex flex-col justify-start gap-2 w-1/3">
+        <div className="flex flex-row justify-between bg-gradient-to-r from-base-100/70 to-base-300/95 px-10 py-5 w-11/12 rounded-2xl">
+          <div className="flex flex-col justify-center items-center gap-2 w-2/5">
             <img
               src={pictureToShow}
               alt=""
@@ -57,26 +57,28 @@ const ProductInfo = (props) => {
               ))}
             </div>
           </div>
-          <div className="w-2/3 flex flex-col justify-start gap-3">
+          <div className="w-2/5 flex flex-col justify-start gap-3">
             <h1 className="text-4xl">{productToShow.title}</h1>
             <h2 className="text-2xl">{productToShow.artist}</h2>
-            <h3 className="italic">{productToShow.releaseDate}</h3>
+            <h3 className="italic text-lg">{productToShow.releaseDate}</h3>
             <div className="flex flex-col justify-start gap-2">
               {productToShow.tracklist.map((t, index) => (
-                <p className="text-xs">
+                <p className="text-sm">
                   {index + 1}. {t} -{" "}
                   {getTrackDuration(productToShow.extra.trackDuration[index])}
                 </p>
               ))}
             </div>
             {productToShow.extra.producer && (
-              <p>Producer: {productToShow.extra.producer}</p>
+              <p className="text-lg">
+                Producer: {productToShow.extra.producer}
+              </p>
             )}
             {productToShow.extra.format && (
-              <p>Format: {productToShow.extra.format}</p>
+              <p className="text-lg">Format: {productToShow.extra.format}</p>
             )}
             {productToShow.extra.duration && (
-              <p>
+              <p className="text-lg">
                 Duration: <br />{" "}
                 {getTrackDuration(productToShow.extra.duration)}
               </p>

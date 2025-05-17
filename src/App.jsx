@@ -63,7 +63,12 @@ function App() {
     <>
       <Nav cart={cart} />
 
-      <div className="bg-gradient-to-br from-base-200 to-base-300 min-h-screen pt-10">
+      <div
+        className="bg-gradient-to-br from-base-200 to-base-300 min-h-screen pt-10"
+        style={{
+          backgroundImage: `url(/img/bg.png)`,
+        }}
+      >
         <Routes>
           <Route
             path="/"
