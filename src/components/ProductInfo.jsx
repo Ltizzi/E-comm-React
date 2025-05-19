@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { getAlbumById, getFront } from "../utils/utils";
 import { useParams } from "react-router-dom";
+import BaseButton from "./common/BaseButton";
 
 const ProductInfo = (props) => {
-  const { prod } = props;
+  const { prod, addProductToCart, removeProdFromCart } = props;
   const [productToShow, setProductToShow] = useState({});
   const [loaded, setLoaded] = useState();
   const [pictureToShow, setPictureToShow] = useState();
+  const [total, setTotal] = useState(1);
 
   const { id } = useParams();
 
@@ -15,6 +17,17 @@ const ProductInfo = (props) => {
     const minutes = Math.floor(totalSeconds / 60);
     const seconds = totalSeconds % 60;
     return `${minutes} : ${seconds < 10 ? "0" + seconds : seconds}`;
+  }
+
+  function addToCart() {
+    for (let i = 0; i < total; i++) {
+      addProductToCart(productToShow);
+    }
+  }
+
+  function handleChange(e) {
+    console.log(e.target.value);
+    setTotal(Number(e.target.value));
   }
 
   useEffect(() => {
@@ -57,7 +70,7 @@ const ProductInfo = (props) => {
               ))}
             </div>
           </div>
-          <div className="w-2/5 flex flex-col justify-start gap-3">
+          <div className="w-2/5 flex flex-col justify-start gap-3 bg-neutral/90 text-neutral-content py-2 px-10 rounded-lg">
             <h1 className="text-4xl">{productToShow.title}</h1>
             <h2 className="text-2xl">{productToShow.artist}</h2>
             <h3 className="italic text-lg">{productToShow.releaseDate}</h3>
@@ -83,6 +96,30 @@ const ProductInfo = (props) => {
                 {getTrackDuration(productToShow.extra.duration)}
               </p>
             )}
+            <div className="bg-success text-success-content py-1 px-2 rounded-2xl w-28 text-center font-mono font-semibold">
+              <p>u$s {productToShow.price}</p>
+            </div>
+            <div className="flex flex-row justify-start">
+              <div className="flex flex-col justify-start">
+                <input
+                  type="number"
+                  className="input validator input-primary input-md w-20 text-base-content bg-base-300"
+                  required
+                  placeholder="1"
+                  min="1"
+                  max="10"
+                  title="Must be greater than 1"
+                  value={total}
+                  onChange={handleChange}
+                />
+                <p className="validator-hint">Must be greater than 1</p>
+              </div>
+              <BaseButton
+                btnLabel={"Add to  Cart"}
+                btnAction={addToCart}
+                btnType={"accent"}
+              />
+            </div>
           </div>
         </div>
       ) : (

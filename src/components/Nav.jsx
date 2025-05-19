@@ -1,9 +1,11 @@
 import React from "react";
 import ThemeSelector from "./common/ThemeSelector";
 import { Link } from "react-router-dom";
+import { getTotal } from "../utils/utils";
 
 const Nav = (props) => {
   const { cart } = props;
+
   return (
     <div className="navbar bg-base-100  shadow-sm fixed top-0">
       <div className="flex-1">
@@ -43,7 +45,7 @@ const Nav = (props) => {
           >
             <div className="card-body">
               <span className="text-lg font-bold">{cart.length} Items</span>
-              <span className="text-info">Subtotal: $999</span>
+              <span className="text-info">Subtotal: u$s{getTotal(cart)}</span>
               <div className="card-actions">
                 <Link to="/cart">
                   <button className="btn btn-primary btn-block">

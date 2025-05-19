@@ -24,7 +24,8 @@
       "trackDuration": [
         2621493
       ]
-    }
+    },
+    "price": "117.16"
   },
   {
     "id": 2,
@@ -77,7 +78,8 @@
         201733,
         201373
       ]
-    }
+    },
+    "price": "23.40"
   },
   {
     "id": 3,
@@ -145,7 +147,8 @@
         320000,
         290000
       ]
-    }
+    },
+    "price": "123.93"
   },
   {
     "id": 4,
@@ -186,7 +189,8 @@
         290000,
         320000
       ]
-    }
+    },
+    "price": "32.85"
   },
   {
     "id": 5,
@@ -235,7 +239,8 @@
         259626,
         324533
       ]
-    }
+    },
+    "price": "122.63"
   },
   {
     "id": 6,
@@ -315,7 +320,8 @@
         222973,
         252400
       ]
-    }
+    },
+    "price": "104.72"
   },
   {
     "id": 7,
@@ -433,7 +439,8 @@
         303813,
         285506
       ]
-    }
+    },
+    "price": "20.29"
   },
   {
     "id": 8,
@@ -480,7 +487,8 @@
         237466,
         274706
       ]
-    }
+    },
+    "price": "36.77"
   },
   {
     "id": 9,
@@ -539,7 +547,8 @@
         245466,
         193333
       ]
-    }
+    },
+    "price": "82.31"
   },
   {
     "id": 10,
@@ -687,7 +696,8 @@
         275800,
         419466
       ]
-    }
+    },
+    "price": "72.32"
   },
   {
     "id": 11,
@@ -789,7 +799,8 @@
         106026,
         174200
       ]
-    }
+    },
+    "price": "81.33"
   },
   {
     "id": 12,
@@ -856,7 +867,8 @@
         164000,
         167000
       ]
-    }
+    },
+    "price": "62.26"
   },
   {
     "id": 13,
@@ -915,7 +927,8 @@
         140000,
         144000
       ]
-    }
+    },
+    "price": "108.23"
   },
   {
     "id": 14,
@@ -968,7 +981,8 @@
         152000,
         143000
       ]
-    }
+    },
+    "price": "95.79"
   },
   {
     "id": 15,
@@ -1027,7 +1041,8 @@
         124000,
         139000
       ]
-    }
+    },
+    "price": "25.55"
   },
   {
     "id": 16,
@@ -1092,7 +1107,8 @@
         155000,
         121000
       ]
-    }
+    },
+    "price": "81.08"
   },
   {
     "id": 17,
@@ -1157,7 +1173,8 @@
         139000,
         144000
       ]
-    }
+    },
+    "price": "25.94"
   },
   {
     "id": 18,
@@ -1224,7 +1241,8 @@
         null,
         null
       ]
-    }
+    },
+    "price": "82.83"
   },
   {
     "id": 19,
@@ -1289,7 +1307,8 @@
         151000,
         180000
       ]
-    }
+    },
+    "price": "35.86"
   },
   {
     "id": 20,
@@ -1348,7 +1367,8 @@
         140000,
         23000
       ]
-    }
+    },
+    "price": "46.41"
   },
   {
     "id": 21,
@@ -1421,7 +1441,8 @@
         80000,
         303000
       ]
-    }
+    },
+    "price": "100.29"
   },
   {
     "id": 22,
@@ -1486,7 +1507,8 @@
         128333,
         167560
       ]
-    }
+    },
+    "price": "80.80"
   },
   {
     "id": 23,
@@ -1567,7 +1589,8 @@
         152000,
         187000
       ]
-    }
+    },
+    "price": "21.22"
   },
   {
     "id": 24,
@@ -1634,7 +1657,8 @@
         122000,
         127000
       ]
-    }
+    },
+    "price": "115.65"
   },
   {
     "id": 25,
@@ -1683,7 +1707,8 @@
         128000,
         153000
       ]
-    }
+    },
+    "price": "57.25"
   },
   {
     "id": 26,
@@ -1750,7 +1775,8 @@
         133000,
         141000
       ]
-    }
+    },
+    "price": "48.90"
   },
   {
     "id": 28,
@@ -1852,7 +1878,8 @@
         155000,
         144000
       ]
-    }
+    },
+    "price": "36.10"
   },
   {
     "id": 29,
@@ -1893,7 +1920,8 @@
         340333,
         742866
       ]
-    }
+    },
+    "price": "116.39"
   },
   {
     "id": 30,
@@ -1996,7 +2024,8 @@
         625000,
         83000
       ]
-    }
+    },
+    "price": "124.95"
   },
   {
     "id": 31,
@@ -2063,7 +2092,8 @@
         166880,
         392573
       ]
-    }
+    },
+    "price": "88.02"
   },
   {
     "id": 32,
@@ -2115,7 +2145,8 @@
         38706,
         526866
       ]
-    }
+    },
+    "price": "37.55"
   },
   {
     "id": 33,
@@ -2182,7 +2213,8 @@
         129000,
         1411000
       ]
-    }
+    },
+    "price": "59.98"
   },
   {
     "id": 34,
@@ -2247,7 +2279,8 @@
         127000,
         200000
       ]
-    }
+    },
+    "price": "46.59"
   },
   {
     "id": 35,
@@ -2299,7 +2332,8 @@
         276933,
         180093
       ]
-    }
+    },
+    "price": "37.42"
   },
   {
     "id": 36,
@@ -2454,7 +2488,8 @@
         314773,
         511533
       ]
-    }
+    },
+    "price": "70.35"
   },
   {
     "id": 37,
@@ -2487,7 +2522,8 @@
         567213,
         771266
       ]
-    }
+    },
+    "price": "87.49"
   },
   {
     "id": 39,
@@ -2560,7 +2596,8 @@
         302040,
         320426
       ]
-    }
+    },
+    "price": "94.24"
   },
   {
     "id": 40,
@@ -2683,7 +2720,8 @@
         77533,
         74640
       ]
-    }
+    },
+    "price": "44.57"
   },
   {
     "id": 41,
@@ -2830,7 +2868,8 @@
         226933,
         131546
       ]
-    }
+    },
+    "price": "88.77"
   },
   {
     "id": 42,
@@ -2922,7 +2961,8 @@
         282573,
         510000
       ]
-    }
+    },
+    "price": "123.42"
   },
   {
     "id": 43,
@@ -2959,7 +2999,8 @@
         336533,
         508466
       ]
-    }
+    },
+    "price": "31.60"
   },
   {
     "id": 46,
@@ -3017,7 +3058,8 @@
         261000,
         261000
       ]
-    }
+    },
+    "price": "39.04"
   },
   {
     "id": 48,
@@ -3074,25 +3116,8 @@
       "Bron‐Yr‐Aur Stomp",
       "Hats Off to (Roy) Harper"
     ],
-    "extra": {
-      "date": "1970-10-05",
-      "producer": null,
-      "format": "12\" Vinyl",
-      "trackCount": 10,
-      "duration": 2563261,
-      "trackDuration": [
-        144333,
-        232826,
-        205706,
-        443466,
-        241226,
-        291706,
-        189293,
-        336866,
-        257373,
-        220466
-      ]
-    }
+    "extra": null,
+    "price": "112.97"
   },
   {
     "id": 49,
@@ -3169,7 +3194,8 @@
         258640,
         329360
       ]
-    }
+    },
+    "price": "53.82"
   },
   {
     "id": 50,
@@ -3265,7 +3291,8 @@
         417000,
         268000
       ]
-    }
+    },
+    "price": "57.23"
   },
   {
     "id": 52,
@@ -3346,7 +3373,8 @@
         213906,
         605466
       ]
-    }
+    },
+    "price": "46.87"
   },
   {
     "id": 53,
@@ -3395,7 +3423,8 @@
         242773,
         384466
       ]
-    }
+    },
+    "price": "36.03"
   },
   {
     "id": 54,
@@ -3470,7 +3499,8 @@
         181000,
         549000
       ]
-    }
+    },
+    "price": "85.99"
   },
   {
     "id": 55,
@@ -3515,7 +3545,8 @@
         249200,
         205134
       ]
-    }
+    },
+    "price": "104.08"
   },
   {
     "id": 56,
@@ -3568,7 +3599,8 @@
         327400,
         268493
       ]
-    }
+    },
+    "price": "73.27"
   },
   {
     "id": 57,
@@ -3631,7 +3663,8 @@
         236133,
         279226
       ]
-    }
+    },
+    "price": "111.81"
   },
   {
     "id": 58,
@@ -3711,7 +3744,8 @@
         202693,
         217920
       ]
-    }
+    },
+    "price": "110.70"
   },
   {
     "id": 59,
@@ -3760,7 +3794,8 @@
         220533,
         512000
       ]
-    }
+    },
+    "price": "65.20"
   },
   {
     "id": 60,
@@ -3919,7 +3954,8 @@
         301373,
         328840
       ]
-    }
+    },
+    "price": "37.78"
   },
   {
     "id": 62,
@@ -3986,7 +4022,8 @@
         184906,
         185453
       ]
-    }
+    },
+    "price": "110.40"
   },
   {
     "id": 63,
@@ -4063,7 +4100,8 @@
         201826,
         444000
       ]
-    }
+    },
+    "price": "83.02"
   },
   {
     "id": 64,
@@ -4191,7 +4229,8 @@
         193733,
         466893
       ]
-    }
+    },
+    "price": "75.30"
   },
   {
     "id": 65,
@@ -4242,7 +4281,8 @@
         536000,
         127760
       ]
-    }
+    },
+    "price": "100.03"
   },
   {
     "id": 67,
@@ -4353,7 +4393,8 @@
         324226,
         219360
       ]
-    }
+    },
+    "price": "64.39"
   },
   {
     "id": 68,
@@ -4413,7 +4454,8 @@
         386000,
         352000
       ]
-    }
+    },
+    "price": "55.72"
   },
   {
     "id": 69,
@@ -4562,7 +4604,8 @@
         136000,
         413000
       ]
-    }
+    },
+    "price": "97.88"
   },
   {
     "id": 71,
@@ -4627,7 +4670,8 @@
         133000,
         695000
       ]
-    }
+    },
+    "price": "115.76"
   },
   {
     "id": 72,
@@ -4672,7 +4716,8 @@
         206200,
         656600
       ]
-    }
+    },
+    "price": "82.76"
   },
   {
     "id": 73,
@@ -4727,7 +4772,8 @@
         null,
         null
       ]
-    }
+    },
+    "price": "44.40"
   },
   {
     "id": 74,
@@ -4770,7 +4816,8 @@
         189693,
         390293
       ]
-    }
+    },
+    "price": "124.21"
   },
   {
     "id": 75,
@@ -4840,7 +4887,8 @@
         249506,
         242866
       ]
-    }
+    },
+    "price": "97.26"
   },
   {
     "id": 77,
@@ -4921,7 +4969,8 @@
         221000,
         216000
       ]
-    }
+    },
+    "price": "28.54"
   },
   {
     "id": 78,
@@ -4972,7 +5021,8 @@
         143840,
         252226
       ]
-    }
+    },
+    "price": "45.47"
   },
   {
     "id": 79,
@@ -5034,7 +5084,8 @@
         211600,
         406666
       ]
-    }
+    },
+    "price": "61.95"
   },
   {
     "id": 81,
@@ -5134,7 +5185,8 @@
         251760,
         218200
       ]
-    }
+    },
+    "price": "42.24"
   },
   {
     "id": 82,
@@ -5208,7 +5260,8 @@
         400200,
         274707
       ]
-    }
+    },
+    "price": "76.23"
   },
   {
     "id": 84,
@@ -5299,7 +5352,8 @@
         205226,
         351373
       ]
-    }
+    },
+    "price": "49.85"
   },
   {
     "id": 85,
@@ -5346,7 +5400,8 @@
         181280,
         281960
       ]
-    }
+    },
+    "price": "64.74"
   },
   {
     "id": 87,
@@ -5393,7 +5448,8 @@
         153200,
         157266
       ]
-    }
+    },
+    "price": "64.16"
   },
   {
     "id": 88,
@@ -5450,7 +5506,8 @@
         192973,
         302480
       ]
-    }
+    },
+    "price": "36.67"
   },
   {
     "id": 90,
@@ -5563,7 +5620,8 @@
         160093,
         134200
       ]
-    }
+    },
+    "price": "55.35"
   },
   {
     "id": 93,
@@ -5651,55 +5709,11 @@
         287000,
         220000
       ]
-    }
+    },
+    "price": "106.90"
   },
   {
     "id": 95,
-    "artist": "The Rolling Stones",
-    "title": "Sticky Fingers",
-    "releaseDate": "1971-04-23",
-    "coverImages": [
-      {
-        "url": "http://coverartarchive.org/release/0289cc7c-31b8-4711-90a9-ca17f4d06f86/9036990491.jpg",
-        "types": [
-          "Front"
-        ]
-      }
-    ],
-    "tracklist": [
-      "Brown Sugar",
-      "Sway",
-      "Wild Horses",
-      "Can’t You Hear Me Knocking",
-      "You Gotta Move",
-      "Bitch",
-      "I Got the Blues",
-      "Let It Rock",
-      "Dead Flowers",
-      "Moonlight Mile"
-    ],
-    "extra": {
-      "date": "1980",
-      "producer": null,
-      "format": "12\" Vinyl",
-      "trackCount": 10,
-      "duration": 2600306,
-      "trackDuration": [
-        230000,
-        225000,
-        341000,
-        437000,
-        152000,
-        222000,
-        240000,
-        152000,
-        245306,
-        356000
-      ]
-    }
-  },
-  {
-    "id": 97,
     "artist": "The Rolling Stones",
     "title": "The Rolling Stones No. 2",
     "releaseDate": "1965-01-15",
@@ -5773,10 +5787,11 @@
         157493,
         113507
       ]
-    }
+    },
+    "price": "54.68"
   },
   {
-    "id": 98,
+    "id": 96,
     "artist": "The Rolling Stones",
     "title": "A Bigger Bang",
     "releaseDate": "2005-06-09",
@@ -5870,10 +5885,11 @@
         193880,
         247053
       ]
-    }
+    },
+    "price": "88.73"
   },
   {
-    "id": 99,
+    "id": 97,
     "artist": "The Rolling Stones",
     "title": "Beggars Banquet",
     "releaseDate": "1968-12-06",
@@ -5915,10 +5931,11 @@
         129473,
         287214
       ]
-    }
+    },
+    "price": "65.56"
   },
   {
-    "id": 101,
+    "id": 99,
     "artist": "The Rolling Stones",
     "title": "12 × 5",
     "releaseDate": "1964-10-24",
@@ -6003,10 +6020,11 @@
         125333,
         110986
       ]
-    }
+    },
+    "price": "25.39"
   },
   {
-    "id": 102,
+    "id": 100,
     "artist": "The Rolling Stones",
     "title": "Between the Buttons",
     "releaseDate": "1967-01-20",
@@ -6070,10 +6088,11 @@
         164000,
         295000
       ]
-    }
+    },
+    "price": "37.24"
   },
   {
-    "id": 104,
+    "id": 102,
     "artist": "The Rolling Stones",
     "title": "Let It Bleed",
     "releaseDate": "1969-11-29",
@@ -6175,10 +6194,11 @@
         256200,
         452440
       ]
-    }
+    },
+    "price": "94.77"
   },
   {
-    "id": 105,
+    "id": 103,
     "artist": "The Rolling Stones",
     "title": "England’s Newest Hit Makers",
     "releaseDate": "1964-04-17",
@@ -6224,10 +6244,11 @@
         126573,
         190000
       ]
-    }
+    },
+    "price": "41.58"
   },
   {
-    "id": 106,
+    "id": 104,
     "artist": "The Rolling Stones",
     "title": "Black and Blue",
     "releaseDate": "1976-04-23",
@@ -6284,10 +6305,11 @@
         305533,
         274333
       ]
-    }
+    },
+    "price": "75.67"
   },
   {
-    "id": 109,
+    "id": 107,
     "artist": "The Rolling Stones",
     "title": "Bridges to Babylon",
     "releaseDate": "1997-09-27",
@@ -6335,10 +6357,11 @@
         315760,
         413000
       ]
-    }
+    },
+    "price": "74.98"
   },
   {
-    "id": 112,
+    "id": 110,
     "artist": "The Rolling Stones",
     "title": "Dirty Work",
     "releaseDate": "1986-03-24",
@@ -6351,19 +6374,7 @@
         ]
       }
     ],
-    "tracklist": [
-      "One Hit (to the Body)",
-      "Fight",
-      "Harlem Shuffle",
-      "Hold Back",
-      "Too Rude",
-      "Winning Ugly",
-      "Back to Zero",
-      "Dirty Work",
-      "Had It With You",
-      "Sleep Tonight",
-      "Key to the Highway (piano instrumental)"
-    ],
+    "tracklist": [],
     "extra": {
       "date": "2014-05-28",
       "producer": null,
@@ -6383,10 +6394,11 @@
         313000,
         33440
       ]
-    }
+    },
+    "price": "101.55"
   },
   {
-    "id": 113,
+    "id": 111,
     "artist": "The Rolling Stones",
     "title": "Tattoo You",
     "releaseDate": "1981-08-18",
@@ -6468,10 +6480,11 @@
         205800,
         274293
       ]
-    }
+    },
+    "price": "64.46"
   },
   {
-    "id": 114,
+    "id": 112,
     "artist": "The Kinks",
     "title": "Give the People What They Want",
     "releaseDate": "1981-08-15",
@@ -6515,10 +6528,11 @@
         227000,
         183000
       ]
-    }
+    },
+    "price": "124.71"
   },
   {
-    "id": 115,
+    "id": 113,
     "artist": "The Kinks",
     "title": "Muswell Hillbillies",
     "releaseDate": "1971-11-24",
@@ -6682,10 +6696,11 @@
         153400,
         300773
       ]
-    }
+    },
+    "price": "99.48"
   },
   {
-    "id": 118,
+    "id": 116,
     "artist": "The Kinks",
     "title": "Low Budget",
     "releaseDate": "1979-07-10",
@@ -6743,10 +6758,11 @@
         410293,
         359866
       ]
-    }
+    },
+    "price": "58.13"
   },
   {
-    "id": 120,
+    "id": 118,
     "artist": "The Kinks",
     "title": "Phobia",
     "releaseDate": "1993-03-29",
@@ -6790,35 +6806,11 @@
       "Scattered",
       "Did Ya"
     ],
-    "extra": {
-      "date": "1993-03-29",
-      "producer": null,
-      "format": "CD",
-      "trackCount": 17,
-      "duration": 4575927,
-      "trackDuration": [
-        38400,
-        301626,
-        305133,
-        292400,
-        316173,
-        304466,
-        276333,
-        287533,
-        260160,
-        360173,
-        214360,
-        243333,
-        366666,
-        244066,
-        241533,
-        250866,
-        272706
-      ]
-    }
+    "extra": null,
+    "price": "35.04"
   },
   {
-    "id": 123,
+    "id": 121,
     "artist": "The Kinks",
     "title": "Kinks",
     "releaseDate": "1964-10-02",
@@ -7005,10 +6997,11 @@
         174000,
         113000
       ]
-    }
+    },
+    "price": "36.47"
   },
   {
-    "id": 124,
+    "id": 122,
     "artist": "The Kinks",
     "title": "The Kink Kontroversy",
     "releaseDate": "1965-11-26",
@@ -7054,10 +7047,11 @@
         124373,
         160293
       ]
-    }
+    },
+    "price": "56.64"
   },
   {
-    "id": 126,
+    "id": 124,
     "artist": "The Kinks",
     "title": "Think Visual",
     "releaseDate": "1986-11-17",
@@ -7115,10 +7109,11 @@
         241760,
         220000
       ]
-    }
+    },
+    "price": "24.44"
   },
   {
-    "id": 127,
+    "id": 125,
     "artist": "The Kinks",
     "title": "Lola Versus Powerman and the Moneygoround, Part One",
     "releaseDate": "1970-11-27",
@@ -7172,10 +7167,11 @@
         218000,
         262000
       ]
-    }
+    },
+    "price": "118.13"
   },
   {
-    "id": 128,
+    "id": 126,
     "artist": "The Kinks",
     "title": "Something Else by The Kinks",
     "releaseDate": "1967-09-15",
@@ -7241,10 +7237,11 @@
         176000,
         195000
       ]
-    }
+    },
+    "price": "52.40"
   },
   {
-    "id": 130,
+    "id": 128,
     "artist": "The Kinks",
     "title": "Kinks‐Size",
     "releaseDate": "1965-03",
@@ -7286,10 +7283,11 @@
         null,
         null
       ]
-    }
+    },
+    "price": "21.77"
   },
   {
-    "id": 131,
+    "id": 129,
     "artist": "The Kinks",
     "title": "Everybody’s in Show‐Biz",
     "releaseDate": "1972-08-25",
@@ -7367,10 +7365,11 @@
         116000,
         100000
       ]
-    }
+    },
+    "price": "72.11"
   },
   {
-    "id": 132,
+    "id": 130,
     "artist": "The Kinks",
     "title": "Soap Opera",
     "releaseDate": "1975-04-25",
@@ -7492,10 +7491,11 @@
         260000,
         249000
       ]
-    }
+    },
+    "price": "39.26"
   },
   {
-    "id": 133,
+    "id": 131,
     "artist": "The Kinks",
     "title": "Schoolboys in Disgrace",
     "releaseDate": "1975-11-17",
@@ -7544,10 +7544,11 @@
         270293,
         62920
       ]
-    }
+    },
+    "price": "86.07"
   },
   {
-    "id": 134,
+    "id": 132,
     "artist": "The Kinks",
     "title": "Arthur (or The Decline and Fall of the British Empire)",
     "releaseDate": "1969-10-10",
@@ -7623,10 +7624,11 @@
         187000,
         320000
       ]
-    }
+    },
+    "price": "96.49"
   },
   {
-    "id": 136,
+    "id": 134,
     "artist": "The Kinks",
     "title": "UK Jive",
     "releaseDate": "1989-10-02",
@@ -7686,10 +7688,11 @@
         209400,
         267133
       ]
-    }
+    },
+    "price": "51.46"
   },
   {
-    "id": 137,
+    "id": 135,
     "artist": "The Kinks",
     "title": "Kinda Kinks",
     "releaseDate": "1965-03-05",
@@ -7741,10 +7744,11 @@
         121266,
         142640
       ]
-    }
+    },
+    "price": "121.23"
   },
   {
-    "id": 139,
+    "id": 137,
     "artist": "The Beach Boys",
     "title": "Surfer Girl",
     "releaseDate": "1963-09-23",
@@ -7821,10 +7825,11 @@
         150440,
         117333
       ]
-    }
+    },
+    "price": "58.21"
   },
   {
-    "id": 140,
+    "id": 138,
     "artist": "The Beach Boys",
     "title": "Wild Honey",
     "releaseDate": "1967-12-11",
@@ -7917,10 +7922,11 @@
         117960,
         63933
       ]
-    }
+    },
+    "price": "88.08"
   },
   {
-    "id": 141,
+    "id": 139,
     "artist": "The Beach Boys",
     "title": "20/20",
     "releaseDate": "1969-02-03",
@@ -8009,10 +8015,11 @@
         67000,
         214000
       ]
-    }
+    },
+    "price": "56.53"
   },
   {
-    "id": 143,
+    "id": 141,
     "artist": "The Beach Boys",
     "title": "Friends",
     "releaseDate": "1968-06-10",
@@ -8107,10 +8114,11 @@
         222200,
         108893
       ]
-    }
+    },
+    "price": "21.04"
   },
   {
-    "id": 144,
+    "id": 142,
     "artist": "The Beach Boys",
     "title": "Holland",
     "releaseDate": "1973-01-08",
@@ -8150,10 +8158,11 @@
         176000,
         247000
       ]
-    }
+    },
+    "price": "110.76"
   },
   {
-    "id": 148,
+    "id": 146,
     "artist": "The Beach Boys",
     "title": "All Summer Long",
     "releaseDate": "1964-07-13",
@@ -8199,10 +8208,11 @@
         120120,
         106387
       ]
-    }
+    },
+    "price": "108.31"
   },
   {
-    "id": 150,
+    "id": 147,
     "artist": "The Beach Boys",
     "title": "M.I.U. Album",
     "releaseDate": "1978-10-02",
@@ -8288,10 +8298,11 @@
         210000,
         193000
       ]
-    }
+    },
+    "price": "48.88"
   },
   {
-    "id": 151,
+    "id": 148,
     "artist": "The Beach Boys",
     "title": "Little Deuce Coupe",
     "releaseDate": "1963-10-21",
@@ -8337,10 +8348,11 @@
         135000,
         100000
       ]
-    }
+    },
+    "price": "56.66"
   },
   {
-    "id": 152,
+    "id": 149,
     "artist": "The Beach Boys",
     "title": "Surfin’ USA",
     "releaseDate": "1963-03-25",
@@ -8411,10 +8423,11 @@
         121600,
         101906
       ]
-    }
+    },
+    "price": "40.85"
   },
   {
-    "id": 153,
+    "id": 150,
     "artist": "The Beach Boys",
     "title": "The Beach Boys",
     "releaseDate": "1985-06-10",
@@ -8460,10 +8473,11 @@
         142866,
         155066
       ]
-    }
+    },
+    "price": "25.39"
   },
   {
-    "id": 154,
+    "id": 151,
     "artist": "The Beach Boys",
     "title": "L.A. (Light Album)",
     "releaseDate": "1979-03-19",
@@ -8555,10 +8569,11 @@
         194000,
         168000
       ]
-    }
+    },
+    "price": "121.33"
   },
   {
-    "id": 155,
+    "id": 152,
     "artist": "The Beach Boys",
     "title": "Smiley Smile",
     "releaseDate": "1967-09-05",
@@ -8645,10 +8660,11 @@
         144733,
         63826
       ]
-    }
+    },
+    "price": "121.10"
   },
   {
-    "id": 156,
+    "id": 153,
     "artist": "The Beach Boys",
     "title": "Surf’s Up",
     "releaseDate": "1971-08-30",
@@ -8708,10 +8724,11 @@
         149000,
         251333
       ]
-    }
+    },
+    "price": "41.87"
   },
   {
-    "id": 157,
+    "id": 154,
     "artist": "The Beach Boys",
     "title": "15 Big Ones",
     "releaseDate": "1976-06-28",
@@ -8763,10 +8780,11 @@
         183306,
         222000
       ]
-    }
+    },
+    "price": "31.65"
   },
   {
-    "id": 158,
+    "id": 155,
     "artist": "The Beach Boys",
     "title": "Carl and the Passions: “So Tough”",
     "releaseDate": "1972-05-15",
@@ -8804,10 +8822,11 @@
         244000,
         330000
       ]
-    }
+    },
+    "price": "75.91"
   },
   {
-    "id": 159,
+    "id": 156,
     "artist": "The Beach Boys",
     "title": "Keepin’ the Summer Alive",
     "releaseDate": "1980-03-24",
@@ -8849,10 +8868,11 @@
         196173,
         189000
       ]
-    }
+    },
+    "price": "59.06"
   },
   {
-    "id": 161,
+    "id": 158,
     "artist": "The Beach Boys",
     "title": "Beach Boys’ Party!",
     "releaseDate": "1965-11-08",
@@ -8898,10 +8918,11 @@
         142000,
         205000
       ]
-    }
+    },
+    "price": "73.30"
   },
   {
-    "id": 162,
+    "id": 159,
     "artist": "The Beach Boys",
     "title": "Love You",
     "releaseDate": "1977-04-11",
@@ -8975,10 +8996,11 @@
         185000,
         175000
       ]
-    }
+    },
+    "price": "50.12"
   },
   {
-    "id": 163,
+    "id": 160,
     "artist": "The Beach Boys",
     "title": "Pet Sounds",
     "releaseDate": "1966-05-16",
@@ -9044,10 +9066,11 @@
         140000,
         136000
       ]
-    }
+    },
+    "price": "120.38"
   },
   {
-    "id": 164,
+    "id": 161,
     "artist": "Nirvana",
     "title": "Nevermind",
     "releaseDate": "1991-09-24",
@@ -9119,10 +9142,11 @@
         196493,
         232866
       ]
-    }
+    },
+    "price": "68.10"
   },
   {
-    "id": 168,
+    "id": 165,
     "artist": "Ramones",
     "title": "Road to Ruin",
     "releaseDate": "1978-09-22",
@@ -9186,10 +9210,11 @@
         146000,
         139000
       ]
-    }
+    },
+    "price": "89.04"
   },
   {
-    "id": 169,
+    "id": 166,
     "artist": "Ramones",
     "title": "Mondo Bizarro",
     "releaseDate": "1992-09-24",
@@ -9286,10 +9311,11 @@
         167000,
         172000
       ]
-    }
+    },
+    "price": "71.41"
   },
   {
-    "id": 170,
+    "id": 167,
     "artist": "Ramones",
     "title": "Acid Eaters",
     "releaseDate": "1993-12-01",
@@ -9335,10 +9361,11 @@
         146000,
         147000
       ]
-    }
+    },
+    "price": "96.22"
   },
   {
-    "id": 171,
+    "id": 168,
     "artist": "Ramones",
     "title": "Pleasant Dreams",
     "releaseDate": "1981-07-20",
@@ -9538,10 +9565,11 @@
         175426,
         146573
       ]
-    }
+    },
+    "price": "74.94"
   },
   {
-    "id": 172,
+    "id": 169,
     "artist": "Ramones",
     "title": "Animal Boy",
     "releaseDate": "1986-05",
@@ -9587,10 +9615,11 @@
         143520,
         246854
       ]
-    }
+    },
+    "price": "37.93"
   },
   {
-    "id": 173,
+    "id": 170,
     "artist": "Ramones",
     "title": "Subterranean Jungle",
     "releaseDate": "1983-02",
@@ -9634,10 +9663,11 @@
         129000,
         184000
       ]
-    }
+    },
+    "price": "77.88"
   },
   {
-    "id": 174,
+    "id": 171,
     "artist": "Ramones",
     "title": "Ramones",
     "releaseDate": "1976-04-23",
@@ -9721,10 +9751,11 @@
         104920,
         130266
       ]
-    }
+    },
+    "price": "117.35"
   },
   {
-    "id": 175,
+    "id": 172,
     "artist": "Ramones",
     "title": "End of the Century",
     "releaseDate": "1980-02-04",
@@ -9883,10 +9914,11 @@
         223466,
         59666
       ]
-    }
+    },
+    "price": "33.59"
   },
   {
-    "id": 176,
+    "id": 173,
     "artist": "Ramones",
     "title": "Leave Home",
     "releaseDate": "1977-01-10",
@@ -9936,10 +9968,11 @@
         162600,
         115774
       ]
-    }
+    },
+    "price": "78.69"
   },
   {
-    "id": 177,
+    "id": 174,
     "artist": "Ramones",
     "title": "Brain Drain",
     "releaseDate": "1989-05-18",
@@ -10022,10 +10055,11 @@
         241226,
         125173
       ]
-    }
+    },
+    "price": "72.62"
   },
   {
-    "id": 179,
+    "id": 176,
     "artist": "Ramones",
     "title": "Too Tough to Die",
     "releaseDate": "1984",
@@ -10097,10 +10131,11 @@
         155093,
         185866
       ]
-    }
+    },
+    "price": "66.10"
   },
   {
-    "id": 181,
+    "id": 178,
     "artist": "The Clash",
     "title": "London Calling",
     "releaseDate": "1979-12-14",
@@ -10142,10 +10177,11 @@
         225000,
         188000
       ]
-    }
+    },
+    "price": "34.73"
   },
   {
-    "id": 182,
+    "id": 179,
     "artist": "The Clash",
     "title": "Combat Rock",
     "releaseDate": "1982-05-14",
@@ -10191,10 +10227,11 @@
         162000,
         195840
       ]
-    }
+    },
+    "price": "41.16"
   },
   {
-    "id": 183,
+    "id": 180,
     "artist": "The Clash",
     "title": "Cut the Crap",
     "releaseDate": "1985-11-04",
@@ -10240,10 +10277,11 @@
         212000,
         159000
       ]
-    }
+    },
+    "price": "47.77"
   },
   {
-    "id": 184,
+    "id": 181,
     "artist": "The Clash",
     "title": "The Clash",
     "releaseDate": "1977-04-08",
@@ -10293,10 +10331,11 @@
         96426,
         194000
       ]
-    }
+    },
+    "price": "63.05"
   },
   {
-    "id": 187,
+    "id": 184,
     "artist": "Depeche Mode",
     "title": "A Broken Frame",
     "releaseDate": "1982-09-27",
@@ -10356,10 +10395,11 @@
         192200,
         303293
       ]
-    }
+    },
+    "price": "20.08"
   },
   {
-    "id": 188,
+    "id": 185,
     "artist": "Depeche Mode",
     "title": "Spirit",
     "releaseDate": "2017-03-17",
@@ -10405,10 +10445,11 @@
         193000,
         307000
       ]
-    }
+    },
+    "price": "54.88"
   },
   {
-    "id": 189,
+    "id": 186,
     "artist": "Depeche Mode",
     "title": "Playing the Angel",
     "releaseDate": "2005-10-11",
@@ -10474,10 +10515,11 @@
         247000,
         245000
       ]
-    }
+    },
+    "price": "69.18"
   },
   {
-    "id": 190,
+    "id": 187,
     "artist": "Depeche Mode",
     "title": "Memento Mori",
     "releaseDate": "2023-03-24",
@@ -10590,10 +10632,11 @@
         243853,
         277946
       ]
-    }
+    },
+    "price": "75.03"
   },
   {
-    "id": 191,
+    "id": 188,
     "artist": "Depeche Mode",
     "title": "Violator",
     "releaseDate": "1990-02-05",
@@ -10646,10 +10689,11 @@
         341960,
         328866
       ]
-    }
+    },
+    "price": "32.93"
   },
   {
-    "id": 192,
+    "id": 189,
     "artist": "Depeche Mode",
     "title": "Speak & Spell",
     "releaseDate": "1981-10-05",
@@ -10742,10 +10786,11 @@
         153000,
         401000
       ]
-    }
+    },
+    "price": "84.25"
   },
   {
-    "id": 193,
+    "id": 190,
     "artist": "Depeche Mode",
     "title": "Sounds of the Universe",
     "releaseDate": "2009-04-17",
@@ -10847,10 +10892,11 @@
         211000,
         294000
       ]
-    }
+    },
+    "price": "23.11"
   },
   {
-    "id": 195,
+    "id": 192,
     "artist": "Depeche Mode",
     "title": "Ultra",
     "releaseDate": "1997-04-10",
@@ -10908,10 +10954,11 @@
         386666,
         129773
       ]
-    }
+    },
+    "price": "69.78"
   },
   {
-    "id": 196,
+    "id": 193,
     "artist": "Depeche Mode",
     "title": "Some Great Reward",
     "releaseDate": "1984-09-24",
@@ -10951,140 +10998,11 @@
         280000,
         381000
       ]
-    }
+    },
+    "price": "70.73"
   },
   {
-    "id": 197,
-    "artist": "Depeche Mode",
-    "title": "DMBX6",
-    "releaseDate": "",
-    "coverImages": [
-      {
-        "url": "https://coverartarchive.org/release/dff467df-36af-41f3-b78a-d6c3c2580485/41970925512.jpg",
-        "types": [
-          "Front"
-        ]
-      }
-    ],
-    "tracklist": [
-      "Barrel of a Gun",
-      "Painkiller",
-      "Barrel of a Gun (Underworld soft mix)",
-      "Barrel of a Gun (One Inch Punch mix)",
-      "Barrel of a Gun (Underworld hard mix)",
-      "Barrel of a Gun (United mix)",
-      "Painkiller (Plastikman mix)",
-      "Barrel of a Gun (3 Phase mix)",
-      "Barrel of a Gun (One Inch Punch mix, version 2)",
-      "It’s No Good",
-      "Slowblow",
-      "It’s No Good (Dom T’s Bass Bounce mix)",
-      "It’s No Good (Speedy J mix)",
-      "It’s No Good (Hardfloor mix)",
-      "Slowblow (Darren Price mix)",
-      "It’s No Good (Andrea Parker mix)",
-      "It’s No Good (Motor Bass mix)",
-      "Home",
-      "Home (Air ‘Around the Golf’ remix)",
-      "Home (LFO Meant to Be)",
-      "Home (The Noodles and the Damage Done)",
-      "Home (Jedi Knights remix – Drowning in Time)",
-      "Home (Grantby mix)",
-      "Barrel of a Gun (live)",
-      "It’s No Good (live)",
-      "Useless (remix)",
-      "Useless (Escape From Wherever: Parts 1 & 2!)",
-      "Useless (Cosmic Blues mix)",
-      "Useless (CJ Bolland Ultrasonar mix)",
-      "Useless (The Kruder + Dorfmeister session™)",
-      "Useless (CJ Bolland Funky Sub mix)",
-      "Useless (Air 20 mix)",
-      "Useless (live)",
-      "Only When I Lose Myself",
-      "Surrender",
-      "Headstar",
-      "Only When I Lose Myself (Subsonic Legacy mix)",
-      "Only When I Lose Myself (Dan the Automator mix)",
-      "Headstar (Luke Slater remix)",
-      "Only When I Lose Myself (Gus Gus long play mix)",
-      "Painkiller (Kill the Pain mix – DJ Shadow vs Depeche Mode)",
-      "Surrender (FC Catalan Out of Reach mix)",
-      "Only When I Lose Myself (Gus Gus short play mix)",
-      "World in My Eyes (Safar mix)",
-      "Dream On (single version)",
-      "Easy Tiger (full version)",
-      "Easy Tiger (Bertrand Burgalat & A.S. Dragon version)",
-      "Dream On (Bushwacka Tough Guy mix)",
-      "Dream On (Dave Clarke acoustic version)",
-      "Dream On (Octagon Man mix)",
-      "Dream On (Kid 606 mix)",
-      "Dream On (Dave Clarke remix)",
-      "Dream On (Bushwacka Blunt mix)"
-    ],
-    "extra": {
-      "producer": null,
-      "format": "Digital Media",
-      "trackCount": 53,
-      "duration": 19295000,
-      "trackDuration": [
-        332000,
-        449000,
-        389000,
-        327000,
-        578000,
-        396000,
-        520000,
-        325000,
-        329000,
-        360000,
-        325000,
-        436000,
-        304000,
-        403000,
-        389000,
-        374000,
-        228000,
-        347000,
-        237000,
-        266000,
-        397000,
-        422000,
-        279000,
-        362000,
-        248000,
-        294000,
-        437000,
-        417000,
-        362000,
-        549000,
-        339000,
-        478000,
-        324000,
-        276000,
-        379000,
-        264000,
-        423000,
-        297000,
-        348000,
-        681000,
-        394000,
-        415000,
-        307000,
-        511000,
-        223000,
-        297000,
-        293000,
-        368000,
-        264000,
-        324000,
-        286000,
-        314000,
-        409000
-      ]
-    }
-  },
-  {
-    "id": 200,
+    "id": 196,
     "artist": "Depeche Mode",
     "title": "Songs of Faith and Devotion",
     "releaseDate": "1993-03-22",
@@ -11261,10 +11179,11 @@
         210000,
         356000
       ]
-    }
+    },
+    "price": "44.67"
   },
   {
-    "id": 201,
+    "id": 197,
     "artist": "Depeche Mode",
     "title": "Music for the Masses",
     "releaseDate": "1987-09-28",
@@ -11324,10 +11243,11 @@
         258106,
         298000
       ]
-    }
+    },
+    "price": "21.55"
   },
   {
-    "id": 202,
+    "id": 198,
     "artist": "Depeche Mode",
     "title": "Construction Time Again",
     "releaseDate": "1983-08-22",
@@ -11443,10 +11363,11 @@
         342733,
         440800
       ]
-    }
+    },
+    "price": "114.02"
   },
   {
-    "id": 203,
+    "id": 199,
     "artist": "The Cure",
     "title": "Wild Mood Swings",
     "releaseDate": "1996-05-06",
@@ -11536,10 +11457,11 @@
         212573,
         255560
       ]
-    }
+    },
+    "price": "23.66"
   },
   {
-    "id": 204,
+    "id": 200,
     "artist": "The Cure",
     "title": "The Top",
     "releaseDate": "1984-05-22",
@@ -11599,10 +11521,11 @@
         192133,
         410600
       ]
-    }
+    },
+    "price": "81.92"
   },
   {
-    "id": 205,
+    "id": 201,
     "artist": "The Cure",
     "title": "Disintegration",
     "releaseDate": "1989-05-01",
@@ -11648,10 +11571,11 @@
         426013,
         390213
       ]
-    }
+    },
+    "price": "57.29"
   },
   {
-    "id": 206,
+    "id": 202,
     "artist": "The Cure",
     "title": "Pornography",
     "releaseDate": "1982-05-03",
@@ -11726,10 +11650,11 @@
         266573,
         387866
       ]
-    }
+    },
+    "price": "81.89"
   },
   {
-    "id": 207,
+    "id": 203,
     "artist": "The Cure",
     "title": "Three Imaginary Boys",
     "releaseDate": "1979-05-08",
@@ -11801,10 +11726,11 @@
         161000,
         261000
       ]
-    }
+    },
+    "price": "60.06"
   },
   {
-    "id": 208,
+    "id": 204,
     "artist": "The Cure",
     "title": "Seventeen Seconds",
     "releaseDate": "1980-04-22",
@@ -11895,10 +11821,11 @@
         354240,
         240400
       ]
-    }
+    },
+    "price": "100.01"
   },
   {
-    "id": 209,
+    "id": 205,
     "artist": "The Cure",
     "title": "The Cure",
     "releaseDate": "2004-06-25",
@@ -11957,10 +11884,11 @@
         621053,
         207880
       ]
-    }
+    },
+    "price": "120.26"
   },
   {
-    "id": 210,
+    "id": 206,
     "artist": "The Cure",
     "title": "Wish",
     "releaseDate": "1992-04-17",
@@ -12076,10 +12004,11 @@
         313266,
         264000
       ]
-    }
+    },
+    "price": "56.51"
   },
   {
-    "id": 212,
+    "id": 208,
     "artist": "The Cure",
     "title": "Kiss Me Kiss Me Kiss Me",
     "releaseDate": "1987-05-05",
@@ -12190,10 +12119,11 @@
         209733,
         267666
       ]
-    }
+    },
+    "price": "92.47"
   },
   {
-    "id": 213,
+    "id": 209,
     "artist": "The Cure",
     "title": "Bloodflowers",
     "releaseDate": "2000-02-02",
@@ -12342,10 +12272,11 @@
         439333,
         448173
       ]
-    }
+    },
+    "price": "84.68"
   },
   {
-    "id": 214,
+    "id": 210,
     "artist": "The Cure",
     "title": "Faith",
     "releaseDate": "1981-04-11",
@@ -12403,10 +12334,11 @@
         400800,
         1620000
       ]
-    }
+    },
+    "price": "37.87"
   },
   {
-    "id": 216,
+    "id": 212,
     "artist": "The Cure",
     "title": "4:13 Dream",
     "releaseDate": "2008-10-24",
@@ -12500,10 +12432,11 @@
         283413,
         269573
       ]
-    }
+    },
+    "price": "61.84"
   },
   {
-    "id": 217,
+    "id": 213,
     "artist": "Talking Heads",
     "title": "Naked",
     "releaseDate": "1988-03-15",
@@ -12614,10 +12547,11 @@
         202733,
         316133
       ]
-    }
+    },
+    "price": "45.68"
   },
   {
-    "id": 218,
+    "id": 214,
     "artist": "Talking Heads",
     "title": "More Songs About Buildings and Food",
     "releaseDate": "1978-07-14",
@@ -12716,10 +12650,11 @@
         303533,
         332026
       ]
-    }
+    },
+    "price": "84.26"
   },
   {
-    "id": 220,
+    "id": 216,
     "artist": "Talking Heads",
     "title": "Speaking in Tongues",
     "releaseDate": "1983-06-01",
@@ -12771,10 +12706,11 @@
         309000,
         296000
       ]
-    }
+    },
+    "price": "33.51"
   },
   {
-    "id": 221,
+    "id": 217,
     "artist": "Talking Heads",
     "title": "Little Creatures",
     "releaseDate": "1985-06-10",
@@ -12857,10 +12793,11 @@
         370466,
         259000
       ]
-    }
+    },
+    "price": "32.09"
   },
   {
-    "id": 222,
+    "id": 218,
     "artist": "Talking Heads",
     "title": "Talking Heads: 77",
     "releaseDate": "1977-09-16",
@@ -12918,10 +12855,11 @@
         259000,
         269000
       ]
-    }
+    },
+    "price": "93.10"
   },
   {
-    "id": 223,
+    "id": 219,
     "artist": "Talking Heads",
     "title": "Fear of Music",
     "releaseDate": "1979-08-03",
@@ -12985,10 +12923,11 @@
         182800,
         309973
       ]
-    }
+    },
+    "price": "105.80"
   },
   {
-    "id": 224,
+    "id": 220,
     "artist": "Talking Heads",
     "title": "Remain in Light",
     "releaseDate": "1980-10-08",
@@ -13069,10 +13008,11 @@
         283133,
         361600
       ]
-    }
+    },
+    "price": "95.68"
   },
   {
-    "id": 225,
+    "id": 221,
     "artist": "Joy Division",
     "title": "Unknown Pleasures",
     "releaseDate": "1979-06-15",
@@ -13138,10 +13078,11 @@
         268000,
         229000
       ]
-    }
+    },
+    "price": "108.99"
   },
   {
-    "id": 226,
+    "id": 222,
     "artist": "Joy Division",
     "title": "Closer",
     "releaseDate": "1980-07-18",
@@ -13181,10 +13122,11 @@
         366933,
         369000
       ]
-    }
+    },
+    "price": "83.61"
   },
   {
-    "id": 227,
+    "id": 223,
     "artist": "Janis Joplin",
     "title": "Big Brother & The Holding Company",
     "releaseDate": "1967-09",
@@ -13231,10 +13173,11 @@
         138306,
         134893
       ]
-    }
+    },
+    "price": "104.08"
   },
   {
-    "id": 228,
+    "id": 224,
     "artist": "Janis Joplin",
     "title": "E.P",
     "releaseDate": "1971-12-02",
@@ -13264,10 +13207,11 @@
         311000,
         248000
       ]
-    }
+    },
+    "price": "108.51"
   },
   {
-    "id": 231,
+    "id": 227,
     "artist": "Janis Joplin",
     "title": "Pearl",
     "releaseDate": "1971-01",
@@ -13321,6 +13265,7 @@
         239000,
         267000
       ]
-    }
+    },
+    "price": "91.86"
   }
 ]

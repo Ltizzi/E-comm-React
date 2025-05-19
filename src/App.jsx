@@ -18,7 +18,7 @@ function App() {
   function addProductToCart(prod) {
     console.log("Agregando a carrito..." + prod.title);
 
-    setCart([...cart, prod]);
+    setCart((prevCart) => [...prevCart, prod]);
   }
 
   function clearCart() {
@@ -66,7 +66,7 @@ function App() {
       <div
         className="bg-gradient-to-br from-base-200 to-base-300 min-h-screen pt-10"
         style={{
-          backgroundImage: `url(/img/bg.png)`,
+          backgroundImage: `url(/img/bg2.png)`,
         }}
       >
         <Routes>
@@ -87,6 +87,7 @@ function App() {
                 cart={cart}
                 removeProdFromCart={removeProdFromCart}
                 clearCart={clearCart}
+                goToProd={goToProd}
               />
             }
           />

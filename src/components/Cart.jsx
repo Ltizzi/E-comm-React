@@ -3,7 +3,7 @@ import BaseButton from "./common/BaseButton";
 import ProductCard from "./ProductCard";
 
 const Cart = (props) => {
-  const { cart, removeProdFromCart, clearCart } = props;
+  const { cart, removeProdFromCart, clearCart, goToProd } = props;
   if (!Array.isArray(cart) || cart.length == 0) {
     return (
       <div className="flex justify-center items-center align-middle min-h-screen -mt-48">
@@ -23,12 +23,13 @@ const Cart = (props) => {
         btnType={"error"}
       />
       <div className="flex flex-row flex-wrap justify-start gap-5 mx-20">
-        {cart.map((prod) => (
+        {cart.map((prod, index) => (
           <ProductCard
-            key={prod.id}
+            key={index}
             prod={prod}
             removeProdFromCart={removeProdFromCart}
             fromCart={true}
+            goToProd={goToProd}
           />
         ))}
       </div>

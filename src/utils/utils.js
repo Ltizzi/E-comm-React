@@ -21,3 +21,9 @@ export async function getAlbumById(id) {
       console.error("Error:", err);
     });
 }
+
+export function getTotal(cart) {
+  let total = 0;
+  cart.forEach((p) => (total += +p.price));
+  return total;
+}
