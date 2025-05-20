@@ -24,6 +24,9 @@ export async function getAlbumById(id) {
 
 export function getTotal(cart) {
   let total = 0;
-  cart.forEach((p) => (total += +p.price));
-  return total;
+  if (cart)
+    cart.forEach((p) => {
+      total += +p.item.price * p.count;
+    });
+  return total.toFixed(2);
 }

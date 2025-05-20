@@ -6,7 +6,7 @@ import Footer from "./components/Footer";
 import { Routes, Route, useNavigate } from "react-router-dom";
 import Cart from "./components/Cart";
 import ProductInfo from "./components/ProductInfo";
-import NotFound from "./components/NotFound";
+import NotFound from "./pages/NotFound";
 
 function App() {
   const [products, setProducts] = useState([]);
@@ -15,10 +15,21 @@ function App() {
 
   const navigate = useNavigate();
 
-  function addProductToCart(prod) {
+  function addProductToCart(prod, count) {
     console.log("Agregando a carrito..." + prod.title);
 
-    setCart((prevCart) => [...prevCart, prod]);
+    const alreadyAdded =
+      cart.filter((item) => item.item.id === prod.id).length > 0;
+    if (alreadyAdded) {
+      setCart((prevCart) =>
+        prevCart.map((item) => {
+          if (item.item.id === prod.id) {
+            return { ...item, count: item.count + count };
+          }
+          return item;
+        })
+      );
+    } else setCart((prevCart) => [...prevCart, { item: prod, count: count }]);
   }
 
   function clearCart() {
@@ -26,16 +37,50 @@ function App() {
   }
 
   function removeProdFromCart(prod) {
-    let found = false;
+    //let found = false;
     setCart(
-      cart.filter((p) => {
-        if (!found && p.id === prod.id) {
-          found = true;
-          return false;
-        }
-        return true;
-      })
+      cart.filter((p) => p.item.id !== prod.id)
+      //   if (!found && p.item.id === prod.id) {
+      //     found = true;
+      //     return false;
+      //   }
+      //   return true;
+      // })
     );
+  }
+
+  function removeOne(prod) {
+    // let removed = false;
+    // setCart((prevCart) =>
+    //   prevCart
+    //     .map((p) => {
+    //       if (!removed && p.item.id === prod.id) {
+    //         removed = true;
+    //         if (p.count > 1) return { ...p, count: p.count - 1 };
+    //         else return null;
+    //       }
+    //       return p;
+    //     })
+    //     .filter(Boolean)
+    // );
+    setCart((prevCart) => {
+      const index = prevCart.findIndex((p) => p.item.id === prod.id);
+      if (index === -1) return prevCart;
+
+      const item = prevCart[index];
+
+      if (item.count > 1) {
+        const newItem = { ...item, count: item.count - 1 };
+        return [
+          ...prevCart.slice(0, index),
+          newItem,
+          ...prevCart.slice(index + 1),
+        ];
+      } else {
+        // Eliminar el item completamente
+        return [...prevCart.slice(0, index), ...prevCart.slice(index + 1)];
+      }
+    });
   }
 
   function goToProd(prod) {
@@ -86,6 +131,7 @@ function App() {
               <Cart
                 cart={cart}
                 removeProdFromCart={removeProdFromCart}
+                removeOne={removeOne}
                 clearCart={clearCart}
                 goToProd={goToProd}
               />

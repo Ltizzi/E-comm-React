@@ -51,7 +51,7 @@ const ProductCard = (props) => {
               ) : (
                 <BaseButton
                   btnLabel={"Add to cart"}
-                  btnAction={() => addProductToCart(prod)}
+                  btnAction={() => addProductToCart(prod, 1)}
                   btnType={"accent"}
                 />
               )}

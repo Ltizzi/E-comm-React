@@ -6,6 +6,14 @@ import { getTotal } from "../utils/utils";
 const Nav = (props) => {
   const { cart } = props;
 
+  function getTotalCartItems() {
+    let sol = 0;
+    for (let i = 0; i < cart.length; i++) {
+      sol += cart[i].count;
+    }
+    return sol;
+  }
+
   return (
     <div className="navbar bg-base-100  shadow-sm fixed top-0">
       <div className="flex-1">
@@ -35,7 +43,7 @@ const Nav = (props) => {
               </svg>
               {/* TODO: FIX BADGE TEXT COLOR */}
               <span className={"badge badge-md indicator-item badge-error"}>
-                {cart.length}
+                {getTotalCartItems()}
               </span>
             </div>
           </div>
@@ -44,8 +52,12 @@ const Nav = (props) => {
             className="card card-compact dropdown-content bg-base-100 z-1 mt-3 w-52 shadow"
           >
             <div className="card-body">
-              <span className="text-lg font-bold">{cart.length} Items</span>
-              <span className="text-info">Subtotal: u$s{getTotal(cart)}</span>
+              <span className="text-lg font-bold">
+                {getTotalCartItems()} Items
+              </span>
+              <span className="text-info">
+                Subtotal: u$s{getTotal(cart) || 0}
+              </span>
               <div className="card-actions">
                 <Link to="/cart">
                   <button className="btn btn-primary btn-block">

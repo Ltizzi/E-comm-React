@@ -8,7 +8,7 @@ const ThemeSelector = () => {
     setIsDark(darkMode);
     document.documentElement.setAttribute(
       "data-theme",
-      isDark ? "dracula" : "cupcake"
+      isDark ? "dracula" : "nord"
     );
     localStorage.setItem("dark-mode", JSON.stringify(isDark));
   }
@@ -25,7 +25,7 @@ const ThemeSelector = () => {
       <input
         type="checkbox"
         className="theme-controller"
-        value="cupcake"
+        value="nord"
         onChange={() => {
           changeTheme;
         }}
