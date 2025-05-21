@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import BaseButton from "./common/BaseButton";
 import { getFront } from "../utils/utils";
 
@@ -6,12 +6,22 @@ const ProductCard = (props) => {
   const { prod, addProductToCart, fromCart, removeProdFromCart, goToProd } =
     props;
   const [isHover, setIsHover] = useState(false);
+  const [loaded, setLoaded] = useState(false);
+
+  useEffect(() => {
+    const img = new Image();
+    img.src = getFront(prod.coverImages);
+    img.onload = () => setLoaded(true);
+    img.onerror = () => setLoaded(false);
+  }, [prod]);
 
   return (
     <div
-      className="bg-neutral text-neutral-content w-72 h-72 flex flex-col  justify-center text-center rounded-lg shadow-lg shadow-secondary border-4 border-primary border-double border-spacing-36 bg-cover bg-center"
+      className={`bg-neutral text-neutral-content w-72 h-72 flex flex-col  justify-center text-center rounded-lg shadow-lg shadow-secondary border-4 border-primary border-double border-spacing-36  ${
+        loaded ? " bg-cover bg-center" : "skeleton"
+      }`}
       style={{
-        backgroundImage: `url(${getFront(prod.coverImages)})`,
+        backgroundImage: loaded ? `url(${getFront(prod.coverImages)})` : "none",
       }}
     >
       {/* {checkIsFront() ? (

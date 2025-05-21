@@ -37,32 +37,10 @@ function App() {
   }
 
   function removeProdFromCart(prod) {
-    //let found = false;
-    setCart(
-      cart.filter((p) => p.item.id !== prod.id)
-      //   if (!found && p.item.id === prod.id) {
-      //     found = true;
-      //     return false;
-      //   }
-      //   return true;
-      // })
-    );
+    setCart(cart.filter((p) => p.item.id !== prod.id));
   }
 
   function removeOne(prod) {
-    // let removed = false;
-    // setCart((prevCart) =>
-    //   prevCart
-    //     .map((p) => {
-    //       if (!removed && p.item.id === prod.id) {
-    //         removed = true;
-    //         if (p.count > 1) return { ...p, count: p.count - 1 };
-    //         else return null;
-    //       }
-    //       return p;
-    //     })
-    //     .filter(Boolean)
-    // );
     setCart((prevCart) => {
       const index = prevCart.findIndex((p) => p.item.id === prod.id);
       if (index === -1) return prevCart;
@@ -77,7 +55,6 @@ function App() {
           ...prevCart.slice(index + 1),
         ];
       } else {
-        // Eliminar el item completamente
         return [...prevCart.slice(0, index), ...prevCart.slice(index + 1)];
       }
     });
