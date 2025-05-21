@@ -7,13 +7,27 @@ import { Routes, Route, useNavigate } from "react-router-dom";
 import Cart from "./components/Cart";
 import ProductInfo from "./components/ProductInfo";
 import NotFound from "./pages/NotFound";
+import Login from "./components/common/Login";
+import ProtectedRoute from "./components/auth/ProtectedRoute";
+import UserProfile from "./components/UserProfile";
 
 function App() {
   const [products, setProducts] = useState([]);
   const [cart, setCart] = useState([]);
   const [productToShow, setProductToShow] = useState({});
+  const [isLogged, setIsLogged] = useState(false);
 
   const navigate = useNavigate();
+
+  function login(obj) {
+    localStorage.setItem("logged", JSON.stringify(obj));
+    setIsLogged(true);
+  }
+
+  function logout() {
+    localStorage.removeItem("logged");
+    setIsLogged(false);
+  }
 
   function addProductToCart(prod, count) {
     console.log("Agregando a carrito..." + prod.title);
@@ -66,7 +80,6 @@ function App() {
   }
 
   useEffect(() => {
-    //return await fetch("/data/albums.json");
     fetch("/data/albums.json")
       .then((res) => {
         if (!res.ok) throw new Error("Error al cargar el archivo");
@@ -83,7 +96,7 @@ function App() {
 
   return (
     <>
-      <Nav cart={cart} />
+      <Nav cart={cart} logout={logout} isLogged={isLogged} />
 
       <div
         className="bg-gradient-to-br from-base-200 to-base-300 min-h-screen pt-10"
@@ -122,6 +135,15 @@ function App() {
                 addProductToCart={addProductToCart}
                 removeProdFromCart={removeProdFromCart}
               />
+            }
+          />
+          <Route path="/login" element={<Login login={login} />} />
+          <Route
+            path="/profile"
+            element={
+              <ProtectedRoute isAuthenticated={isLogged}>
+                <UserProfile />{" "}
+              </ProtectedRoute>
             }
           />
           <Route path="*" element={<NotFound />} />

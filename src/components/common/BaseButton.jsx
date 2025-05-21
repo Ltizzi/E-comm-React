@@ -13,7 +13,6 @@ const BaseButton = (props) => {
       warning: "btn-warning",
       error: "btn-error",
       lilError: "btn-error btn-xs",
-      // Agrega más tipos si es necesario
     }[btnType] || "btn-default";
   return (
     <button

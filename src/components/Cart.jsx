@@ -31,14 +31,7 @@ const Cart = (props) => {
                 <th>Price</th>
 
                 <th>Quantity</th>
-                <th>
-                  {" "}
-                  <BaseButton
-                    btnLabel={"Clear Cart"}
-                    btnAction={() => clearCart()}
-                    btnType={"lilError"}
-                  />
-                </th>
+                <th>Control</th>
               </tr>
             </thead>
             <tbody>
@@ -69,22 +62,20 @@ const Cart = (props) => {
                     />
                   </td>
                 </tr>
-                // <ProductCard
-                //   key={index}
-                //   prod={cartItem.item}
-                //   removeProdFromCart={removeProdFromCart}
-                //   fromCart={true}
-                //   goToProd={goToProd}
-                // />
               ))}
             </tbody>
           </table>
         </div>
         <div className="bg-base-100 h-80 w-80 rounded-xl py-7 px-7  flex flex-col gap-10 justify-between">
           <h1 className="text-3xl">
-            Total: <span className="italic">u$s{getTotal(cart)}</span>{" "}
+            Total: <span className="italic">u$s {getTotal(cart)}</span>{" "}
           </h1>
-          <div className="flex flex-row justify-end">
+          <div className="flex flex-row justify-between gap-5">
+            <BaseButton
+              btnLabel={"Clear Cart"}
+              btnAction={() => clearCart()}
+              btnType={"error"}
+            />
             <BaseButton btnType="info" btnLabel={"Buy"} />
           </div>
         </div>

@@ -24,16 +24,6 @@ const ProductCard = (props) => {
         backgroundImage: loaded ? `url(${getFront(prod.coverImages)})` : "none",
       }}
     >
-      {/* {checkIsFront() ? (
-        <img
-          src={getFront(prod.coverImages).url} //prod.coverImages[0].url
-          className="w-44 h-44 object-center rounded-lg mx-auto"
-          alt=""
-        />
-      ) : (
-        <div className="skeleton h-52 w-56"></div>
-      )} */}
-
       <div
         className="w-full h-full  flex flex-col justify-center items-center text-center align-middle hover:bg-slate-950/70 transition-all duration-300 ease-in-out"
         onMouseEnter={() => setIsHover(true)}

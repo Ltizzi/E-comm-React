@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="footer sm:footer-horizontal bg-neutral text-neutral-content p-10">
+    <footer className="footer sm:footer-horizontal bg-gradient-to-br from-neutral  to-base-300 text-base-content p-10">
       <aside>
         <svg
           width="50"
@@ -30,8 +30,11 @@ const Footer = () => {
           <a class="link link-hover">Cart</a>
         </Link>
 
-        <a class="link link-hover">Profile</a>
-        <a class="link link-hover">Admin</a>
+        <Link to="/profile">
+          <a class="link link-hover">Profile</a>{" "}
+        </Link>
+
+        {/* <a class="link link-hover">Admin</a> */}
       </nav>
       <nav>
         <h6 className="footer-title">Social</h6>
