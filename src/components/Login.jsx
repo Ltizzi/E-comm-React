@@ -21,7 +21,7 @@ const Login = (props) => {
         <label className="label">Email</label>
         <input
           type="email"
-          className="input"
+          className="input input-primary"
           value={mail}
           placeholder="Email"
           onChange={(e) => setMail(e.target.value)}
@@ -30,7 +30,7 @@ const Login = (props) => {
         <label className="label">Password</label>
         <input
           type="password"
-          className="input"
+          className="input input-primary"
           placeholder="Password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}

@@ -7,17 +7,25 @@ import { Routes, Route, useNavigate } from "react-router-dom";
 import Cart from "./components/Cart";
 import ProductInfo from "./components/ProductInfo";
 import NotFound from "./pages/NotFound";
-import Login from "./components/common/Login";
-import ProtectedRoute from "./components/auth/ProtectedRoute";
+import Login from "./components/Login";
+import ProtectedRoute from "./auth/ProtectedRoute";
 import UserProfile from "./components/UserProfile";
+import BaseLoading from "./components/common/BaseLoading";
+import AdminPanel from "./components/AdminPanel";
 
 function App() {
   const [products, setProducts] = useState([]);
   const [cart, setCart] = useState([]);
   const [productToShow, setProductToShow] = useState({});
   const [isLogged, setIsLogged] = useState(false);
+  const [isAdmin, setIsAdmin] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
+  const [hasErrors, setHasErrors] = useState(false);
+  const [otherAlbums, setOtherAlbums] = useState([]);
 
   const navigate = useNavigate();
+
+  //AUTH
 
   function login(obj) {
     localStorage.setItem("logged", JSON.stringify(obj));
@@ -28,6 +36,12 @@ function App() {
     localStorage.removeItem("logged");
     setIsLogged(false);
   }
+
+  function setAdmin() {
+    setIsAdmin((prevIsAdmin) => !prevIsAdmin);
+  }
+
+  //CART
 
   function addProductToCart(prod, count) {
     console.log("Agregando a carrito..." + prod.title);
@@ -74,9 +88,22 @@ function App() {
     });
   }
 
+  //NAVIGATION
+
   function goToProd(prod) {
+    getOtherAlbumsByArtist(prod.artist);
     setProductToShow(prod);
+
     navigate(`/product/${prod.id}`);
+  }
+
+  function getOtherAlbumsByArtist(artist) {
+    const albums = products.filter(
+      (album) => album.artist.toLowerCase() === artist.toLowerCase()
+    );
+    console.log("***");
+    console.log(albums);
+    setOtherAlbums(albums);
   }
 
   useEffect(() => {
@@ -88,18 +115,21 @@ function App() {
       .then((data) => {
         console.log("Contenido del JSON:", data);
         setProducts(data);
+        setIsLoading(false);
       })
       .catch((err) => {
         console.error("Error:", err);
+        setHasErrors(true);
+        setIsLoading(false);
       });
   }, []);
 
   return (
     <>
-      <Nav cart={cart} logout={logout} isLogged={isLogged} />
-
+      <Nav cart={cart} logout={logout} isLogged={isLogged} isAdmin={isAdmin} />
+      {isLoading && <BaseLoading />}
       <div
-        className="bg-gradient-to-br from-base-200 to-base-300 min-h-screen pt-10"
+        className="bg-gradient-to-br from-base-200 to-base-300 min-h-screen pt-10 "
         style={{
           backgroundImage: `url(/img/bg2.png)`,
         }}
@@ -112,6 +142,7 @@ function App() {
                 products={products}
                 addProductToCart={addProductToCart}
                 goToProd={goToProd}
+                hasErrors={hasErrors}
               />
             }
           />
@@ -132,8 +163,10 @@ function App() {
             element={
               <ProductInfo
                 prod={productToShow}
+                otherAlbums={otherAlbums}
                 addProductToCart={addProductToCart}
                 removeProdFromCart={removeProdFromCart}
+                goToProd={goToProd}
               />
             }
           />
@@ -142,14 +175,22 @@ function App() {
             path="/profile"
             element={
               <ProtectedRoute isAuthenticated={isLogged}>
-                <UserProfile />{" "}
+                <UserProfile isAdmin={isAdmin} setAdmin={setAdmin} />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/admin"
+            element={
+              <ProtectedRoute isAuthenticated={isLogged && isAdmin}>
+                <AdminPanel />
               </ProtectedRoute>
             }
           />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
-      <Footer />
+      <Footer isAdmin={isAdmin} isLogged={isLogged} />
     </>
   );
 }

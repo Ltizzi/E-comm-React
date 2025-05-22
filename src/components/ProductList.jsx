@@ -2,8 +2,9 @@ import React from "react";
 import ProductCard from "./ProductCard";
 
 const ProductList = (props) => {
-  const { products, addProductToCart, goToProd } = props;
-  if (!Array.isArray(products)) {
+  const { products, addProductToCart, goToProd, hasErrors } = props;
+
+  if (!Array.isArray(products) && hasErrors) {
     console.error("no products in products");
     return (
       <div className="flex flex-col justify-center items-center align-middle ">

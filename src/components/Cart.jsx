@@ -5,6 +5,7 @@ import { getFront, getTotal } from "../utils/utils";
 
 const Cart = (props) => {
   const { cart, removeProdFromCart, clearCart, goToProd, removeOne } = props;
+
   if (!Array.isArray(cart) || cart.length == 0) {
     return (
       <div className="flex justify-center items-center align-middle min-h-screen -mt-48">
