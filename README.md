@@ -1,3 +1,19 @@
+# PRE ENTREGA
+
+# Para instalar dependencias:
+
+`npm run install`
+
+# Para ejecutar:
+
+`npm run dev`
+
+## Información adicional:
+
+\*El login funciona poniendo cualquier cosa.
+
+\*Para activar el rol de admin hay que ir al profile ("/profile") q se puede acceder desde la navbar, click en el 'avatar' de usuario, click en profile o desde el footer (ambas rutas sólo aparecen si el usuario está logueado). Una vez activado, por la misma métodología (desde nav o footer) se puede acceder al panel de admin ("/admin")
+
 # Consignas pre-entrega.
 
 ## Requerimiento #1: Funcionalidad básica del carrito de compras
