@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import ThemeSelector from "./common/ThemeSelector";
 import { Link } from "react-router-dom";
 import { getFront, getTotal } from "../utils/utils";
+import { AppContext } from "../context/AppContext";
 
-const Nav = (props) => {
-  const { cart, logout, isLogged, isAdmin } = props;
+const Nav = () => {
+  // const { logout, isLogged, isAdmin } = props;
+
+  const { cart, logout, isLogged, isAdmin } = useContext(AppContext);
 
   function getCartCoverImages() {
     return cart.map((item) => getFront(item.item.coverImages));

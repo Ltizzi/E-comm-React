@@ -1,11 +1,14 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { getAlbumById, getFront } from "../utils/utils";
 import { Link, useParams } from "react-router-dom";
 import BaseButton from "./common/BaseButton";
+import { AppContext } from "../context/AppContext";
 
 const ProductInfo = (props) => {
-  const { prod, addProductToCart, removeProdFromCart, otherAlbums, goToProd } =
-    props;
+  const { prod, otherAlbums, goToProd } = props;
+
+  const { addProductToCart, removeProdFromCart } = useContext(AppContext);
+
   const [productToShow, setProductToShow] = useState({});
   const [loaded, setLoaded] = useState();
   const [pictureToShow, setPictureToShow] = useState();

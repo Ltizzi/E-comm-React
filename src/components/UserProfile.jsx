@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
 import BaseButton from "./common/BaseButton";
+import { AppContext } from "../context/AppContext";
 
-const UserProfile = (props) => {
-  const { isAdmin, setAdmin } = props;
+const UserProfile = () => {
+  const { isAdmin, setAdmin } = useContext(AppContext);
   return (
     <div className="flex flex-col justify-center items-center align-middle h-screen">
       <div className="flex flex-col justify-center text-center rounded-xl py-5 px-7 bg-base-100">

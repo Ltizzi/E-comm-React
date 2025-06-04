@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
 import BaseButton from "./common/BaseButton";
 import ProductCard from "./ProductCard";
 import { getFront, getTotal } from "../utils/utils";
+import { AppContext } from "../context/AppContext";
 
 const Cart = (props) => {
-  const { cart, removeProdFromCart, clearCart, goToProd, removeOne } = props;
+  const { goToProd } = props;
+
+  const { cart, removeProdFromCart, clearCart, removeOne } =
+    useContext(AppContext);
 
   if (!Array.isArray(cart) || cart.length == 0) {
     return (

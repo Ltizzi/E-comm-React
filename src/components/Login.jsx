@@ -1,10 +1,13 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { AppContext } from "../context/AppContext";
 
-const Login = (props) => {
-  const { login } = props;
+const Login = () => {
+  // const { login } = props;
   const [mail, setMail] = useState("");
   const [password, setPassword] = useState("");
+
+  const { login } = useContext(AppContext);
 
   const navigate = useNavigate();
 

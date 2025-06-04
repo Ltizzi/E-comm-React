@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+import { AppContext } from "../context/AppContext";
 
-const Footer = (props) => {
-  const { isAdmin, isLogged } = props;
+const Footer = () => {
+  const { isAdmin, isLogged } = useContext(AppContext);
   return (
     <footer className="footer sm:footer-horizontal bg-gradient-to-br from-neutral  to-base-300 text-base-content p-10">
       <aside>

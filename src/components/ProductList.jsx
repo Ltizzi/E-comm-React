@@ -2,7 +2,7 @@ import React from "react";
 import ProductCard from "./ProductCard";
 
 const ProductList = (props) => {
-  const { products, addProductToCart, goToProd, hasErrors } = props;
+  const { products, goToProd, hasErrors } = props;
 
   if (!Array.isArray(products) && hasErrors) {
     console.error("no products in products");
@@ -22,7 +22,7 @@ const ProductList = (props) => {
         <ProductCard
           prod={p}
           key={p.id}
-          addProductToCart={addProductToCart}
+          // addProductToCart={addProductToCart}
           goToProd={goToProd}
           fromCart={false}
         />

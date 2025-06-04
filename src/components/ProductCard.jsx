@@ -1,12 +1,14 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import BaseButton from "./common/BaseButton";
 import { getFront } from "../utils/utils";
+import { AppContext } from "../context/AppContext";
 
 const ProductCard = (props) => {
-  const { prod, addProductToCart, fromCart, removeProdFromCart, goToProd } =
-    props;
+  const { prod, fromCart, goToProd } = props;
   const [isHover, setIsHover] = useState(false);
   const [loaded, setLoaded] = useState(false);
+
+  const { addProductToCart, removeProdFromCart } = useContext(AppContext);
 
   useEffect(() => {
     const img = new Image();
