@@ -28,69 +28,6 @@ function App() {
 
   const navigate = useNavigate();
 
-  //AUTH
-
-  // function login(obj) {
-  //   localStorage.setItem("logged", JSON.stringify(obj));
-  //   setIsLogged(true);
-  // }
-
-  // function logout() {
-  //   localStorage.removeItem("logged");
-  //   setIsLogged(false);
-  // }
-
-  // function setAdmin() {
-  //   setIsAdmin((prevIsAdmin) => !prevIsAdmin);
-  // }
-
-  //CART
-
-  // function addProductToCart(prod, count) {
-  //   console.log("Agregando a carrito..." + prod.title);
-
-  //   const alreadyAdded =
-  //     cart.filter((item) => item.item.id === prod.id).length > 0;
-  //   if (alreadyAdded) {
-  //     setCart((prevCart) =>
-  //       prevCart.map((item) => {
-  //         if (item.item.id === prod.id) {
-  //           return { ...item, count: item.count + count };
-  //         }
-  //         return item;
-  //       })
-  //     );
-  //   } else setCart((prevCart) => [...prevCart, { item: prod, count: count }]);
-  // }
-
-  // function clearCart() {
-  //   setCart([]);
-  // }
-
-  // function removeProdFromCart(prod) {
-  //   setCart(cart.filter((p) => p.item.id !== prod.id));
-  // }
-
-  // function removeOne(prod) {
-  //   setCart((prevCart) => {
-  //     const index = prevCart.findIndex((p) => p.item.id === prod.id);
-  //     if (index === -1) return prevCart;
-
-  //     const item = prevCart[index];
-
-  //     if (item.count > 1) {
-  //       const newItem = { ...item, count: item.count - 1 };
-  //       return [
-  //         ...prevCart.slice(0, index),
-  //         newItem,
-  //         ...prevCart.slice(index + 1),
-  //       ];
-  //     } else {
-  //       return [...prevCart.slice(0, index), ...prevCart.slice(index + 1)];
-  //     }
-  //   });
-  // }
-
   //NAVIGATION
 
   function goToProd(prod) {
@@ -126,7 +63,7 @@ function App() {
         setIsLoading(false);
       });
   }, []);
-  // cart={cart} logout={logout} isLogged={isLogged} isAdmin={isAdmin}
+
   return (
     <>
       <Nav />
@@ -143,32 +80,18 @@ function App() {
             element={
               <ProductList
                 products={products}
-                // addProductToCart={addProductToCart}
                 goToProd={goToProd}
                 hasErrors={hasErrors}
               />
             }
           />
-          <Route
-            path="/cart"
-            element={
-              <Cart
-                // cart={cart}
-                // removeProdFromCart={removeProdFromCart}
-                // removeOne={removeOne}
-                // clearCart={clearCart}
-                goToProd={goToProd}
-              />
-            }
-          />
+          <Route path="/cart" element={<Cart goToProd={goToProd} />} />
           <Route
             path="/product/:id"
             element={
               <ProductInfo
                 prod={productToShow}
                 otherAlbums={otherAlbums}
-                // addProductToCart={addProductToCart}
-                // removeProdFromCart={removeProdFromCart}
                 goToProd={goToProd}
               />
             }
