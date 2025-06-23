@@ -13,6 +13,7 @@ const Nav = (props) => {
 
   const [count, setCount] = useState(0);
   const [errorAlbums, setErrorAlbums] = useState([]);
+  const [errorCount, setErrorCount] = useState(0);
   const [showModal, setShowModal] = useState(false);
 
   function getCartCoverImages() {
@@ -34,6 +35,8 @@ const Nav = (props) => {
   async function postProducts() {
     setShowModal(true);
     const failed = [];
+    let i = 0;
+    let errCount = 0;
     let albums = errorAlbums.length > 0 ? errorAlbums : products;
 
     for (const album of albums) {
@@ -52,14 +55,17 @@ const Nav = (props) => {
         );
         if (!res.ok) throw new Error("Error al subir " + album.title);
         await res.json();
-        setCount(count + 1);
+        i++;
       } catch (err) {
         console.error("ERROR: ", err);
+        errCount++;
         failed.push(album);
       }
+      setCount(i);
+      setErrorCount(errCount);
       await delay(400);
     }
-    setErrorAlbums(failed);
+
     setShowModal(false);
   }
 
