@@ -13,6 +13,7 @@ import UserProfile from "./components/UserProfile";
 import BaseLoading from "./components/common/BaseLoading";
 import AdminPanel from "./components/AdminPanel";
 import { AppContext } from "./context/AppContext";
+import { ProductContext } from "./context/ProductContext";
 
 function App() {
   const [products, setProducts] = useState([]);
@@ -66,7 +67,7 @@ function App() {
 
   return (
     <>
-      <Nav />
+      <Nav products={products} />
       {isLoading && <BaseLoading />}
       <div
         className="bg-gradient-to-br from-base-200 to-base-300 min-h-screen pt-10 "

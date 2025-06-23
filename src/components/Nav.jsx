@@ -1,13 +1,19 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import ThemeSelector from "./common/ThemeSelector";
 import { Link } from "react-router-dom";
 import { getFront, getTotal } from "../utils/utils";
 import { AppContext } from "../context/AppContext";
+import BaseButton from "./common/BaseButton";
+import { ProductContext } from "../context/ProductContext";
 
-const Nav = () => {
-  // const { logout, isLogged, isAdmin } = props;
+const Nav = (props) => {
+  const { products } = props;
 
   const { cart, logout, isLogged, isAdmin } = useContext(AppContext);
+
+  const [count, setCount] = useState(0);
+  const [errorAlbums, setErrorAlbums] = useState([]);
+  const [showModal, setShowModal] = useState(false);
 
   function getCartCoverImages() {
     return cart.map((item) => getFront(item.item.coverImages));
@@ -21,6 +27,42 @@ const Nav = () => {
     return sol;
   }
 
+  function delay(ms) {
+    return new Promise((resolve) => setTimeout(resolve, ms));
+  }
+
+  async function postProducts() {
+    setShowModal(true);
+    const failed = [];
+    let albums = errorAlbums.length > 0 ? errorAlbums : products;
+
+    for (const album of albums) {
+      try {
+        console.log("ALBUM: " + album);
+
+        const res = await fetch(
+          "https://6812b2cd129f6313e20f4d3d.mockapi.io/api/products",
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(album),
+          }
+        );
+        if (!res.ok) throw new Error("Error al subir " + album.title);
+        await res.json();
+        setCount(count + 1);
+      } catch (err) {
+        console.error("ERROR: ", err);
+        failed.push(album);
+      }
+      await delay(400);
+    }
+    setErrorAlbums(failed);
+    setShowModal(false);
+  }
+
   return (
     <div className="navbar bg-base-100  shadow-sm fixed top-0">
       <div className="flex-1 hover:cursor-pointer">
@@ -32,6 +74,23 @@ const Nav = () => {
       <div className="flex flex-row gap-5">
         <div>
           <ThemeSelector />
+        </div>
+        <div>
+          <BaseButton
+            btnLabel={"UPLOAD"}
+            btnAction={postProducts}
+            btnType={"success"}
+          />
+          {showModal && (
+            <div className="w-screen h-screen bg-black/50 absolute top-0 left-0">
+              <div className="bg-white rounded-2xl py-5 px-5 absolute top-1/2 left-1/2 text-black">
+                <p>
+                  Count: {count} / {products.length}
+                </p>
+                <p>Errors: {errorAlbums.length}</p>
+              </div>
+            </div>
+          )}
         </div>
         <div className="dropdown dropdown-end">
           <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">

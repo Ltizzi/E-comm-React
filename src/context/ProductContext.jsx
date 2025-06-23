@@ -4,7 +4,7 @@ import { AppContext } from "./AppContext";
 export const ProductContext = createContext();
 
 export function ProductProvider({ children }) {
-  const [products, setProducts] = useState([]);
+  const [albums, setAlbums] = useState([]); //TODO: RENAME AFTER REFACTOR
 
   function getProducts(page, limit) {}
 
@@ -17,18 +17,18 @@ export function ProductProvider({ children }) {
   function deleteProduct(id) {}
 
   return (
-    <AppContext.Provider
+    <ProductContext.Provider
       value={
-        (products,
+        (albums,
         addNewProduct,
         updateProduct,
         deleteProduct,
         getProducts,
         getProductById,
-        setProducts)
+        setAlbums)
       }
     >
       {children}
-    </AppContext.Provider>
+    </ProductContext.Provider>
   );
 }
