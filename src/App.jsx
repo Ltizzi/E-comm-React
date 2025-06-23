@@ -26,6 +26,7 @@ function App() {
   const [otherAlbums, setOtherAlbums] = useState([]);
 
   const { isLogged, isAdmin } = useContext(AppContext);
+  const { getAllProducts } = useContext(ProductContext);
 
   const navigate = useNavigate();
 
@@ -48,21 +49,35 @@ function App() {
   }
 
   useEffect(() => {
-    fetch("/data/albums.json")
-      .then((res) => {
-        if (!res.ok) throw new Error("Error al cargar el archivo");
-        return res.json();
-      })
-      .then((data) => {
-        console.log("Contenido del JSON:", data);
+    async function fetchData() {
+      try {
+        const data = await getAllProducts();
         setProducts(data);
         setIsLoading(false);
-      })
-      .catch((err) => {
-        console.error("Error:", err);
+      } catch (err) {
+        console.error(err);
         setHasErrors(true);
         setIsLoading(false);
-      });
+      }
+    }
+
+    fetchData();
+
+    // fetch("/data/albums.json")
+    //   .then((res) => {
+    //     if (!res.ok) throw new Error("Error al cargar el archivo");
+    //     return res.json();
+    //   })
+    //   .then((data) => {
+    //     console.log("Contenido del JSON:", data);
+    //     setProducts(data);
+    //     setIsLoading(false);
+    //   })
+    //   .catch((err) => {
+    //     console.error("Error:", err);
+    //     setHasErrors(true);
+    //     setIsLoading(false);
+    //   });
   }, []);
 
   return (
@@ -79,11 +94,13 @@ function App() {
           <Route
             path="/"
             element={
-              <ProductList
-                products={products}
-                goToProd={goToProd}
-                hasErrors={hasErrors}
-              />
+              !isLoading && (
+                <ProductList
+                  products={products}
+                  goToProd={goToProd}
+                  hasErrors={hasErrors}
+                />
+              )
             }
           />
           <Route path="/cart" element={<Cart goToProd={goToProd} />} />

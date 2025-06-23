@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { getFront, getTotal } from "../utils/utils";
 import { AppContext } from "../context/AppContext";
 import BaseButton from "./common/BaseButton";
-import { ProductContext } from "../context/ProductContext";
+import { API_URL, ProductContext } from "../context/ProductContext";
 
 const Nav = (props) => {
   const { products } = props;
@@ -43,16 +43,13 @@ const Nav = (props) => {
       try {
         console.log("ALBUM: " + album);
 
-        const res = await fetch(
-          "https://6812b2cd129f6313e20f4d3d.mockapi.io/api/products",
-          {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify(album),
-          }
-        );
+        const res = await fetch(API_URL, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(album),
+        });
         if (!res.ok) throw new Error("Error al subir " + album.title);
         await res.json();
         i++;
