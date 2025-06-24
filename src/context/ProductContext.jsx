@@ -9,6 +9,8 @@ export const API_URL =
 export function ProductProvider({ children }) {
   const [products, setProducts] = useState([]); //TODO: RENAME AFTER REFACTOR
 
+  const [focusProduct, setFocusProduct] = useState([]);
+
   function getAllProducts() {
     return fetch(API_URL, { method: "GET" })
       .then((res) => {
@@ -25,13 +27,17 @@ export function ProductProvider({ children }) {
       });
   }
 
-  function getProducts(page, limit) {}
+  function getProductsWithPagination(page = 1, limit = 10) {
+    const skip = (page - 1) * limit;
+    const end = skip + limit;
+    return products.slice(skip, end);
+  }
 
   function getProductById(id) {}
 
   function addNewProduct(prod, count) {}
 
-  function updateProduct(id, prod) {}
+  function updateProduct(id, prod, count) {}
 
   function deleteProduct(id) {}
 
@@ -43,9 +49,11 @@ export function ProductProvider({ children }) {
         updateProduct,
         deleteProduct,
         getAllProducts,
-        getProducts,
+        getProductsWithPagination,
         getProductById,
         setProducts,
+        setFocusProduct,
+        focusProduct,
       }}
     >
       {children}

@@ -23,7 +23,7 @@ function App() {
   const [otherAlbums, setOtherAlbums] = useState([]);
 
   const { isLogged, isAdmin } = useContext(AppContext);
-  const { getAllProducts } = useContext(ProductContext);
+  const { getAllProducts, setFocusProduct } = useContext(ProductContext);
 
   const navigate = useNavigate();
 
@@ -32,7 +32,7 @@ function App() {
   function goToProd(prod) {
     getOtherAlbumsByArtist(prod.artist);
     setProductToShow(prod);
-
+    setFocusProduct(prod);
     navigate(`/product/${prod.id}`);
   }
 

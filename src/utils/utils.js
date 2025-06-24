@@ -30,3 +30,9 @@ export function getTotal(cart) {
     });
   return total.toFixed(2);
 }
+
+export function buildPagination(total, limit) {
+  const totalPages = Math.ceil(total / limit);
+  const pages = Array.from({ length: totalPages }, (_, i) => i + 1);
+  return { totalPages: totalPages, pages: pages };
+}
