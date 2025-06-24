@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import ThemeSelector from "./common/ThemeSelector";
 import { Link } from "react-router-dom";
 import { getFront, getTotal } from "../utils/utils";
@@ -6,15 +6,15 @@ import { AppContext } from "../context/AppContext";
 import BaseButton from "./common/BaseButton";
 import { API_URL, ProductContext } from "../context/ProductContext";
 
-const Nav = (props) => {
-  const { products } = props;
-
+const Nav = () => {
   const { cart, logout, isLogged, isAdmin } = useContext(AppContext);
 
-  const [count, setCount] = useState(0);
-  const [errorAlbums, setErrorAlbums] = useState([]);
-  const [errorCount, setErrorCount] = useState(0);
-  const [showModal, setShowModal] = useState(false);
+  //NOTE: variables used to give feedback about the fetched album data uploading's process
+
+  // const [count, setCount] = useState(0);
+  // const [errorAlbums, setErrorAlbums] = useState([]);
+  // const [errorCount, setErrorCount] = useState(0);
+  // const [showModal, setShowModal] = useState(false);
 
   function getCartCoverImages() {
     return cart.map((item) => getFront(item.item.coverImages));
@@ -28,43 +28,44 @@ const Nav = (props) => {
     return sol;
   }
 
-  function delay(ms) {
-    return new Promise((resolve) => setTimeout(resolve, ms));
-  }
+  // function delay(ms) {
+  //   return new Promise((resolve) => setTimeout(resolve, ms));
+  // }
 
-  async function postProducts() {
-    setShowModal(true);
-    const failed = [];
-    let i = 0;
-    let errCount = 0;
-    let albums = errorAlbums.length > 0 ? errorAlbums : products;
+  //NOTE:function used to upload fetched album data stored in albums.json to mockAPI
+  // async function postProducts() {
+  //   setShowModal(true);
+  //   const failed = [];
+  //   let i = 0;
+  //   let errCount = 0;
+  //   let albums = errorAlbums.length > 0 ? errorAlbums : products;
 
-    for (const album of albums) {
-      try {
-        console.log("ALBUM: " + album);
+  //   for (const album of albums) {
+  //     try {
+  //       console.log("ALBUM: " + album);
 
-        const res = await fetch(API_URL, {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(album),
-        });
-        if (!res.ok) throw new Error("Error al subir " + album.title);
-        await res.json();
-        i++;
-      } catch (err) {
-        console.error("ERROR: ", err);
-        errCount++;
-        failed.push(album);
-      }
-      setCount(i);
-      setErrorCount(errCount);
-      await delay(400);
-    }
+  //       const res = await fetch(API_URL, {
+  //         method: "POST",
+  //         headers: {
+  //           "Content-Type": "application/json",
+  //         },
+  //         body: JSON.stringify(album),
+  //       });
+  //       if (!res.ok) throw new Error("Error al subir " + album.title);
+  //       await res.json();
+  //       i++;
+  //     } catch (err) {
+  //       console.error("ERROR: ", err);
+  //       errCount++;
+  //       failed.push(album);
+  //     }
+  //     setCount(i);
+  //     setErrorCount(errCount);
+  //     await delay(400);
+  //   }
 
-    setShowModal(false);
-  }
+  //   setShowModal(false);
+  // }
 
   return (
     <div className="navbar bg-base-100  shadow-sm fixed top-0">
@@ -78,7 +79,7 @@ const Nav = (props) => {
         <div>
           <ThemeSelector />
         </div>
-        <div>
+        {/* <div>
           <BaseButton
             btnLabel={"UPLOAD"}
             btnAction={postProducts}
@@ -93,8 +94,8 @@ const Nav = (props) => {
                 <p>Errors: {errorAlbums.length}</p>
               </div>
             </div>
-          )}
-        </div>
+          )} 
+        </div>*/}
         <div className="dropdown dropdown-end">
           <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
             <div className="indicator">

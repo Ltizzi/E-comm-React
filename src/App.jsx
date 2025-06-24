@@ -17,10 +17,7 @@ import { ProductContext } from "./context/ProductContext";
 
 function App() {
   const [products, setProducts] = useState([]);
-  // const [cart, setCart] = useState([]);
   const [productToShow, setProductToShow] = useState({});
-  // const [isLogged, setIsLogged] = useState(false);
-  // const [isAdmin, setIsAdmin] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
   const [hasErrors, setHasErrors] = useState(false);
   const [otherAlbums, setOtherAlbums] = useState([]);
@@ -82,7 +79,7 @@ function App() {
 
   return (
     <>
-      <Nav products={products} />
+      <Nav />
       {isLoading && <BaseLoading />}
       <div
         className="bg-gradient-to-br from-base-200 to-base-300 min-h-screen pt-10 "
