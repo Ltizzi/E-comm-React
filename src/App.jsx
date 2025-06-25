@@ -17,10 +17,9 @@ import { ProductContext } from "./context/ProductContext";
 
 function App() {
   const [products, setProducts] = useState([]);
-  const [productToShow, setProductToShow] = useState({});
+  //const [productToShow, setProductToShow] = useState({});
   const [isLoading, setIsLoading] = useState(true);
   const [hasErrors, setHasErrors] = useState(false);
-  const [otherAlbums, setOtherAlbums] = useState([]);
 
   const { isLogged, isAdmin } = useContext(AppContext);
   const { getAllProducts, setFocusProduct } = useContext(ProductContext);
@@ -30,19 +29,9 @@ function App() {
   //NAVIGATION
 
   function goToProd(prod) {
-    getOtherAlbumsByArtist(prod.artist);
-    setProductToShow(prod);
+    //setProductToShow(prod);
     setFocusProduct(prod);
     navigate(`/product/${prod.id}`);
-  }
-
-  function getOtherAlbumsByArtist(artist) {
-    const albums = products.filter(
-      (album) => album.artist.toLowerCase() === artist.toLowerCase()
-    );
-    console.log("***");
-    console.log(albums);
-    setOtherAlbums(albums);
   }
 
   useEffect(() => {
@@ -105,8 +94,7 @@ function App() {
             path="/product/:id"
             element={
               <ProductInfo
-                prod={productToShow}
-                otherAlbums={otherAlbums}
+                // prod={productToShow}
                 goToProd={goToProd}
               />
             }

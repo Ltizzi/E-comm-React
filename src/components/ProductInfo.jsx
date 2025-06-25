@@ -1,18 +1,27 @@
 import React, { useContext, useEffect, useState } from "react";
-import { getAlbumById, getFront } from "../utils/utils";
+import { getFront } from "../utils/utils";
 import { Link, useParams } from "react-router-dom";
 import BaseButton from "./common/BaseButton";
 import { AppContext } from "../context/AppContext";
+import { ProductContext } from "../context/ProductContext";
 
 const ProductInfo = (props) => {
-  const { prod, otherAlbums, goToProd } = props;
+  const { goToProd } = props;
 
   const { addProductToCart, removeProdFromCart } = useContext(AppContext);
+  const {
+    getProductById,
+    getOtherAlbumsByArtist,
+    focusProduct,
+    setFocusProduct,
+  } = useContext(ProductContext);
 
   const [productToShow, setProductToShow] = useState({});
   const [loaded, setLoaded] = useState();
   const [pictureToShow, setPictureToShow] = useState();
   const [total, setTotal] = useState(1);
+
+  const [otherAlbums, setOtherAlbums] = useState([]);
 
   const { id } = useParams();
 
@@ -34,23 +43,30 @@ const ProductInfo = (props) => {
 
   useEffect(() => {
     const loadProduct = async () => {
-      if (prod) {
-        setProductToShow(prod);
+      if (focusProduct && focusProduct.id) {
+        setProductToShow(focusProduct);
         setLoaded(true);
       } else {
-        const album = await getAlbumById(id);
+        const album = await getProductById(id);
+
         if (album) {
+          setFocusProduct(album);
           setProductToShow(album);
           setLoaded(true);
         } else {
           setLoaded(false);
         }
       }
+      const albums = await getOtherAlbumsByArtist(
+        productToShow.artist,
+        productToShow.title
+      );
+      setOtherAlbums(albums);
     };
     loadProduct();
     const frontImg = getFront(productToShow.coverImages);
     setPictureToShow(frontImg);
-  }, [prod, id, productToShow]);
+  }, [focusProduct, id, productToShow]);
 
   return (
     <div className=" flex flex-col justify-center h-auto items-center">

@@ -18,7 +18,6 @@ export function ProductProvider({ children }) {
         return res.json();
       })
       .then((data) => {
-        console.log(data);
         setProducts(data);
         return data;
       })
@@ -33,7 +32,33 @@ export function ProductProvider({ children }) {
     return products.slice(skip, end);
   }
 
-  function getProductById(id) {}
+  function getProductById(id) {
+    return fetch(`${API_URL}/${id}`, { method: "GET" })
+      .then((res) => {
+        if (!res.ok) throw new Error("Product not found!");
+        return res.json();
+      })
+      .then((data) => {
+        setFocusProduct(data);
+        return data;
+      })
+      .catch((err) => {
+        console.error(err);
+      });
+  }
+
+  async function getOtherAlbumsByArtist(artist, title) {
+    if (products)
+      return products.filter(
+        (prod) =>
+          prod.artist.toLowerCase() === artist.toLowerCase() &&
+          prod.title.toLowerCase() !== title.toLowerCase()
+      );
+    else {
+      await getAllProducts();
+      getOtherAlbumsByArtist(artist);
+    }
+  }
 
   function addNewProduct(prod, count) {}
 
@@ -54,6 +79,7 @@ export function ProductProvider({ children }) {
         setProducts,
         setFocusProduct,
         focusProduct,
+        getOtherAlbumsByArtist,
       }}
     >
       {children}
