@@ -56,7 +56,7 @@ export function ProductProvider({ children }) {
       );
     else {
       await getAllProducts();
-      getOtherAlbumsByArtist(artist);
+      await getOtherAlbumsByArtist(artist);
     }
   }
 
