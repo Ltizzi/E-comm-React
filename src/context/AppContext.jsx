@@ -12,6 +12,7 @@ export function AppProvider({ children }) {
     return !!loggedData;
   });
   const [isAdmin, setIsAdmin] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
   //AUTH
   function login(obj) {
@@ -88,6 +89,8 @@ export function AppProvider({ children }) {
         login,
         logout,
         setAdmin,
+        setIsMobile,
+        isMobile,
       }}
     >
       {children}

@@ -72,12 +72,12 @@ const ProductInfo = (props) => {
     <div className=" flex flex-col justify-center h-auto items-center">
       {loaded && productToShow ? (
         <div className="flex flex-col justify-center w-11/12 h-5/6 pt-12 gap-5">
-          <div className="flex flex-row justify-between bg-gradient-to-r from-base-100/70 to-base-300/95 px-10 py-5 w-full rounded-2xl h-5/6">
-            <div className="flex flex-col justify-center items-center gap-2 w-2/5">
+          <div className="flex lg:flex-row flex-col justify-between bg-gradient-to-r from-base-100/70 to-base-300/95 px-10 py-5 w-full rounded-2xl h-5/6">
+            <div className="flex flex-col justify-center items-center gap-2 lg:w-2/5">
               <img
                 src={pictureToShow}
                 alt=""
-                className="w-4/5 max-h-120 min-h-120 object-contain"
+                className="lg:w-4/5 max-h-120 min-h-120 object-contain"
               />
               <div className="flex flex-row overflow-hidden overflow-x-scroll justify-start gap-2 mt-2  ">
                 {productToShow.coverImages.map((img) => (
@@ -89,7 +89,10 @@ const ProductInfo = (props) => {
                 ))}
               </div>
             </div>
-            <div className="w-2/5 flex flex-col justify-start gap-2 bg-neutral/90 text-neutral-content py-2 px-10 rounded-lg h-full">
+            <div
+              className="lg:w-2/5 flex flex-col justify-start gap-2 bg-neutral/90 text-neutral-content md:py-2 py-5 mt-2 md:mt-0 px-10 rounded-lg h-full"
+              z
+            >
               <h1 className="text-4xl">{productToShow.title}</h1>
               <h2 className="text-2xl">{productToShow.artist}</h2>
               <h3 className="italic text-lg">{productToShow.releaseDate}</h3>
@@ -142,7 +145,7 @@ const ProductInfo = (props) => {
             </div>
           </div>
 
-          <div className="flex flex-row flex-nowrap overflow-x-scroll justify-start w-full gap-3 h-1/6">
+          <div className="flex flex-row flex-nowrap overflow-x-scroll justify-start w-full gap-3 h-1/6 mb-10 lg:mb-0">
             {otherAlbums.map((album, index) => (
               <img
                 src={getFront(album.coverImages)}

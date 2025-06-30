@@ -21,7 +21,7 @@ function App() {
   const [isLoading, setIsLoading] = useState(true);
   const [hasErrors, setHasErrors] = useState(false);
 
-  const { isLogged, isAdmin } = useContext(AppContext);
+  const { isLogged, isAdmin, setIsMobile } = useContext(AppContext);
   const { getAllProducts, setFocusProduct, searchProducts } =
     useContext(ProductContext);
 
@@ -41,6 +41,10 @@ function App() {
   }
 
   useEffect(() => {
+    function handleResize() {
+      setIsMobile(window.innerWidth < 768);
+    }
+
     async function fetchData() {
       try {
         const data = await getAllProducts();
@@ -54,7 +58,10 @@ function App() {
       }
     }
 
+    window.addEventListener("resize", handleResize);
     fetchData();
+
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   return (

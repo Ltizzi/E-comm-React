@@ -23,7 +23,7 @@ const Nav = (props) => {
   }
 
   return (
-    <div className="navbar bg-base-100  shadow-sm fixed top-0">
+    <div className="navbar bg-base-100  shadow-sm fixed top-0 z-50">
       <div className="flex-1 hover:cursor-pointer">
         <Link to="/">
           <p className="btn btn-ghost text-xl">E-Commerce</p>
@@ -82,9 +82,9 @@ const Nav = (props) => {
           </div>
           <div
             tabIndex={0}
-            className="card card-compact dropdown-content bg-base-100 z-1 mt-3 w-52 shadow"
+            className="card card-compact dropdown-content bg-base-100  mt-3 w-52 shadow"
           >
-            <div className="card-body">
+            <div className="card-body ">
               <span className="text-lg font-bold">
                 {getTotalCartItems()} Items
               </span>
@@ -102,7 +102,7 @@ const Nav = (props) => {
 
               <div className="card-actions">
                 <Link to="/cart">
-                  <button className="btn btn-primary btn-block">
+                  <button className="btn btn-primary btn-block z-50">
                     View cart
                   </button>
                 </Link>

@@ -7,7 +7,7 @@ import { AppContext } from "../context/AppContext";
 const Cart = (props) => {
   const { goToProd } = props;
 
-  const { cart, removeProdFromCart, clearCart, removeOne } =
+  const { cart, removeProdFromCart, clearCart, removeOne, isMobile } =
     useContext(AppContext);
 
   if (!Array.isArray(cart) || cart.length == 0) {
@@ -22,17 +22,18 @@ const Cart = (props) => {
     );
   }
   return (
-    <div className="flex flex-col py-10 gap-10  justify-center  ">
+    <div className="flex flex-col py-10 gap-10  justify-center">
       <h1 className="text-center text-5xl font-extrabold">Cart</h1>
-      <div className="flex 2xl:flex-row flex-col flex-wrap justify-start gap-5 mx-20 mt-5 items-start align-top">
+      <div className="flex 2xl:flex-row flex-col flex-wrap justify-start gap-5 mx-8 lg:mx-20 mt-5 items-start align-top">
         <div className="overflow-x-auto rounded-box border border-base-content/5 bg-base-100 2xl:w-2/3">
-          <table className="table">
+          <table className="table z-0">
             {/* head */}
             <thead>
               <tr>
                 <th>Cover</th>
-                <th>Album</th>
-                <th>Artist</th>
+                {!isMobile && <th>Album</th>}
+                {!isMobile && <th>Artist</th>}
+
                 <th>Price</th>
 
                 <th>Quantity</th>
@@ -50,13 +51,14 @@ const Cart = (props) => {
                       onClick={() => goToProd(cartItem.item)}
                     />
                   </th>
-                  <td>{cartItem.item.title}</td>
-                  <td>{cartItem.item.artist}</td>
+                  {!isMobile && <td>{cartItem.item.title}</td>}
+                  {!isMobile && <td>{cartItem.item.artist}</td>}
+
                   <td>u$s{cartItem.item.price}</td>
                   <td>{cartItem.count}</td>
                   <td className="flex flex-row gap-1">
                     <BaseButton
-                      btnLabel={"Remove One"}
+                      btnLabel={!isMobile ? "Remove One" : "-1"}
                       btnType={"warning"}
                       btnAction={() => removeOne(cartItem.item)}
                     />
