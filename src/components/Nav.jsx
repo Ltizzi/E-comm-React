@@ -6,15 +6,9 @@ import { AppContext } from "../context/AppContext";
 import BaseButton from "./common/BaseButton";
 import { API_URL, ProductContext } from "../context/ProductContext";
 
-const Nav = () => {
+const Nav = (props) => {
+  const { search } = props;
   const { cart, logout, isLogged, isAdmin } = useContext(AppContext);
-
-  //NOTE: variables used to give feedback about the fetched album data uploading's process
-
-  // const [count, setCount] = useState(0);
-  // const [errorAlbums, setErrorAlbums] = useState([]);
-  // const [errorCount, setErrorCount] = useState(0);
-  // const [showModal, setShowModal] = useState(false);
 
   function getCartCoverImages() {
     return cart.map((item) => getFront(item.item.coverImages));
@@ -28,45 +22,6 @@ const Nav = () => {
     return sol;
   }
 
-  // function delay(ms) {
-  //   return new Promise((resolve) => setTimeout(resolve, ms));
-  // }
-
-  //NOTE:function used to upload fetched album data stored in albums.json to mockAPI
-  // async function postProducts() {
-  //   setShowModal(true);
-  //   const failed = [];
-  //   let i = 0;
-  //   let errCount = 0;
-  //   let albums = errorAlbums.length > 0 ? errorAlbums : products;
-
-  //   for (const album of albums) {
-  //     try {
-  //       console.log("ALBUM: " + album);
-
-  //       const res = await fetch(API_URL, {
-  //         method: "POST",
-  //         headers: {
-  //           "Content-Type": "application/json",
-  //         },
-  //         body: JSON.stringify(album),
-  //       });
-  //       if (!res.ok) throw new Error("Error al subir " + album.title);
-  //       await res.json();
-  //       i++;
-  //     } catch (err) {
-  //       console.error("ERROR: ", err);
-  //       errCount++;
-  //       failed.push(album);
-  //     }
-  //     setCount(i);
-  //     setErrorCount(errCount);
-  //     await delay(400);
-  //   }
-
-  //   setShowModal(false);
-  // }
-
   return (
     <div className="navbar bg-base-100  shadow-sm fixed top-0">
       <div className="flex-1 hover:cursor-pointer">
@@ -76,6 +31,12 @@ const Nav = () => {
       </div>
 
       <div className="flex flex-row gap-5">
+        <input
+          type="text"
+          placeholder="Search"
+          class="input input-bordered w-40 input-primary md:w-auto"
+          onChange={(e) => search(e.target.value)}
+        />
         <div>
           <ThemeSelector />
         </div>

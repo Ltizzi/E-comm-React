@@ -66,6 +66,17 @@ export function ProductProvider({ children }) {
 
   function deleteProduct(id) {}
 
+  function searchProducts(searchInput) {
+    console.log(searchInput);
+    if (searchInput.length > 0)
+      return products.filter(
+        (prod) =>
+          prod.title.toLowerCase().includes(searchInput.toLowerCase()) ||
+          prod.artist.toLowerCase().includes(searchInput.toLowerCase())
+      );
+    else return products;
+  }
+
   return (
     <ProductContext.Provider
       value={{
@@ -80,6 +91,7 @@ export function ProductProvider({ children }) {
         setFocusProduct,
         focusProduct,
         getOtherAlbumsByArtist,
+        searchProducts,
       }}
     >
       {children}

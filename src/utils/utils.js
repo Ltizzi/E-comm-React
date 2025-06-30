@@ -36,3 +36,42 @@ export function buildPagination(total, limit) {
   const pages = Array.from({ length: totalPages }, (_, i) => i + 1);
   return { totalPages: totalPages, pages: pages };
 }
+
+// function delay(ms) {
+//   return new Promise((resolve) => setTimeout(resolve, ms));
+// }
+
+//NOTE:function used to upload fetched album data stored in albums.json to mockAPI
+// async function postProducts() {
+//   setShowModal(true);
+//   const failed = [];
+//   let i = 0;
+//   let errCount = 0;
+//   let albums = errorAlbums.length > 0 ? errorAlbums : products;
+
+//   for (const album of albums) {
+//     try {
+//       console.log("ALBUM: " + album);
+
+//       const res = await fetch(API_URL, {
+//         method: "POST",
+//         headers: {
+//           "Content-Type": "application/json",
+//         },
+//         body: JSON.stringify(album),
+//       });
+//       if (!res.ok) throw new Error("Error al subir " + album.title);
+//       await res.json();
+//       i++;
+//     } catch (err) {
+//       console.error("ERROR: ", err);
+//       errCount++;
+//       failed.push(album);
+//     }
+//     setCount(i);
+//     setErrorCount(errCount);
+//     await delay(400);
+//   }
+
+//   setShowModal(false);
+// }

@@ -22,7 +22,8 @@ function App() {
   const [hasErrors, setHasErrors] = useState(false);
 
   const { isLogged, isAdmin } = useContext(AppContext);
-  const { getAllProducts, setFocusProduct } = useContext(ProductContext);
+  const { getAllProducts, setFocusProduct, searchProducts } =
+    useContext(ProductContext);
 
   const navigate = useNavigate();
 
@@ -34,10 +35,16 @@ function App() {
     navigate(`/product/${prod.id}`);
   }
 
+  function search(input) {
+    const data = searchProducts(input);
+    setProducts(data);
+  }
+
   useEffect(() => {
     async function fetchData() {
       try {
         const data = await getAllProducts();
+
         setProducts(data);
         setIsLoading(false);
       } catch (err) {
@@ -48,27 +55,11 @@ function App() {
     }
 
     fetchData();
-
-    // fetch("/data/albums.json")
-    //   .then((res) => {
-    //     if (!res.ok) throw new Error("Error al cargar el archivo");
-    //     return res.json();
-    //   })
-    //   .then((data) => {
-    //     console.log("Contenido del JSON:", data);
-    //     setProducts(data);
-    //     setIsLoading(false);
-    //   })
-    //   .catch((err) => {
-    //     console.error("Error:", err);
-    //     setHasErrors(true);
-    //     setIsLoading(false);
-    //   });
   }, []);
 
   return (
     <>
-      <Nav />
+      <Nav search={search} />
       {isLoading && <BaseLoading />}
       <div
         className="bg-gradient-to-br from-base-200 to-base-300 min-h-screen pt-10 w-full"
