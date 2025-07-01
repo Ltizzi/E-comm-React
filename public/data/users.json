@@ -1,0 +1,20 @@
+[
+  {
+    "email": "basic@gmail.com",
+    "password": "12345",
+    "name": "Basic",
+    "lastname": "User",
+    "nickname": "React rookie",
+    "isAdmin": false,
+    "avatar": "https://api.dicebear.com/9.x/adventurer/svg?seed=Vivian"
+  },
+  {
+    "email": "admin@gmail.com",
+    "password": "12345",
+    "name": "Admin",
+    "lastname": "User",
+    "nickname": "Admin",
+    "isAdmin": true,
+    "avatar": "https://api.dicebear.com/9.x/adventurer/svg?seed=Sawyer"
+  }
+]

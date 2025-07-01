@@ -21,7 +21,8 @@ function App() {
   const [isLoading, setIsLoading] = useState(true);
   const [hasErrors, setHasErrors] = useState(false);
 
-  const { isLogged, isAdmin, setIsMobile } = useContext(AppContext);
+  const { isLogged, isAdmin, setIsMobile, logLocalUser, logout } =
+    useContext(AppContext);
   const { getAllProducts, setFocusProduct, searchProducts } =
     useContext(ProductContext);
 
@@ -57,23 +58,15 @@ function App() {
       }
     }
 
-    // fetch("/data/albums.json")
-    //   .then((res) => {
-    //     if (!res.ok) throw new Error("Error al cargar el archivo");
-    //     return res.json();
-    //   })
-    //   .then((data) => {
-    //     console.log("Contenido del JSON:", data);
-    //     setProducts(data);
-    //     setIsLoading(false);
-    //   })
-    //   .catch((err) => {
-    //     console.error("Error:", err);
-    //     setHasErrors(true);
-    //     setIsLoading(false);
-    //   });
+    function getIsLogged() {
+      const isLoggedLocal = JSON.parse(localStorage.getItem("logged"));
+      if (isLoggedLocal) {
+        logLocalUser(isLoggedLocal);
+      } else logout();
+    }
 
     window.addEventListener("resize", handleResize);
+    getIsLogged();
     fetchData();
 
     return () => window.removeEventListener("resize", handleResize);
@@ -120,7 +113,7 @@ function App() {
             path="/admin"
             element={
               <ProtectedRoute isAuthenticated={isLogged && isAdmin}>
-                <AdminPanel />
+                <AdminPanel goToProd={goToProd} />
               </ProtectedRoute>
             }
           />

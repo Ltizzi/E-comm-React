@@ -1,7 +1,7 @@
 import React from "react";
 
 const BaseButton = (props) => {
-  const { btnLabel, btnAction, btnType, children, tooltip } = props;
+  const { btnLabel, btnAction, btnType, children, tooltip, rounded } = props;
 
   const bgClass =
     {
@@ -18,7 +18,9 @@ const BaseButton = (props) => {
     <div className="tooltip tooltip-right tooltip-warning" data-tip={tooltip}>
       <button
         onClick={btnAction}
-        className={`  font-semibold   text-sm hover:cursor-pointer btn ${bgClass} w-fit`}
+        className={`  font-semibold   text-sm hover:cursor-pointer btn ${bgClass}  ${
+          rounded ? "rounded-full px-2" : "w-fit"
+        }`}
       >
         {btnLabel && children}
         {btnLabel.length > 0 ? btnLabel : children}

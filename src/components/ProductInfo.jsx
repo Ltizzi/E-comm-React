@@ -149,11 +149,11 @@ const ProductInfo = (props) => {
             </div>
           </div>
 
-          <div className="flex flex-row flex-nowrap overflow-x-scroll justify-start w-full gap-3 h-1/6 mb-10 lg:mb-0">
+          <div className="flex flex-row flex-wrap lg:flex-nowrap overflow-x-scroll justify-center lg:justify-start w-full gap-3 h-1/6 mb-10 lg:mb-0">
             {otherAlbums.map((album, index) => (
               <img
                 src={getFront(album.coverImages)}
-                className="w-32 h-32 hover:cursor-pointer"
+                className="w-20 h-20 lg:w-32 lg:h-32 hover:cursor-pointer"
                 onClick={() => goToProd(album)}
                 key={index}
               />

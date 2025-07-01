@@ -1,5 +1,4 @@
 import { React, createContext, useState } from "react";
-import { AppContext } from "./AppContext";
 
 export const ProductContext = createContext();
 
@@ -7,7 +6,7 @@ export const API_URL =
   "https://6812b2cd129f6313e20f4d3d.mockapi.io/api/products";
 
 export function ProductProvider({ children }) {
-  const [products, setProducts] = useState([]); //TODO: RENAME AFTER REFACTOR
+  const [products, setProducts] = useState([]);
 
   const [focusProduct, setFocusProduct] = useState([]);
 
@@ -60,11 +59,71 @@ export function ProductProvider({ children }) {
     }
   }
 
-  function addNewProduct(prod, count) {}
+  function addNewProduct(prod) {
+    return fetch(`${API_URL}`, {
+      method: "POST",
+      body: prod,
+    })
+      .then((res) => {
+        if (!res.ok)
+          throw new Error(
+            "Something went wrong while adding new product to the database"
+          );
+        return res.json();
+      })
+      .then((data) => {
+        console.log(data);
+        getAllProducts();
+        return "Product added!";
+      })
+      .catch((err) => {
+        console.error(err);
+        return err;
+      });
+  }
 
-  function updateProduct(id, prod, count) {}
+  function updateProduct(id, prod) {
+    return fetch(`${API_URL}/${id}`, {
+      method: "PUT",
+      body: prod,
+    })
+      .then((res) => {
+        if (!res.ok)
+          throw new Error("Something went wrong while updating product");
+        return res.json();
+      })
+      .then((data) => {
+        console.log(data);
+        getAllProducts();
+        return "Product updated!";
+      })
+      .catch((err) => {
+        console.error(err);
+        return err;
+      });
+  }
 
-  function deleteProduct(id) {}
+  function deleteProduct(id) {
+    return fetch(`${API_URL}/${id}`, {
+      method: "DELETE",
+    })
+      .then((res) => {
+        if (!res.ok)
+          throw new Error(
+            "Something went wrong while deleting product from the database"
+          );
+        return res.json();
+      })
+      .then((data) => {
+        console.log(data);
+        getAllProducts();
+        return "Product deleted!";
+      })
+      .catch((err) => {
+        console.error(err);
+        return err;
+      });
+  }
 
   function searchProducts(searchInput) {
     console.log(searchInput);

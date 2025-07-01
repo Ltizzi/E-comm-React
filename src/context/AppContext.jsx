@@ -13,21 +13,65 @@ export function AppProvider({ children }) {
   });
   const [isAdmin, setIsAdmin] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+  const [user, setUser] = useState();
 
   //AUTH
-  function login(obj) {
-    localStorage.setItem("logged", JSON.stringify(obj));
+
+  async function getUsers() {
+    return await fetch("/data/users.json")
+      .then((res) => {
+        if (!res.ok) throw new Error("Error al cargar el archivo");
+        return res.json();
+      })
+      .catch((err) => {
+        console.error("Error:", err);
+      });
+  }
+  async function login(obj) {
+    const users = await getUsers();
+
+    const filteredUser = users.filter(
+      (user) => user.email.toLowerCase() === obj.email.toLowerCase()
+    );
+
+    if (!filteredUser || filteredUser.length < 1) {
+      return "Invalid e-mail";
+    } else {
+      if (filteredUser[0].password !== obj.password) {
+        return "Wrong password";
+      } else {
+        const user = filteredUser[0];
+        user.password = "********";
+        localStorage.setItem("logged", JSON.stringify(user));
+        localStorage.setItem("isAdmin", JSON.stringify(user.isAdmin));
+        setUser(user);
+        setIsLogged(true);
+        setIsAdmin(user.isAdmin);
+
+        return "logged";
+      }
+    }
+  }
+
+  function logLocalUser(obj) {
+    setUser(obj);
     setIsLogged(true);
-    console.log(isLogged);
+    setIsAdmin(obj.isAdmin);
   }
 
   function logout() {
     localStorage.removeItem("logged");
+    localStorage.removeItem("isAdmin");
     setIsLogged(false);
   }
 
   function setAdmin() {
     setIsAdmin((prevIsAdmin) => !prevIsAdmin);
+  }
+
+  function checkIsAdmin() {
+    const isAdmin = JSON.parse(localStorage.getItem("isAdmin"));
+    return isAdmin;
   }
 
   //CART
@@ -89,8 +133,11 @@ export function AppProvider({ children }) {
         login,
         logout,
         setAdmin,
+        checkIsAdmin,
         setIsMobile,
         isMobile,
+        user,
+        logLocalUser,
       }}
     >
       {children}

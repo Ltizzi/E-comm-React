@@ -2,8 +2,11 @@ import React, { useContext, useEffect, useState } from "react";
 import { ProductContext } from "../context/ProductContext";
 import { buildPagination, getFront } from "../utils/utils";
 import { GrPrevious, GrNext } from "react-icons/gr";
+import { FaInfoCircle, FaTrashAlt, FaRegEdit } from "react-icons/fa";
+import { MdCreateNewFolder } from "react-icons/md";
+import BaseButton from "./common/BaseButton";
 
-const AdminPanel = () => {
+const AdminPanel = ({ goToProd }) => {
   const [totalPages, setTotalPages] = useState(0);
   const [pages, setPages] = useState([]);
   const { products, getProductsWithPagination, getProducyById } =
@@ -52,11 +55,22 @@ const AdminPanel = () => {
   }, [setTotalPages, setPages, products, getProductsWithPagination]);
 
   return (
-    <div className="w-screen h-screen flex flex-col justify-center items-center">
-      <div className="flex flex-col justify-center max-w-full lg:max-w-2/3 lg:min-w-2/3 bg-base-300/85 py-5 px-7 rounded-lg min-h-5/6 max-h-5/6 relative">
+    <div className="w-screen min-h-screen flex flex-col justify-center items-center">
+      <div className="flex flex-col justify-center max-w-full lg:max-w-2/3 lg:min-w-2/3 bg-base-300/85 py-5 px-7 rounded-lg min-h-5/6 max-h-5/6 relative pt-20">
         <h1 className="text-3xl font-bold pb-5 absolute top-5">Admin panel</h1>
-        <div className="h-full">
-          <table className="table flex flex-col justify-center items-center ">
+        <div className="w-40">
+          <BaseButton
+            btnLabel={"Add new Album"}
+            btnType={"success"}
+            btnAction={() => openEditor()}
+            tooltip={"Add new Album"}
+          >
+            <MdCreateNewFolder />
+          </BaseButton>
+        </div>
+
+        <div className="h-full pt-10 md:pt-0">
+          <table className="table flex flex-col lg:justify-center lg:items-center justify-start items-start -ml-5 lg:ml-0 text-xs lg:text-base">
             <thead>
               <tr>
                 <th className="max-w-14">Cover</th>
@@ -70,7 +84,7 @@ const AdminPanel = () => {
               {productsToShow.map((prod) => (
                 <tr>
                   <td className="max-w-14">
-                    <div className="avatar h-12 w-12 max-w-12">
+                    <div className="avatar lg:h-12 lg:w-12 w-6 h-6 max-w-12">
                       <img src={getFront(prod.coverImages)} alt="Album cover" />
                     </div>
                   </td>
@@ -94,8 +108,37 @@ const AdminPanel = () => {
                     </div>
                   </td>
 
-                  <td>
-                    <button className="btn btn-ghost btn-xs">details</button>
+                  <td className="flex flex-row justify-start align-middle gap-2">
+                    <BaseButton
+                      btnLabel={""}
+                      btnType={"info"}
+                      btnAction={() => goToProd(prod)}
+                      tooltip={"See Album"}
+                      rounded={true}
+                    >
+                      {" "}
+                      <FaInfoCircle className="h-4 w-4 md:h-6 md:w-6" />
+                    </BaseButton>
+                    <BaseButton
+                      btnLabel={""}
+                      btnType={"warning"}
+                      btnAction={() => openEditor(prod, true)}
+                      tooltip={"Edit Album"}
+                      rounded={true}
+                    >
+                      {" "}
+                      <FaRegEdit className="h-4 w-4 md:h-6 md:w-6" />
+                    </BaseButton>
+                    <BaseButton
+                      btnLabel={""}
+                      btnType={"error"}
+                      btnAction={() => deleteProd(prod.id)}
+                      tooltip={"Delete Album"}
+                      rounded={true}
+                    >
+                      {" "}
+                      <FaTrashAlt className="h-4 w-4 md:h-6 md:w-6" />
+                    </BaseButton>
                   </td>
                 </tr>
               ))}
@@ -103,7 +146,11 @@ const AdminPanel = () => {
           </table>
 
           <div className="join flex mx-auto justify-center items-center">
-            <button className="btn" onClick={() => goPrev()}>
+            <button
+              className={`btn`}
+              disabled={currentPage === 1}
+              onClick={() => goPrev()}
+            >
               <GrPrevious />
             </button>
             {pages.map((page) => (
@@ -117,7 +164,11 @@ const AdminPanel = () => {
                 {page}
               </button>
             ))}
-            <button className="btn" onClick={() => goNext()}>
+            <button
+              className="btn"
+              disabled={currentPage === totalPages}
+              onClick={() => goNext()}
+            >
               <GrNext />
             </button>
           </div>

@@ -23,7 +23,7 @@ const Footer = () => {
         <p className={`${isMobile ? "text-xs w-15" : ""}`}>
           Webpage created by Ltizzi
           <br />
-          {!isMobile && <p>Providing reliable tech since 1983</p>}
+          {!isMobile && <span>Providing reliable tech since 1983</span>}
         </p>
       </aside>
 
