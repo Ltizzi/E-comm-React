@@ -1,75 +1,116 @@
-import React from "react";
+import React, { useContext, useEffect, useState } from "react";
+import { ProductContext } from "../context/ProductContext";
+import { buildPagination, getFront } from "../utils/utils";
+import { GrPrevious, GrNext } from "react-icons/gr";
 
 const AdminPanel = () => {
+  const [totalPages, setTotalPages] = useState(0);
+  const [pages, setPages] = useState([]);
+  const { products, getProductsWithPagination, getProducyById } =
+    useContext(ProductContext);
+
+  const [productsToShow, setProductToShow] = useState([]);
+  const [currentPage, setCurrentPage] = useState(1);
+
+  const ITEMS_PER_PAGE = 10;
+
+  async function getProducts(page) {
+    const data = await getProductsWithPagination(page, ITEMS_PER_PAGE);
+    setProductToShow(data);
+  }
+
+  async function goPrev() {
+    if (currentPage > 1) {
+      await getProducts(currentPage - 1);
+      setCurrentPage(currentPage - 1);
+    }
+  }
+
+  async function goNext() {
+    if (currentPage < pages[pages.length - 1]) {
+      await getProducts(currentPage + 1);
+      setCurrentPage(currentPage + 1);
+    }
+  }
+
+  async function goPage(page) {
+    await getProducts(page);
+    setCurrentPage(page);
+  }
+
+  useEffect(() => {
+    const pagination = buildPagination(products.length, ITEMS_PER_PAGE);
+    setTotalPages(pagination.totalPages);
+    setPages(pagination.pages);
+
+    async function getProds() {
+      const data = await getProductsWithPagination(1, ITEMS_PER_PAGE);
+      setProductToShow(data);
+    }
+
+    getProds();
+  }, [setTotalPages, setPages, products, getProductsWithPagination]);
+
   return (
     <div className="w-screen h-screen flex flex-col justify-center items-center">
-      <div className="flex flex-col justify-center w-1/4 bg-base-300/70 py-5 px-7 rounded-lg">
-        <h1>This is the Admin panel</h1>
-        <div className="overflow-x-auto">
-          <table className="table">
-            {/* head */}
+      <div className="flex flex-col justify-center max-w-full lg:max-w-2/3 lg:min-w-2/3 bg-base-300/85 py-5 px-7 rounded-lg min-h-5/6 max-h-5/6 relative">
+        <h1 className="text-3xl font-bold pb-5 absolute top-5">Admin panel</h1>
+        <div>
+          <table className="table flex flex-col justify-center items-center">
             <thead>
               <tr>
-                <th>
-                  <label>
-                    <input type="checkbox" className="checkbox" />
-                  </label>
-                </th>
-                <th>Name</th>
-                <th>Job</th>
-                <th>Favorite Color</th>
-                <th></th>
+                <th className="max-w-14">Cover</th>
+                <th>Album</th>
+                <th>Price</th>
+                <th>Control</th>
               </tr>
             </thead>
             <tbody>
-              {/* row 1 */}
-              <tr>
-                <th>
-                  <label>
-                    <input type="checkbox" className="checkbox" />
-                  </label>
-                </th>
-                <td>
-                  <div className="flex items-center gap-3">
-                    <div className="avatar">
-                      <div className="mask mask-squircle h-12 w-12">
-                        <img
-                          src="https://img.daisyui.com/images/profile/demo/2@94.webp"
-                          alt="Avatar Tailwind CSS Component"
-                        />
-                      </div>
+              {productsToShow.map((prod) => (
+                <tr>
+                  <td className="max-w-14">
+                    <div className="avatar h-12 w-12 max-w-12">
+                      <img src={getFront(prod.coverImages)} alt="Album cover" />
                     </div>
+                  </td>
+                  <td className="max-w-3/6 min-w-3/6">
                     <div>
-                      <div className="font-bold">Hart Hagerty</div>
-                      <div className="text-sm opacity-50">United States</div>
+                      <div className="font-bold">{prod.title}</div>
+                      <div className="text-sm opacity-50">{prod.artist}</div>
                     </div>
-                  </div>
-                </td>
-                <td>
-                  Zemlak, Daniel and Leannon
-                  <br />
-                  <span className="badge badge-ghost badge-sm">
-                    Desktop Support Technician
-                  </span>
-                </td>
-                <td>Purple</td>
-                <th>
-                  <button className="btn btn-ghost btn-xs">details</button>
-                </th>
-              </tr>
-              {/* row 2 */}
+                  </td>
+                  <td>
+                    <div>
+                      <div className="text-sm opacity-50">{prod.price}</div>
+                    </div>
+                  </td>
+                  <td>
+                    <button className="btn btn-ghost btn-xs">details</button>
+                  </td>
+                </tr>
+              ))}
             </tbody>
-            {/* foot */}
-            <tfoot>
-              <tr>
-                <th></th>
-                <th>Name</th>
-                <th>Job</th>
-                <th>Favorite Color</th>
-                <th></th>
-              </tr>
-            </tfoot>
           </table>
+
+          <div className="join flex mx-auto justify-center items-center">
+            <button className="btn" onClick={() => goPrev()}>
+              <GrPrevious />
+            </button>
+            {pages.map((page) => (
+              <button
+                className={`${
+                  currentPage == page ? "btn-active bg-primary" : ""
+                } join-item btn hover:cursor-pointer btn-sm
+                      `}
+                onClick={() => goPage(page)}
+              >
+                {page}
+              </button>
+            ))}
+            <button className="btn" onClick={() => goNext()}>
+              <GrNext />
+            </button>
+          </div>
         </div>
       </div>
     </div>
