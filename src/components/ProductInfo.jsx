@@ -4,6 +4,7 @@ import { Link, useParams } from "react-router-dom";
 import BaseButton from "./common/BaseButton";
 import { AppContext } from "../context/AppContext";
 import { ProductContext } from "../context/ProductContext";
+import { FaCartPlus } from "react-icons/fa";
 
 const ProductInfo = (props) => {
   const { goToProd } = props;
@@ -137,10 +138,13 @@ const ProductInfo = (props) => {
                   <p className="validator-hint">Must be greater than 1</p>
                 </div>
                 <BaseButton
-                  btnLabel={"Add to  Cart"}
+                  btnLabel={""}
                   btnAction={addToCart}
                   btnType={"accent"}
-                />
+                  tooltip={"Add album to cart"}
+                >
+                  <FaCartPlus className="text-2xl" />
+                </BaseButton>
               </div>
             </div>
           </div>

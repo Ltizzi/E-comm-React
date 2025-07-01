@@ -5,6 +5,7 @@ import { getFront, getTotal } from "../utils/utils";
 import { AppContext } from "../context/AppContext";
 import BaseButton from "./common/BaseButton";
 import { API_URL, ProductContext } from "../context/ProductContext";
+import { FaShop } from "react-icons/fa6";
 
 const Nav = (props) => {
   const { search } = props;
@@ -26,7 +27,15 @@ const Nav = (props) => {
     <div className="navbar bg-base-100  shadow-sm fixed top-0 z-50">
       <div className="flex-1 hover:cursor-pointer">
         <Link to="/">
-          <p className="btn btn-ghost text-xl">E-Commerce</p>
+          <div
+            className="tooltip tooltip-bottom tooltip-secondary"
+            data-tip="Go back to main"
+          >
+            <p className="btn btn-ghost text-xl">
+              <FaShop />
+              E-Commerce
+            </p>
+          </div>
         </Link>
       </div>
 

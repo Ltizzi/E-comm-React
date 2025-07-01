@@ -1,7 +1,7 @@
 import React from "react";
 
 const BaseButton = (props) => {
-  const { btnLabel, btnAction, btnType } = props;
+  const { btnLabel, btnAction, btnType, children, tooltip } = props;
 
   const bgClass =
     {
@@ -15,12 +15,15 @@ const BaseButton = (props) => {
       lilError: "btn-error btn-xs",
     }[btnType] || "btn-default";
   return (
-    <button
-      onClick={btnAction}
-      className={`  font-semibold   text-sm hover:cursor-pointer btn ${bgClass} w-fit`}
-    >
-      {btnLabel}
-    </button>
+    <div className="tooltip tooltip-right tooltip-warning" data-tip={tooltip}>
+      <button
+        onClick={btnAction}
+        className={`  font-semibold   text-sm hover:cursor-pointer btn ${bgClass} w-fit`}
+      >
+        {btnLabel && children}
+        {btnLabel.length > 0 ? btnLabel : children}
+      </button>
+    </div>
   );
 };
 

@@ -2,6 +2,8 @@ import React, { useContext, useEffect, useState } from "react";
 import BaseButton from "./common/BaseButton";
 import { getFront } from "../utils/utils";
 import { AppContext } from "../context/AppContext";
+import { FaInfoCircle, FaCartPlus } from "react-icons/fa";
+import { BsCartDashFill } from "react-icons/bs";
 
 const ProductCard = (props) => {
   const { prod, fromCart, goToProd } = props;
@@ -38,24 +40,32 @@ const ProductCard = (props) => {
             </h3>
             <h4 className="text-xl font-semibold capitalize">{prod.artist}</h4>
 
-            <div className="flex flex-row justify-around pt-4 gap-3">
+            <div className="flex flex-row justify-around pt-4 gap-3 w-32 mx-auto">
               <BaseButton
-                btnLabel={"See more"}
+                btnLabel={""}
                 btnAction={() => goToProd(prod)}
                 btnType={"success"}
-              />
+                tooltip={"See more"}
+              >
+                <FaInfoCircle className="text-xl" />
+              </BaseButton>{" "}
               {fromCart ? (
                 <BaseButton
-                  btnLabel={"Remove"}
+                  btnLabel={""}
                   btnAction={() => removeProdFromCart(prod)}
                   btnType={"error"}
-                />
+                >
+                  <BsCartDashFill className="text-xl" />
+                </BaseButton>
               ) : (
                 <BaseButton
-                  btnLabel={"Add to cart"}
+                  btnLabel={""}
                   btnAction={() => addProductToCart(prod, 1)}
                   btnType={"accent"}
-                />
+                  tooltip={"Add to cart"}
+                >
+                  <FaCartPlus className="text-xl" />
+                </BaseButton>
               )}
             </div>
           </div>

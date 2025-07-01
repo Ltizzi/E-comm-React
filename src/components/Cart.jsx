@@ -3,6 +3,9 @@ import BaseButton from "./common/BaseButton";
 import ProductCard from "./ProductCard";
 import { getFront, getTotal } from "../utils/utils";
 import { AppContext } from "../context/AppContext";
+import { BsCartDashFill } from "react-icons/bs";
+import { FaTrashAlt } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 const Cart = (props) => {
   const { goToProd } = props;
@@ -10,12 +13,18 @@ const Cart = (props) => {
   const { cart, removeProdFromCart, clearCart, removeOne, isMobile } =
     useContext(AppContext);
 
+  const navigate = useNavigate();
+
   if (!Array.isArray(cart) || cart.length == 0) {
+    setTimeout(() => navigate("/"), 2000);
     return (
       <div className="flex justify-center items-center align-middle min-h-screen -mt-48">
         <div className="bg-red-400 rounded-lg py-5 px-7 text-center">
           <p className="text-white font-light text-2xl">
             Error: There is no products in the cart
+          </p>
+          <p className="text-white font-extralight text-lg mt-5">
+            Redirecting...
           </p>
         </div>
       </div>
@@ -58,15 +67,21 @@ const Cart = (props) => {
                   <td>{cartItem.count}</td>
                   <td className="flex flex-row gap-1">
                     <BaseButton
-                      btnLabel={!isMobile ? "Remove One" : "-1"}
+                      btnLabel={""}
                       btnType={"warning"}
                       btnAction={() => removeOne(cartItem.item)}
-                    />
+                      tooltip={"Remove one"}
+                    >
+                      <BsCartDashFill className="text-xl" />
+                    </BaseButton>
                     <BaseButton
-                      btnLabel={"Remove All"}
+                      btnLabel={""}
                       btnType={"error"}
                       btnAction={() => removeProdFromCart(cartItem.item)}
-                    />
+                      tooltip={"Remove all"}
+                    >
+                      <FaTrashAlt className="text-xl" />
+                    </BaseButton>
                   </td>
                 </tr>
               ))}
@@ -82,8 +97,15 @@ const Cart = (props) => {
               btnLabel={"Clear Cart"}
               btnAction={() => clearCart()}
               btnType={"error"}
+              tooltip={"Clear all items from cart"}
+            >
+              <FaTrashAlt className="text-2xl" />
+            </BaseButton>
+            <BaseButton
+              btnType="info"
+              btnLabel={"Buy"}
+              tooltip={"Buy all items"}
             />
-            <BaseButton btnType="info" btnLabel={"Buy"} />
           </div>
         </div>
       </div>
