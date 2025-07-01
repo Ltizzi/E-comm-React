@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import ThemeSelector from "./common/ThemeSelector";
 import { Link } from "react-router-dom";
 import { getFront, getTotal } from "../utils/utils";
@@ -8,7 +8,7 @@ import { API_URL, ProductContext } from "../context/ProductContext";
 import { FaShop } from "react-icons/fa6";
 
 const Nav = (props) => {
-  const { search } = props;
+  const { search, products } = props;
   const { cart, logout, isLogged, isAdmin, isMobile } = useContext(AppContext);
 
   function getCartCoverImages() {
@@ -24,7 +24,7 @@ const Nav = (props) => {
   }
 
   return (
-    <div className="navbar bg-base-100  shadow-sm fixed top-0 z-50">
+    <div className="navbar bg-base-100  shadow-sm fixed top-0 z-30">
       <div className="flex-1 hover:cursor-pointer">
         <Link to="/">
           <div
@@ -50,8 +50,8 @@ const Nav = (props) => {
         />
         <div>
           <ThemeSelector />
-        </div>
-        {/* <div>
+          {/* </div>
+        <div>
           <BaseButton
             btnLabel={"UPLOAD"}
             btnAction={postProducts}
@@ -66,8 +66,8 @@ const Nav = (props) => {
                 <p>Errors: {errorAlbums.length}</p>
               </div>
             </div>
-          )} 
-        </div>*/}
+          )} */}
+        </div>
         <div className="dropdown dropdown-end">
           <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
             <div className="indicator">

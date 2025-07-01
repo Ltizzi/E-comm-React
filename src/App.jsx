@@ -30,7 +30,6 @@ function App() {
   //NAVIGATION
 
   function goToProd(prod) {
-    //setProductToShow(prod);
     setFocusProduct(prod);
     navigate(`/product/${prod.id}`);
   }
@@ -58,6 +57,22 @@ function App() {
       }
     }
 
+    // fetch("/data/albums.json")
+    //   .then((res) => {
+    //     if (!res.ok) throw new Error("Error al cargar el archivo");
+    //     return res.json();
+    //   })
+    //   .then((data) => {
+    //     console.log("Contenido del JSON:", data);
+    //     setProducts(data);
+    //     setIsLoading(false);
+    //   })
+    //   .catch((err) => {
+    //     console.error("Error:", err);
+    //     setHasErrors(true);
+    //     setIsLoading(false);
+    //   });
+
     window.addEventListener("resize", handleResize);
     fetchData();
 
@@ -66,7 +81,7 @@ function App() {
 
   return (
     <>
-      <Nav search={search} />
+      <Nav search={search} products={products} />
       {isLoading && <BaseLoading />}
       <div
         className="bg-gradient-to-br from-base-200 to-base-300 min-h-screen pt-10 w-full"
@@ -90,12 +105,7 @@ function App() {
           <Route path="/cart" element={<Cart goToProd={goToProd} />} />
           <Route
             path="/product/:id"
-            element={
-              <ProductInfo
-                // prod={productToShow}
-                goToProd={goToProd}
-              />
-            }
+            element={<ProductInfo goToProd={goToProd} />}
           />
           <Route path="/login" element={<Login />} />
           <Route

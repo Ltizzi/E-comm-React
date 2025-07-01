@@ -55,13 +55,14 @@ const AdminPanel = () => {
     <div className="w-screen h-screen flex flex-col justify-center items-center">
       <div className="flex flex-col justify-center max-w-full lg:max-w-2/3 lg:min-w-2/3 bg-base-300/85 py-5 px-7 rounded-lg min-h-5/6 max-h-5/6 relative">
         <h1 className="text-3xl font-bold pb-5 absolute top-5">Admin panel</h1>
-        <div>
-          <table className="table flex flex-col justify-center items-center">
+        <div className="h-full">
+          <table className="table flex flex-col justify-center items-center ">
             <thead>
               <tr>
                 <th className="max-w-14">Cover</th>
                 <th>Album</th>
-                <th>Price</th>
+                <th>Price/Stock</th>
+
                 <th>Control</th>
               </tr>
             </thead>
@@ -81,9 +82,18 @@ const AdminPanel = () => {
                   </td>
                   <td>
                     <div>
-                      <div className="text-sm opacity-50">{prod.price}</div>
+                      <div className="text-sm opacity-85">u$s {prod.price}</div>
+                      <div className="text-xs pt-2 opacity-65">
+                        {prod.count > 0 ? prod.count : ""}
+                        {prod.count > 1
+                          ? " units"
+                          : prod.count > 0
+                          ? " unit"
+                          : "none"}
+                      </div>
                     </div>
                   </td>
+
                   <td>
                     <button className="btn btn-ghost btn-xs">details</button>
                   </td>

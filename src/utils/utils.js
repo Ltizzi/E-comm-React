@@ -37,6 +37,11 @@ export function buildPagination(total, limit) {
   return { totalPages: totalPages, pages: pages };
 }
 
+//NOTE: UPLOAD TO MOCKAPI CODE (used in nav as a button)
+// const [count, setCount] = useState(0);
+// const [showModal, setShowModal] = useState(false);
+// const [errorCount, setErrorCount] = useState(0);
+// const [errorAlbums, setErrorAlbums] = useState([]);
 // function delay(ms) {
 //   return new Promise((resolve) => setTimeout(resolve, ms));
 // }
@@ -75,3 +80,21 @@ export function buildPagination(total, limit) {
 
 //   setShowModal(false);
 // }
+
+//NOTE: App useEffect old code
+
+// fetch("/data/albums.json")
+//   .then((res) => {
+//     if (!res.ok) throw new Error("Error al cargar el archivo");
+//     return res.json();
+//   })
+//   .then((data) => {
+//     console.log("Contenido del JSON:", data);
+//     setProducts(data);
+//     setIsLoading(false);
+//   })
+//   .catch((err) => {
+//     console.error("Error:", err);
+//     setHasErrors(true);
+//     setIsLoading(false);
+//   });
