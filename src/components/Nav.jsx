@@ -9,7 +9,7 @@ import { FaShop } from "react-icons/fa6";
 
 const Nav = (props) => {
   const { search } = props;
-  const { cart, logout, isLogged, isAdmin } = useContext(AppContext);
+  const { cart, logout, isLogged, isAdmin, isMobile } = useContext(AppContext);
 
   function getCartCoverImages() {
     return cart.map((item) => getFront(item.item.coverImages));
@@ -31,7 +31,7 @@ const Nav = (props) => {
             className="tooltip tooltip-bottom tooltip-secondary"
             data-tip="Go back to main"
           >
-            <p className="btn btn-ghost text-xl">
+            <p className={`btn btn-ghost ${isMobile ? "text-sm" : "text-lg"}`}>
               <FaShop />
               E-Commerce
             </p>
@@ -43,7 +43,9 @@ const Nav = (props) => {
         <input
           type="text"
           placeholder="Search"
-          class="input input-bordered w-40 input-primary md:w-auto"
+          class={`input input-bordered ${
+            isMobile ? " w-36 input-sm" : "w-40"
+          } input-primary md:w-auto`}
           onChange={(e) => search(e.target.value)}
         />
         <div>

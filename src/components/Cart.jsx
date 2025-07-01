@@ -88,7 +88,11 @@ const Cart = (props) => {
             </tbody>
           </table>
         </div>
-        <div className="bg-base-100 h-80 w-80 rounded-xl py-7 px-7  flex flex-col gap-10 justify-between">
+        <div
+          className={`bg-base-100 ${
+            !isMobile ? "h-80 w-80" : "w-99 ml-2"
+          } rounded-xl py-7 px-7  flex flex-col gap-10 justify-between`}
+        >
           <h1 className="text-3xl">
             Total: <span className="italic">u$s {getTotal(cart)}</span>{" "}
           </h1>
