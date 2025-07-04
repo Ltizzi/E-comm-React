@@ -5,6 +5,7 @@ import { GrPrevious, GrNext } from "react-icons/gr";
 import { FaInfoCircle, FaTrashAlt, FaRegEdit } from "react-icons/fa";
 import { MdCreateNewFolder } from "react-icons/md";
 import BaseButton from "./common/BaseButton";
+import NewProductModal from "./NewProductModal";
 
 const AdminPanel = ({ goToProd }) => {
   const [totalPages, setTotalPages] = useState(0);
@@ -14,6 +15,18 @@ const AdminPanel = ({ goToProd }) => {
 
   const [productsToShow, setProductToShow] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
+
+  const [showEditor, setShowEditor] = useState(false);
+  const [isEditor, setIsEditor] = useState(false);
+  const [prodToEdit, setProdToEdit] = useState();
+
+  function showEditorModal(prod = null, isEditor = false) {
+    setShowEditor((prev) => !prev);
+    setIsEditor(isEditor);
+    if (prod) {
+      setProdToEdit(prod);
+    }
+  }
 
   const ITEMS_PER_PAGE = 10;
 
@@ -62,7 +75,7 @@ const AdminPanel = ({ goToProd }) => {
           <BaseButton
             btnLabel={"Add new Album"}
             btnType={"success"}
-            btnAction={() => openEditor()}
+            btnAction={() => showEditorModal()}
             tooltip={"Add new Album"}
           >
             <MdCreateNewFolder />
@@ -122,7 +135,7 @@ const AdminPanel = ({ goToProd }) => {
                     <BaseButton
                       btnLabel={""}
                       btnType={"warning"}
-                      btnAction={() => openEditor(prod, true)}
+                      btnAction={() => showEditorModal(prod, true)}
                       tooltip={"Edit Album"}
                       rounded={true}
                     >
@@ -174,6 +187,13 @@ const AdminPanel = ({ goToProd }) => {
           </div>
         </div>
       </div>
+
+      <NewProductModal
+        showEditor={showEditor}
+        isEditor={isEditor}
+        prod={prodToEdit}
+        showEditorModal={() => setShowEditor(false)}
+      />
     </div>
   );
 };

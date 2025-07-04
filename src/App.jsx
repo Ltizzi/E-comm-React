@@ -17,7 +17,6 @@ import { ProductContext } from "./context/ProductContext";
 
 function App() {
   const [products, setProducts] = useState([]);
-  //const [productToShow, setProductToShow] = useState({});
   const [isLoading, setIsLoading] = useState(true);
   const [hasErrors, setHasErrors] = useState(false);
 
@@ -74,7 +73,7 @@ function App() {
 
   return (
     <>
-      <Nav search={search} products={products} />
+      <Nav search={search} />
       {isLoading && <BaseLoading />}
       <div
         className="bg-gradient-to-br from-base-200 to-base-300 min-h-screen pt-10 w-full"

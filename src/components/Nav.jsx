@@ -1,14 +1,14 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import ThemeSelector from "./common/ThemeSelector";
 import { Link } from "react-router-dom";
 import { getFront, getTotal } from "../utils/utils";
 import { AppContext } from "../context/AppContext";
 import BaseButton from "./common/BaseButton";
-import { API_URL, ProductContext } from "../context/ProductContext";
+
 import { FaShop } from "react-icons/fa6";
 
 const Nav = (props) => {
-  const { search, products } = props;
+  const { search } = props;
   const { cart, logout, isLogged, isAdmin, isMobile, user } =
     useContext(AppContext);
 
