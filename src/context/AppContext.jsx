@@ -2,77 +2,82 @@ import React, { createContext, useState } from "react";
 
 export const AppContext = createContext();
 
-//TODO: pasar todo el manejo de state al Context.
-
 export function AppProvider({ children }) {
   const [cart, setCart] = useState([]);
 
-  const [isLogged, setIsLogged] = useState(() => {
-    const loggedData = localStorage.getItem("logged");
-    return !!loggedData;
-  });
-  const [isAdmin, setIsAdmin] = useState(false);
+  // const [isLogged, setIsLogged] = useState(() => {
+  //   const loggedData = localStorage.getItem("logged");
+  //   return !!loggedData;
+  // });
+  // const [isAdmin, setIsAdmin] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
-  const [user, setUser] = useState();
+  //const [user, setUser] = useState();
 
   //AUTH
 
-  async function getUsers() {
-    return await fetch("/data/users.json")
-      .then((res) => {
-        if (!res.ok) throw new Error("Error al cargar el archivo");
-        return res.json();
-      })
-      .catch((err) => {
-        console.error("Error:", err);
-      });
-  }
-  async function login(obj) {
-    const users = await getUsers();
+  // async function getUsers() {
+  //   return await fetch("/data/users.json")
+  //     .then((res) => {
+  //       if (!res.ok) throw new Error("Error al cargar el archivo");
+  //       return res.json();
+  //     })
+  //     .catch((err) => {
+  //       console.error("Error:", err);
+  //     });
+  // }
+  // async function login(obj) {
+  //   const users = [];
+  //   const jsonUsers = await getUsers();
+  //   const localUsers = JSON.parse(localStorage.getItem("localUsers"));
 
-    const filteredUser = users.filter(
-      (user) => user.email.toLowerCase() === obj.email.toLowerCase()
-    );
+  //   users.concat(jsonUsers);
+  //   if (localUsers && localUsers.length > 0) {
+  //     users.concat(localUsers);
+  //   }
 
-    if (!filteredUser || filteredUser.length < 1) {
-      return "Invalid e-mail";
-    } else {
-      if (filteredUser[0].password !== obj.password) {
-        return "Wrong password";
-      } else {
-        const user = filteredUser[0];
-        user.password = "********";
-        localStorage.setItem("logged", JSON.stringify(user));
-        localStorage.setItem("isAdmin", JSON.stringify(user.isAdmin));
-        setUser(user);
-        setIsLogged(true);
-        setIsAdmin(user.isAdmin);
+  //   const filteredUser = users.filter(
+  //     (user) => user.email.toLowerCase() === obj.email.toLowerCase()
+  //   );
 
-        return "logged";
-      }
-    }
-  }
+  //   if (!filteredUser || filteredUser.length < 1) {
+  //     return "Invalid e-mail";
+  //   } else {
+  //     if (filteredUser[0].password !== obj.password) {
+  //       return "Wrong password";
+  //     } else {
+  //       const user = filteredUser[0];
+  //       user.password = "********";
+  //       localStorage.setItem("logged", JSON.stringify(user));
+  //       localStorage.setItem("isAdmin", JSON.stringify(user.isAdmin));
+  //       setUser(user);
+  //       setIsLogged(true);
+  //       setIsAdmin(user.isAdmin);
 
-  function logLocalUser(obj) {
-    setUser(obj);
-    setIsLogged(true);
-    setIsAdmin(obj.isAdmin);
-  }
+  //       return "logged";
+  //     }
+  //   }
+  // }
 
-  function logout() {
-    localStorage.removeItem("logged");
-    localStorage.removeItem("isAdmin");
-    setIsLogged(false);
-  }
+  // function logLocalUser(obj) {
+  //   setUser(obj);
+  //   setIsLogged(true);
+  //   setIsAdmin(obj.isAdmin);
+  // }
 
-  function setAdmin() {
-    setIsAdmin((prevIsAdmin) => !prevIsAdmin);
-  }
+  // function logout() {
+  //   localStorage.removeItem("logged");
+  //   localStorage.removeItem("isAdmin");
+  //   setIsLogged(false);
+  // }
 
-  function checkIsAdmin() {
-    const isAdmin = JSON.parse(localStorage.getItem("isAdmin"));
-    return isAdmin;
-  }
+  // function setAdmin() {
+  //   setIsAdmin((prevIsAdmin) => !prevIsAdmin);
+  // }
+
+  // function checkIsAdmin() {
+  //   const isAdmin = JSON.parse(localStorage.getItem("isAdmin"));
+  //   return isAdmin;
+  // }
 
   //CART
   function addProductToCart(prod, count) {
@@ -128,16 +133,16 @@ export function AppProvider({ children }) {
         clearCart,
         removeProdFromCart,
         removeOne,
-        isLogged,
-        isAdmin,
-        login,
-        logout,
-        setAdmin,
-        checkIsAdmin,
+        // isLogged,
+        // isAdmin,
+        // login,
+        // logout,
+        // setAdmin,
+        // checkIsAdmin,
         setIsMobile,
         isMobile,
-        user,
-        logLocalUser,
+        // user,
+        // logLocalUser,
       }}
     >
       {children}

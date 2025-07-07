@@ -1,9 +1,10 @@
 import React, { useContext } from "react";
 import BaseButton from "./common/BaseButton";
-import { AppContext } from "../context/AppContext";
+
+import { AuthContext } from "../context/AuthContext";
 
 const UserProfile = () => {
-  const { user } = useContext(AppContext);
+  const { user } = useContext(AuthContext);
   return (
     <div className="flex flex-col justify-center items-center align-middle h-screen">
       <div className="flex flex-col justify-center text-center items-center gap-4 w-1/3 rounded-xl py-10 px-7 bg-base-100/80">

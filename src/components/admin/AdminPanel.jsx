@@ -1,11 +1,11 @@
 import React, { useContext, useEffect, useState } from "react";
-import { ProductContext } from "../context/ProductContext";
-import { buildPagination, getFront } from "../utils/utils";
+import { ProductContext } from "../../context/ProductContext";
+import { buildPagination, getFront } from "../../utils/utils";
 import { GrPrevious, GrNext } from "react-icons/gr";
 import { FaInfoCircle, FaTrashAlt, FaRegEdit } from "react-icons/fa";
 import { MdCreateNewFolder } from "react-icons/md";
-import BaseButton from "./common/BaseButton";
-import NewProductModal from "./NewProductModal";
+import BaseButton from "../common/BaseButton";
+import NewProductModal from "../NewProductModal";
 
 const AdminPanel = ({ goToProd }) => {
   const [totalPages, setTotalPages] = useState(0);

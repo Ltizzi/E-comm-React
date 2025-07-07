@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { AppContext } from "../context/AppContext";
+import { AuthContext } from "../../context/AuthContext";
 
 const Login = () => {
   // const { login } = props;
@@ -10,7 +10,7 @@ const Login = () => {
   const [errorMsg, setErrorMsg] = useState("");
   const [hasError, setHasError] = useState(false);
 
-  const { login } = useContext(AppContext);
+  const { login } = useContext(AuthContext);
 
   const navigate = useNavigate();
 
@@ -88,6 +88,12 @@ const Login = () => {
             value={password}
             onChange={(e) => handlePassword(e.target.value)}
           />
+        </div>
+        <div className="flex flex-col justify-start text-sm text-start w-56">
+          <p>Don't have an account?</p>
+          <span className="hover:cursor-pointer text-accent font-semibold underline italic">
+            Create one
+          </span>
         </div>
         <button
           className="btn btn-neutral mt-4 w-24 mx-auto"

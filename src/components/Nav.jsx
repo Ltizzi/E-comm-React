@@ -6,11 +6,12 @@ import { AppContext } from "../context/AppContext";
 import BaseButton from "./common/BaseButton";
 
 import { FaShop } from "react-icons/fa6";
+import { AuthContext } from "../context/AuthContext";
 
 const Nav = (props) => {
   const { search } = props;
-  const { cart, logout, isLogged, isAdmin, isMobile, user } =
-    useContext(AppContext);
+  const { cart, isMobile } = useContext(AppContext);
+  const { logout, isLogged, isAdmin, user } = useContext(AuthContext);
 
   function getCartCoverImages() {
     return cart.map((item) => getFront(item.item.coverImages));

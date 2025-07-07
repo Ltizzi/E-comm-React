@@ -7,21 +7,23 @@ import { Routes, Route, useNavigate } from "react-router-dom";
 import Cart from "./components/Cart";
 import ProductInfo from "./components/ProductInfo";
 import NotFound from "./pages/NotFound";
-import Login from "./components/Login";
+import Login from "./components/auth/Login";
+import Register from "./components/auth/Register";
 import ProtectedRoute from "./auth/ProtectedRoute";
 import UserProfile from "./components/UserProfile";
 import BaseLoading from "./components/common/BaseLoading";
-import AdminPanel from "./components/AdminPanel";
+import AdminPanel from "./components/admin/AdminPanel";
 import { AppContext } from "./context/AppContext";
 import { ProductContext } from "./context/ProductContext";
+import { AuthContext } from "./context/AuthContext";
 
 function App() {
   const [products, setProducts] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [hasErrors, setHasErrors] = useState(false);
 
-  const { isLogged, isAdmin, setIsMobile, logLocalUser, logout } =
-    useContext(AppContext);
+  const { isLogged, isAdmin, logLocalUser, logout } = useContext(AuthContext);
+  const { setIsMobile } = useContext(AppContext);
   const { getAllProducts, setFocusProduct, searchProducts } =
     useContext(ProductContext);
 
@@ -100,6 +102,7 @@ function App() {
             element={<ProductInfo goToProd={goToProd} />}
           />
           <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
           <Route
             path="/profile"
             element={
