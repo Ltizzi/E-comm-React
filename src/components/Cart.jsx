@@ -33,8 +33,8 @@ const Cart = (props) => {
   return (
     <div className="flex flex-col py-10 gap-10  justify-center">
       <h1 className="text-center text-5xl font-extrabold">Cart</h1>
-      <div className="flex 2xl:flex-row flex-col flex-wrap justify-start gap-5 mx-8 lg:mx-20 mt-5 items-start align-top">
-        <div className="overflow-x-auto rounded-box border border-base-content/5 bg-base-100 2xl:w-2/3">
+      <div className="flex lg:flex-row flex-col flex-wrap justify-start gap-5 mx-8 xl:mx-20 lg:mx-10 mt-5 items-start align-top">
+        <div className="overflow-x-auto rounded-box border border-base-content/5 bg-base-100 lg:w-2/3">
           <table className="table z-0">
             {/* head */}
             <thead>
