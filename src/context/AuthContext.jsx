@@ -20,15 +20,19 @@ export function AuthProvider({ children }) {
         console.error("Error:", err);
       });
   }
-  async function login(obj) {
-    const users = await getUsers();
-    //const jsonUsers = await getUsers();
-    const localUsers = JSON.parse(localStorage.getItem("localUsers"));
 
-    //users.concat(jsonUsers);
-    if (localUsers && localUsers.length > 0) {
-      users.concat(localUsers);
-    }
+  async function getRegisteredUsers() {
+    const users = await getUsers();
+    const localUsers = getRegisteredLocalUsers();
+    return users.concat(localUsers);
+  }
+
+  function getRegisteredLocalUsers() {
+    return JSON.parse(localStorage.getItem("eComUsers")) || [];
+  }
+
+  async function login(obj) {
+    const users = await getRegisteredUsers();
 
     const filteredUser = users.filter(
       (user) => user.email.toLowerCase() === obj.email.toLowerCase()
@@ -51,6 +55,35 @@ export function AuthProvider({ children }) {
         return "logged";
       }
     }
+  }
+
+  function registerUser(formUser) {
+    const user = {
+      email: formUser.email,
+      password: formUser.password,
+      name: formUser.email.split("@")[0],
+      lastname: "",
+      nickname: formUser.email.split("@")[0],
+      isAdmin: false,
+      avatar: "https://avatar.iran.liara.run/public",
+    };
+    const users = getRegisteredLocalUsers();
+    users.push(user);
+    try {
+      localStorage.setItem("eComUsers", JSON.stringify(users));
+      return "OK";
+    } catch (err) {
+      console.error(err);
+      return err;
+    }
+  }
+
+  async function alreadyRegister(mail) {
+    const users = await getRegisteredUsers();
+    return (
+      users.filter((user) => user.email.toLowerCase() === mail.toLowerCase())
+        .length > 0
+    );
   }
 
   function logLocalUser(obj) {
@@ -85,6 +118,8 @@ export function AuthProvider({ children }) {
         checkIsAdmin,
         user,
         logLocalUser,
+        alreadyRegister,
+        registerUser,
       }}
     >
       {children}

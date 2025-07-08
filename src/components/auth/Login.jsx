@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { AuthContext } from "../../context/AuthContext";
 
 const Login = () => {
@@ -72,7 +72,7 @@ const Login = () => {
           <label className="label">Email</label>
           <input
             type="email"
-            className="input input-primary"
+            className="input input-primary validator"
             value={mail}
             placeholder="Email"
             onChange={(e) => handleMail(e.target.value)}
@@ -83,7 +83,7 @@ const Login = () => {
           <label className="label">Password</label>
           <input
             type="password"
-            className="input input-primary"
+            className="input input-primary validator"
             placeholder="Password"
             value={password}
             onChange={(e) => handlePassword(e.target.value)}
@@ -91,9 +91,11 @@ const Login = () => {
         </div>
         <div className="flex flex-col justify-start text-sm text-start w-56">
           <p>Don't have an account?</p>
-          <span className="hover:cursor-pointer text-accent font-semibold underline italic">
-            Create one
-          </span>
+          <Link to="/signup">
+            <span className="hover:cursor-pointer text-accent font-semibold underline italic">
+              Create one
+            </span>
+          </Link>
         </div>
         <button
           className="btn btn-neutral mt-4 w-24 mx-auto"

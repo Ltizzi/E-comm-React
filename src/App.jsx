@@ -102,7 +102,7 @@ function App() {
             element={<ProductInfo goToProd={goToProd} />}
           />
           <Route path="/login" element={<Login />} />
-          <Route path="/register" element={<Register />} />
+          <Route path="/signup" element={<Register />} />
           <Route
             path="/profile"
             element={
