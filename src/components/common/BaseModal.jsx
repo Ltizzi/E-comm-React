@@ -26,11 +26,11 @@ const BaseModal = ({ isOpen, onClose, title, children }) => {
       onClick={onClose}
     >
       <div
-        className="bg-white rounded-lg p-6 max-w-md w-full mx-4 text-primary-content"
+        className="bg-white rounded-lg pb-6 lg:max-w-4xl lg:min-w-auto w-full mx-4 text-primary-content"
         onClick={(e) => e.stopPropagation()}
       >
-        <div className="flex justify-between items-center mb-4 bg-secondary text-secondary-content px-2">
-          <h2 className="text-xl font-bold">{title}</h2>
+        <div className="flex justify-between items-center mb-4 bg-secondary text-secondary-content px-2 w-auto">
+          <h2 className="text-xl font-bold px-6 py-2">{title}</h2>
           <button
             onClick={onClose}
             className="text-secondary-content text-2xl hover:text-gray-700 hover:cursor-pointer"
@@ -38,7 +38,7 @@ const BaseModal = ({ isOpen, onClose, title, children }) => {
             <AiFillCloseSquare />
           </button>
         </div>
-        {children}
+        <div className="px-8">{children}</div>
       </div>
     </div>
   );

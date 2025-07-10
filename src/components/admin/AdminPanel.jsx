@@ -5,13 +5,12 @@ import { GrPrevious, GrNext } from "react-icons/gr";
 import { FaInfoCircle, FaTrashAlt, FaRegEdit } from "react-icons/fa";
 import { MdCreateNewFolder } from "react-icons/md";
 import BaseButton from "../common/BaseButton";
-import NewProductModal from "../NewProductModal";
+import NewProductModal from "./NewProductModal";
 
 const AdminPanel = ({ goToProd }) => {
   const [totalPages, setTotalPages] = useState(0);
   const [pages, setPages] = useState([]);
-  const { products, getProductsWithPagination, getProducyById } =
-    useContext(ProductContext);
+  const { products, getProductsWithPagination } = useContext(ProductContext);
 
   const [productsToShow, setProductToShow] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
@@ -21,7 +20,9 @@ const AdminPanel = ({ goToProd }) => {
   const [prodToEdit, setProdToEdit] = useState();
 
   function showEditorModal(prod = null, isEditor = false) {
-    setShowEditor((prev) => !prev);
+    setShowEditor((prev) => {
+      return !prev;
+    });
     setIsEditor(isEditor);
     if (prod) {
       setProdToEdit(prod);
@@ -170,7 +171,7 @@ const AdminPanel = ({ goToProd }) => {
               <button
                 className={`${
                   currentPage == page ? "btn-active bg-primary" : ""
-                } join-item btn hover:cursor-pointer btn-sm
+                } join-item btn hover:cursor-pointer btn-sm.
                       `}
                 onClick={() => goPage(page)}
               >

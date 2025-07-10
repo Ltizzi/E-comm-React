@@ -90,12 +90,15 @@ export function AuthProvider({ children }) {
     setUser(obj);
     setIsLogged(true);
     setIsAdmin(obj.isAdmin);
+    localStorage.setItem("isAdmin", JSON.stringify(isAdmin));
   }
 
   function logout() {
     localStorage.removeItem("logged");
     localStorage.removeItem("isAdmin");
     setIsLogged(false);
+    setUser({});
+    setIsAdmin(false);
   }
 
   function setAdmin() {
