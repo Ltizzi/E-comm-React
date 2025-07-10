@@ -37,6 +37,13 @@ export function buildPagination(total, limit) {
   return { totalPages: totalPages, pages: pages };
 }
 
+export function getTrackDuration(time) {
+  const totalSeconds = Math.floor(time / 1000);
+  const minutes = Math.floor(totalSeconds / 60);
+  const seconds = totalSeconds % 60;
+  return `${minutes}:${seconds < 10 ? "0" + seconds : seconds}`;
+}
+
 //NOTE: UPLOAD TO MOCKAPI CODE (used in nav as a button)
 // const [count, setCount] = useState(0);
 // const [showModal, setShowModal] = useState(false);

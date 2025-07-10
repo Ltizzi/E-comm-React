@@ -3,7 +3,6 @@ import BaseModal from "../common/BaseModal";
 import StepAInfo from "./FormSteps/StepAInfo";
 import StepBTracks from "./FormSteps/StepBTracks";
 import StepCExtra from "./FormSteps/StepCExtra";
-import StepDBussines from "./FormSteps/StepDBussines";
 import { getFront } from "../../utils/utils";
 
 const NewProductModal = ({ isEditor, prod, showEditor, showEditorModal }) => {
@@ -28,8 +27,6 @@ const NewProductModal = ({ isEditor, prod, showEditor, showEditorModal }) => {
   const [extraAlbums, setExtraAlbums] = useState([]);
 
   const [activeTab, setActiveTab] = useState(0);
-
-  const [collapseAlbums, setCollapseAlbums] = useState(true);
 
   function onClose() {
     showEditorModal();
@@ -74,11 +71,12 @@ const NewProductModal = ({ isEditor, prod, showEditor, showEditorModal }) => {
   }
 
   function goPrev() {
-    if (activeTab > 0) setActiveTab((prev) => prev - 1);
+    if (!isEditor && activeTab > 0) setActiveTab((prev) => prev - 1);
+    else if (activeTab > 1) setActiveTab((prev) => prev - 1);
   }
 
   function goNext() {
-    if (activeTab < 5) setActiveTab((prev) => prev + 1);
+    if (activeTab < 4) setActiveTab((prev) => prev + 1);
   }
 
   function addAlbum(album) {
@@ -110,61 +108,53 @@ const NewProductModal = ({ isEditor, prod, showEditor, showEditorModal }) => {
       title={!isEditor ? "Create new Album" : "Edit Album"}
       onClose={onClose}
     >
-      <div className="flex flex-col justify-between h-fit">
-        <div className="w-full h-fit flex flex-col justify-center items-center text-base-content gap-4 relative">
-          <ul className="steps text-xs  w-3/4 ">
-            {!isEditor && (
-              <li
-                className={`step  step-primary hover:cursor-pointer`}
-                onClick={() => setActiveTab(0)}
-              >
-                New Album
-              </li>
-            )}
+      <div className="flex flex-col justify-between items-center h-fit gap-3 relative">
+        <ul className="steps text-xs  w-3/4 text-base-content h-1/6">
+          {!isEditor && (
             <li
-              className={`step hover:cursor-pointer  ${
-                activeTab >= 1 ? "step-primary" : ""
-              }`}
-              onClick={() => setActiveTab(1)}
+              className={`step  step-primary hover:cursor-pointer`}
+              onClick={() => setActiveTab(0)}
             >
-              Info
+              New Album
             </li>
-            <li
-              className={`step hover:cursor-pointer  ${
-                activeTab >= 2 ? "step-primary" : ""
-              }`}
-              onClick={() => setActiveTab(2)}
-            >
-              Tracks
-            </li>
-            <li
-              className={`step hover:cursor-pointer ${
-                activeTab >= 3 ? "step-primary" : ""
-              }`}
-              onClick={() => setActiveTab(3)}
-            >
-              Extra
-            </li>
-            <li
-              className={`step hover:cursor-pointer  ${
-                activeTab >= 4 ? "step-primary" : ""
-              }`}
-              onClick={() => setActiveTab(4)}
-            >
-              Business
-            </li>
-            <li
-              className={`step hover:cursor-pointer ${
-                activeTab >= 5 ? "step-primary" : ""
-              }`}
-              onClick={() => setActiveTab(5)}
-            >
-              Finish
-            </li>
-          </ul>
+          )}
+          <li
+            className={`step hover:cursor-pointer  ${
+              activeTab >= 1 ? "step-primary" : ""
+            }`}
+            onClick={() => setActiveTab(1)}
+          >
+            Info
+          </li>
+          <li
+            className={`step hover:cursor-pointer  ${
+              activeTab >= 2 ? "step-primary" : ""
+            }`}
+            onClick={() => setActiveTab(2)}
+          >
+            Tracks
+          </li>
+          <li
+            className={`step hover:cursor-pointer ${
+              activeTab >= 3 ? "step-primary" : ""
+            }`}
+            onClick={() => setActiveTab(3)}
+          >
+            Extra
+          </li>
 
+          <li
+            className={`step hover:cursor-pointer ${
+              activeTab >= 4 ? "step-primary" : ""
+            }`}
+            onClick={() => setActiveTab(4)}
+          >
+            Finish
+          </li>
+        </ul>
+        <div className="w-full   h-4/6 min-h-140 lg:min-h-140 flex flex-col justify-center items-center align-top text-base-content gap-4">
           {!isEditor && activeTab === 0 && (
-            <div className="flex flex-col gap-1 ">
+            <div className="flex flex-col gap-1 h-10/12">
               <div
                 tabIndex={0}
                 className="bg-secondary text-primary-content collapse-open  collapse w-full"
@@ -190,7 +180,7 @@ const NewProductModal = ({ isEditor, prod, showEditor, showEditorModal }) => {
                 </div>
               </div>
 
-              <div className="flex flex-row gap-1 flex-wrap pt-1 overflow-y-auto overflow-x-clip h-110">
+              <div className="flex flex-row gap-1 flex-wrap pt-1 overflow-y-auto overflow-x-clip h-100">
                 {extraAlbums.map((album) => (
                   <div className="tooltip tooltip-bottom">
                     <div className="tooltip-content flex flex-col gap-1 py-3 px-3 z-50 justify-start text-start text-base max-w-40">
@@ -215,18 +205,19 @@ const NewProductModal = ({ isEditor, prod, showEditor, showEditorModal }) => {
               </div>
             </div>
           )}
-          {activeTab === 1 && <StepAInfo />}
-          {activeTab === 2 && <StepBTracks />}
-          {activeTab === 3 && <StepCExtra />}
-          {activeTab === 4 && <StepDBussines />}
-          {activeTab === 5 && (
-            <div>
-              <h1>Finish</h1>
-              <p>{product.title}</p>
-            </div>
-          )}
+          <div className="h-auto">
+            {activeTab === 1 && <StepAInfo />}
+            {activeTab === 2 && <StepBTracks />}
+            {activeTab === 3 && <StepCExtra />}
+            {activeTab === 4 && (
+              <div>
+                <h1>Finish</h1>
+                <p>{product.title}</p>
+              </div>
+            )}
+          </div>
         </div>
-        <div className="join grid grid-cols-2">
+        <div className="join grid grid-cols-2  w-full h-1/6">
           <button
             className="join-item btn btn-outline btn-secondary "
             onClick={goPrev}
