@@ -22,7 +22,7 @@ const NewProductModal = ({ isEditor, prod, showEditor, showEditorModal }) => {
   });
   const [extraAlbums, setExtraAlbums] = useState([]);
 
-  const [toggleText, setToggleText] = useState(false);
+  const [activeTab, setActiveTab] = useState(0);
 
   function onClose() {
     showEditorModal();
@@ -66,8 +66,17 @@ const NewProductModal = ({ isEditor, prod, showEditor, showEditorModal }) => {
     };
   }
 
+  function goPrev() {
+    if (activeTab > 0) setActiveTab((prev) => prev - 1);
+  }
+
+  function goNext() {
+    if (activeTab < 5) setActiveTab((prev) => prev + 1);
+  }
+
   useEffect(() => {
     if (!isEditor) {
+      setActiveTab(0);
       fetch("/data/extra.json")
         .then((data) => {
           if (!data) throw new Error("Something went wrong");
@@ -77,7 +86,10 @@ const NewProductModal = ({ isEditor, prod, showEditor, showEditorModal }) => {
           setExtraAlbums(albums.json());
         })
         .catch((err) => console.error(err));
-    } else setProduct(prod);
+    } else {
+      setActiveTab(1);
+      setProduct(prod);
+    }
   }, [isEditor, prod]);
 
   return (
@@ -86,9 +98,27 @@ const NewProductModal = ({ isEditor, prod, showEditor, showEditorModal }) => {
       title={!isEditor ? "Create new Album" : "Edit Album"}
       onClose={onClose}
     >
-      <div className="w-full">
-        {isEditor && <p>{prod.title}</p>}
-        {!isEditor && (
+      <div className="w-full flex flex-col justify-center text-base-content gap-7">
+        <ul className="steps">
+          {!isEditor && <li className={`step  step-primary`}>New Album</li>}
+          <li className={`step  ${activeTab >= 1 ? "step-primary" : ""}`}>
+            Info
+          </li>
+          <li className={`step  ${activeTab >= 2 ? "step-primary" : ""}`}>
+            Tracks
+          </li>
+          <li className={`step  ${activeTab >= 3 ? "step-primary" : ""}`}>
+            Extra
+          </li>
+          <li className={`step  ${activeTab >= 4 ? "step-primary" : ""}`}>
+            Business
+          </li>
+          <li className={`step  ${activeTab >= 5 ? "step-primary" : ""}`}>
+            Finish
+          </li>
+        </ul>
+
+        {!isEditor && activeTab === 0 && (
           <div
             tabIndex={0}
             className="bg-primary text-primary-content focus:bg-secondary focus:text-secondary-content collapse w-full"
@@ -99,9 +129,8 @@ const NewProductModal = ({ isEditor, prod, showEditor, showEditorModal }) => {
             <div className="collapse-content text-sm">
               <div className="flex flex-col justify-start text-start text-xs lg:text-base gap-5">
                 <p>
-                  {" "}
                   Como el objeto product es un poco complejo, con motivos para
-                  testear, he aquí una lista de albums extra para completar el
+                  testear, se provee una lista de albums extra para completar el
                   formulario fácilmente seleccionando uno de estos albums. De
                   todos modos el usuario puede crear su propio album (aunque no
                   es recomendado)
@@ -115,6 +144,20 @@ const NewProductModal = ({ isEditor, prod, showEditor, showEditorModal }) => {
             </div>
           </div>
         )}
+        <div className="join grid grid-cols-2 ">
+          <button
+            className="join-item btn btn-outline btn-secondary "
+            onClick={goPrev}
+          >
+            Previous page
+          </button>
+          <button
+            className="join-item btn btn-secondary btn-outline"
+            onClick={goNext}
+          >
+            Next
+          </button>
+        </div>
       </div>
     </BaseModal>
   );
