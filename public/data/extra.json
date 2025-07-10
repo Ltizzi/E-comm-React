@@ -7,23 +7,17 @@
     "coverImages": [
       {
         "url": "http://coverartarchive.org/release/47343e96-7e84-4be1-9668-1692efabd972/37471174923.jpg",
-        "types": [
-          "Front"
-        ]
+        "types": ["Front"]
       }
     ],
-    "tracklist": [
-      "The Interview"
-    ],
+    "tracklist": ["The Interview"],
     "extra": {
       "date": "2010-08-23",
       "producer": null,
       "format": "Digital Media",
       "trackCount": 1,
       "duration": 2621493,
-      "trackDuration": [
-        2621493
-      ]
+      "trackDuration": [2621493]
     },
     "price": "90.53",
     "count": 6
@@ -36,9 +30,7 @@
     "coverImages": [
       {
         "url": "http://coverartarchive.org/release/01e3fec0-8c75-4800-9c31-7cd42e93f3bf/23613473953.jpg",
-        "types": [
-          "Front"
-        ]
+        "types": ["Front"]
       }
     ],
     "tracklist": [
@@ -64,20 +56,8 @@
       "trackCount": 14,
       "duration": 3397182,
       "trackDuration": [
-        199386,
-        260013,
-        258400,
-        322626,
-        201533,
-        269320,
-        296746,
-        212053,
-        324560,
-        119506,
-        297373,
-        232560,
-        201733,
-        201373
+        199386, 260013, 258400, 322626, 201533, 269320, 296746, 212053, 324560,
+        119506, 297373, 232560, 201733, 201373
       ]
     },
     "price": "83.94",
@@ -91,16 +71,11 @@
     "coverImages": [
       {
         "url": "http://coverartarchive.org/release/1475431a-cfd3-43ad-bf09-b3826118446f/31783411229.jpg",
-        "types": [
-          "Front",
-          "Medium"
-        ]
+        "types": ["Front", "Medium"]
       },
       {
         "url": "http://coverartarchive.org/release/1475431a-cfd3-43ad-bf09-b3826118446f/20349631953.jpg",
-        "types": [
-          "Front"
-        ]
+        "types": ["Front"]
       }
     ],
     "tracklist": [
@@ -130,24 +105,8 @@
       "trackCount": 18,
       "duration": 4764000,
       "trackDuration": [
-        240000,
-        244000,
-        257000,
-        320000,
-        230000,
-        131000,
-        292000,
-        330000,
-        250000,
-        283000,
-        244000,
-        250000,
-        230000,
-        330000,
-        283000,
-        240000,
-        320000,
-        290000
+        240000, 244000, 257000, 320000, 230000, 131000, 292000, 330000, 250000,
+        283000, 244000, 250000, 230000, 330000, 283000, 240000, 320000, 290000
       ]
     },
     "price": "75.74",
@@ -161,9 +120,7 @@
     "coverImages": [
       {
         "url": "http://coverartarchive.org/release/0ec67913-5de5-4ca5-a354-59f34af17c77/7221142924.jpg",
-        "types": [
-          "Front"
-        ]
+        "types": ["Front"]
       }
     ],
     "tracklist": [
@@ -183,14 +140,7 @@
       "trackCount": 8,
       "duration": 2254000,
       "trackDuration": [
-        315000,
-        281000,
-        267000,
-        193000,
-        301000,
-        287000,
-        290000,
-        320000
+        315000, 281000, 267000, 193000, 301000, 287000, 290000, 320000
       ]
     },
     "price": "32.59",
@@ -204,9 +154,7 @@
     "coverImages": [
       {
         "url": "http://coverartarchive.org/release/0b6b4ba0-d36f-47bd-b4ea-6a5b91842d29/3537819129.jpg",
-        "types": [
-          "Front"
-        ]
+        "types": ["Front"]
       }
     ],
     "tracklist": [
@@ -230,18 +178,8 @@
       "trackCount": 12,
       "duration": 3207156,
       "trackDuration": [
-        284400,
-        383493,
-        267706,
-        264800,
-        299266,
-        261626,
-        117333,
-        230640,
-        285200,
-        228533,
-        259626,
-        324533
+        284400, 383493, 267706, 264800, 299266, 261626, 117333, 230640, 285200,
+        228533, 259626, 324533
       ]
     },
     "price": "96.13",
@@ -255,40 +193,27 @@
     "coverImages": [
       {
         "url": "http://coverartarchive.org/release/11a5a163-b7e0-4e24-a3d6-8e9ebd213c7c/35741770140.jpg",
-        "types": [
-          "Front",
-          "Booklet"
-        ]
+        "types": ["Front", "Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/11a5a163-b7e0-4e24-a3d6-8e9ebd213c7c/35744645727.jpg",
-        "types": [
-          "Sticker"
-        ]
+        "types": ["Sticker"]
       },
       {
         "url": "http://coverartarchive.org/release/11a5a163-b7e0-4e24-a3d6-8e9ebd213c7c/35744646055.jpg",
-        "types": [
-          "Back"
-        ]
+        "types": ["Back"]
       },
       {
         "url": "http://coverartarchive.org/release/11a5a163-b7e0-4e24-a3d6-8e9ebd213c7c/35744646486.jpg",
-        "types": [
-          "Medium"
-        ]
+        "types": ["Medium"]
       },
       {
         "url": "http://coverartarchive.org/release/11a5a163-b7e0-4e24-a3d6-8e9ebd213c7c/35744646775.jpg",
-        "types": [
-          "Medium"
-        ]
+        "types": ["Medium"]
       },
       {
         "url": "http://coverartarchive.org/release/11a5a163-b7e0-4e24-a3d6-8e9ebd213c7c/35744647079.jpg",
-        "types": [
-          "Medium"
-        ]
+        "types": ["Medium"]
       }
     ],
     "tracklist": [
@@ -312,18 +237,8 @@
       "trackCount": 12,
       "duration": 2917531,
       "trackDuration": [
-        259200,
-        246200,
-        257533,
-        290693,
-        189000,
-        233240,
-        234093,
-        276440,
-        208733,
-        247026,
-        222973,
-        252400
+        259200, 246200, 257533, 290693, 189000, 233240, 234093, 276440, 208733,
+        247026, 222973, 252400
       ]
     },
     "price": "124.00",
@@ -337,80 +252,51 @@
     "coverImages": [
       {
         "url": "http://coverartarchive.org/release/0c46011c-2c86-4c53-8226-10c79f746e6f/28328236131.jpg",
-        "types": [
-          "Front"
-        ]
+        "types": ["Front"]
       },
       {
         "url": "http://coverartarchive.org/release/0c46011c-2c86-4c53-8226-10c79f746e6f/28328237138.jpg",
-        "types": [
-          "Back",
-          "Spine"
-        ]
+        "types": ["Back", "Spine"]
       },
       {
         "url": "http://coverartarchive.org/release/0c46011c-2c86-4c53-8226-10c79f746e6f/28328237976.jpg",
-        "types": [
-          "Front",
-          "Back",
-          "Spine",
-          "Other"
-        ]
+        "types": ["Front", "Back", "Spine", "Other"]
       },
       {
         "url": "http://coverartarchive.org/release/0c46011c-2c86-4c53-8226-10c79f746e6f/28328239157.jpg",
-        "types": [
-          "Other"
-        ]
+        "types": ["Other"]
       },
       {
         "url": "http://coverartarchive.org/release/0c46011c-2c86-4c53-8226-10c79f746e6f/28328240607.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/0c46011c-2c86-4c53-8226-10c79f746e6f/28328242361.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/0c46011c-2c86-4c53-8226-10c79f746e6f/28328243404.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/0c46011c-2c86-4c53-8226-10c79f746e6f/28328244993.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/0c46011c-2c86-4c53-8226-10c79f746e6f/28328246118.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/0c46011c-2c86-4c53-8226-10c79f746e6f/28328247728.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/0c46011c-2c86-4c53-8226-10c79f746e6f/28328249225.jpg",
-        "types": [
-          "Medium"
-        ]
+        "types": ["Medium"]
       },
       {
         "url": "http://coverartarchive.org/release/0c46011c-2c86-4c53-8226-10c79f746e6f/28328250272.jpg",
-        "types": [
-          "Medium",
-          "Matrix/Runout"
-        ]
+        "types": ["Medium", "Matrix/Runout"]
       }
     ],
     "tracklist": [
@@ -433,17 +319,8 @@
       "trackCount": 11,
       "duration": 3160303,
       "trackDuration": [
-        221453,
-        384546,
-        281000,
-        224586,
-        367346,
-        172960,
-        266640,
-        345893,
-        306560,
-        303813,
-        285506
+        221453, 384546, 281000, 224586, 367346, 172960, 266640, 345893, 306560,
+        303813, 285506
       ]
     },
     "price": "93.20",
@@ -457,9 +334,7 @@
     "coverImages": [
       {
         "url": "http://coverartarchive.org/release/0762fd5f-99f2-4501-8b4b-c294e09f90db/2580247402.jpg",
-        "types": [
-          "Front"
-        ]
+        "types": ["Front"]
       }
     ],
     "tracklist": [
@@ -482,17 +357,8 @@
       "trackCount": 11,
       "duration": 2635329,
       "trackDuration": [
-        240333,
-        288733,
-        247266,
-        191000,
-        293760,
-        254866,
-        194266,
-        291733,
-        121200,
-        237466,
-        274706
+        240333, 288733, 247266, 191000, 293760, 254866, 194266, 291733, 121200,
+        237466, 274706
       ]
     },
     "price": "120.94",
@@ -506,9 +372,7 @@
     "coverImages": [
       {
         "url": "http://coverartarchive.org/release/02769f4d-ee78-3680-aa79-67f3a821c931/15348666822.jpg",
-        "types": [
-          "Front"
-        ]
+        "types": ["Front"]
       }
     ],
     "tracklist": [
@@ -537,23 +401,8 @@
       "trackCount": 17,
       "duration": 3491823,
       "trackDuration": [
-        208600,
-        235693,
-        132173,
-        325600,
-        161600,
-        217800,
-        189693,
-        192666,
-        145373,
-        253160,
-        187800,
-        280800,
-        132800,
-        191933,
-        197333,
-        245466,
-        193333
+        208600, 235693, 132173, 325600, 161600, 217800, 189693, 192666, 145373,
+        253160, 187800, 280800, 132800, 191933, 197333, 245466, 193333
       ]
     },
     "price": "28.55",
@@ -567,112 +416,75 @@
     "coverImages": [
       {
         "url": "https://coverartarchive.org/release/18e2b05b-937a-3c25-ac78-07267e6411a0/10430250580.jpg",
-        "types": [
-          "Front"
-        ]
+        "types": ["Front"]
       },
       {
         "url": "https://coverartarchive.org/release/18e2b05b-937a-3c25-ac78-07267e6411a0/19451982885.jpg",
-        "types": [
-          "Back",
-          "Spine"
-        ]
+        "types": ["Back", "Spine"]
       },
       {
         "url": "https://coverartarchive.org/release/18e2b05b-937a-3c25-ac78-07267e6411a0/38657160880.jpg",
-        "types": [
-          "Medium"
-        ]
+        "types": ["Medium"]
       },
       {
         "url": "https://coverartarchive.org/release/18e2b05b-937a-3c25-ac78-07267e6411a0/38657161248.jpg",
-        "types": [
-          "Matrix/Runout"
-        ]
+        "types": ["Matrix/Runout"]
       },
       {
         "url": "https://coverartarchive.org/release/18e2b05b-937a-3c25-ac78-07267e6411a0/38657161853.jpg",
-        "types": [
-          "Matrix/Runout"
-        ]
+        "types": ["Matrix/Runout"]
       },
       {
         "url": "https://coverartarchive.org/release/18e2b05b-937a-3c25-ac78-07267e6411a0/38657162390.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "https://coverartarchive.org/release/18e2b05b-937a-3c25-ac78-07267e6411a0/38657162706.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "https://coverartarchive.org/release/18e2b05b-937a-3c25-ac78-07267e6411a0/38657163031.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "https://coverartarchive.org/release/18e2b05b-937a-3c25-ac78-07267e6411a0/38657163348.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "https://coverartarchive.org/release/18e2b05b-937a-3c25-ac78-07267e6411a0/38657163648.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "https://coverartarchive.org/release/18e2b05b-937a-3c25-ac78-07267e6411a0/38657163969.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "https://coverartarchive.org/release/18e2b05b-937a-3c25-ac78-07267e6411a0/38657164343.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "https://coverartarchive.org/release/18e2b05b-937a-3c25-ac78-07267e6411a0/38657164666.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "https://coverartarchive.org/release/18e2b05b-937a-3c25-ac78-07267e6411a0/38657164953.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "https://coverartarchive.org/release/18e2b05b-937a-3c25-ac78-07267e6411a0/38657165274.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "https://coverartarchive.org/release/18e2b05b-937a-3c25-ac78-07267e6411a0/38657165839.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "https://coverartarchive.org/release/18e2b05b-937a-3c25-ac78-07267e6411a0/38657166144.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "https://coverartarchive.org/release/18e2b05b-937a-3c25-ac78-07267e6411a0/38657166460.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       }
     ],
     "tracklist": [
@@ -694,15 +506,7 @@
       "trackCount": 10,
       "duration": 2997890,
       "trackDuration": [
-        251426,
-        284506,
-        351693,
-        356333,
-        222600,
-        315973,
-        211000,
-        309093,
-        275800,
+        251426, 284506, 351693, 356333, 222600, 315973, 211000, 309093, 275800,
         419466
       ]
     },
@@ -717,57 +521,39 @@
     "coverImages": [
       {
         "url": "http://coverartarchive.org/release/1812700d-3c1e-4372-ba7d-ed0e71419ec3/6801548754.jpg",
-        "types": [
-          "Front"
-        ]
+        "types": ["Front"]
       },
       {
         "url": "http://coverartarchive.org/release/1812700d-3c1e-4372-ba7d-ed0e71419ec3/11959289436.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/1812700d-3c1e-4372-ba7d-ed0e71419ec3/11959291047.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/1812700d-3c1e-4372-ba7d-ed0e71419ec3/11959293400.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/1812700d-3c1e-4372-ba7d-ed0e71419ec3/11959294031.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/1812700d-3c1e-4372-ba7d-ed0e71419ec3/11959295966.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/1812700d-3c1e-4372-ba7d-ed0e71419ec3/11959297514.jpg",
-        "types": [
-          "Tray"
-        ]
+        "types": ["Tray"]
       },
       {
         "url": "http://coverartarchive.org/release/1812700d-3c1e-4372-ba7d-ed0e71419ec3/11959299082.jpg",
-        "types": [
-          "Back"
-        ]
+        "types": ["Back"]
       },
       {
         "url": "http://coverartarchive.org/release/1812700d-3c1e-4372-ba7d-ed0e71419ec3/11959300458.jpg",
-        "types": [
-          "Medium"
-        ]
+        "types": ["Medium"]
       }
     ],
     "tracklist": [
@@ -799,26 +585,9 @@
       "trackCount": 20,
       "duration": 4282994,
       "trackDuration": [
-        168826,
-        178000,
-        191000,
-        223000,
-        163240,
-        676266,
-        209826,
-        190666,
-        339000,
-        176973,
-        192333,
-        168693,
-        191000,
-        151973,
-        226800,
-        175866,
-        183506,
-        181733,
-        160093,
-        134200
+        168826, 178000, 191000, 223000, 163240, 676266, 209826, 190666, 339000,
+        176973, 192333, 168693, 191000, 151973, 226800, 175866, 183506, 181733,
+        160093, 134200
       ]
     },
     "price": "36.09",
@@ -832,52 +601,35 @@
     "coverImages": [
       {
         "url": "http://coverartarchive.org/release/02390ca0-0862-4cd2-ba3b-a95d0f5bc744/15743098992.jpg",
-        "types": [
-          "Front"
-        ]
+        "types": ["Front"]
       },
       {
         "url": "http://coverartarchive.org/release/02390ca0-0862-4cd2-ba3b-a95d0f5bc744/24299301212.jpg",
-        "types": [
-          "Front",
-          "Obi"
-        ]
+        "types": ["Front", "Obi"]
       },
       {
         "url": "http://coverartarchive.org/release/02390ca0-0862-4cd2-ba3b-a95d0f5bc744/24299302059.jpg",
-        "types": [
-          "Back"
-        ]
+        "types": ["Back"]
       },
       {
         "url": "http://coverartarchive.org/release/02390ca0-0862-4cd2-ba3b-a95d0f5bc744/24299302943.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/02390ca0-0862-4cd2-ba3b-a95d0f5bc744/24299303655.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/02390ca0-0862-4cd2-ba3b-a95d0f5bc744/24299304763.jpg",
-        "types": [
-          "Medium"
-        ]
+        "types": ["Medium"]
       },
       {
         "url": "http://coverartarchive.org/release/02390ca0-0862-4cd2-ba3b-a95d0f5bc744/24299690639.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/02390ca0-0862-4cd2-ba3b-a95d0f5bc744/24299694604.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       }
     ],
     "tracklist": [
@@ -899,15 +651,7 @@
       "trackCount": 10,
       "duration": 2661000,
       "trackDuration": [
-        228000,
-        173000,
-        195000,
-        188000,
-        477000,
-        319000,
-        265000,
-        309000,
-        287000,
+        228000, 173000, 195000, 188000, 477000, 319000, 265000, 309000, 287000,
         220000
       ]
     },
@@ -922,9 +666,7 @@
     "coverImages": [
       {
         "url": "http://coverartarchive.org/release/0289cc7c-31b8-4711-90a9-ca17f4d06f86/9036990491.jpg",
-        "types": [
-          "Front"
-        ]
+        "types": ["Front"]
       }
     ],
     "tracklist": [
@@ -946,15 +688,7 @@
       "trackCount": 10,
       "duration": 2600306,
       "trackDuration": [
-        230000,
-        225000,
-        341000,
-        437000,
-        152000,
-        222000,
-        240000,
-        152000,
-        245306,
+        230000, 225000, 341000, 437000, 152000, 222000, 240000, 152000, 245306,
         356000
       ]
     },
@@ -969,21 +703,15 @@
     "coverImages": [
       {
         "url": "http://coverartarchive.org/release/1f9fdeeb-59b4-4751-91b6-be38fb76c380/22898368633.png",
-        "types": [
-          "Front"
-        ]
+        "types": ["Front"]
       },
       {
         "url": "http://coverartarchive.org/release/1f9fdeeb-59b4-4751-91b6-be38fb76c380/22898370224.png",
-        "types": [
-          "Medium"
-        ]
+        "types": ["Medium"]
       },
       {
         "url": "http://coverartarchive.org/release/1f9fdeeb-59b4-4751-91b6-be38fb76c380/22898371276.png",
-        "types": [
-          "Medium"
-        ]
+        "types": ["Medium"]
       },
       {
         "url": "http://coverartarchive.org/release/1f9fdeeb-59b4-4751-91b6-be38fb76c380/22898372422.png",
@@ -1023,18 +751,8 @@
       "trackCount": 12,
       "duration": 2244503,
       "trackDuration": [
-        307000,
-        256506,
-        218493,
-        180000,
-        188666,
-        128333,
-        179666,
-        170333,
-        210506,
-        134000,
-        157493,
-        113507
+        307000, 256506, 218493, 180000, 188666, 128333, 179666, 170333, 210506,
+        134000, 157493, 113507
       ]
     },
     "price": "92.44",
@@ -1048,45 +766,31 @@
     "coverImages": [
       {
         "url": "https://coverartarchive.org/release/6000566f-d7fc-42c0-a37c-fee72e8b32a5/39181304945.jpg",
-        "types": [
-          "Front"
-        ]
+        "types": ["Front"]
       },
       {
         "url": "https://coverartarchive.org/release/6000566f-d7fc-42c0-a37c-fee72e8b32a5/39181305662.jpg",
-        "types": [
-          "Other"
-        ]
+        "types": ["Other"]
       },
       {
         "url": "https://coverartarchive.org/release/6000566f-d7fc-42c0-a37c-fee72e8b32a5/39181306373.jpg",
-        "types": [
-          "Back"
-        ]
+        "types": ["Back"]
       },
       {
         "url": "https://coverartarchive.org/release/6000566f-d7fc-42c0-a37c-fee72e8b32a5/39181306818.jpg",
-        "types": [
-          "Medium"
-        ]
+        "types": ["Medium"]
       },
       {
         "url": "https://coverartarchive.org/release/6000566f-d7fc-42c0-a37c-fee72e8b32a5/39181307181.jpg",
-        "types": [
-          "Medium"
-        ]
+        "types": ["Medium"]
       },
       {
         "url": "https://coverartarchive.org/release/6000566f-d7fc-42c0-a37c-fee72e8b32a5/39181307805.jpg",
-        "types": [
-          "Medium"
-        ]
+        "types": ["Medium"]
       },
       {
         "url": "https://coverartarchive.org/release/6000566f-d7fc-42c0-a37c-fee72e8b32a5/39181308336.jpg",
-        "types": [
-          "Medium"
-        ]
+        "types": ["Medium"]
       },
       {
         "url": "https://coverartarchive.org/release/6000566f-d7fc-42c0-a37c-fee72e8b32a5/39181309013.jpg",
@@ -1126,14 +830,7 @@
       "trackCount": 8,
       "duration": 1947797,
       "trackDuration": [
-        193466,
-        257226,
-        236146,
-        295400,
-        310866,
-        213760,
-        193880,
-        247053
+        193466, 257226, 236146, 295400, 310866, 213760, 193880, 247053
       ]
     },
     "price": "24.91",
@@ -1147,9 +844,7 @@
     "coverImages": [
       {
         "url": "http://coverartarchive.org/release/0fd6ed93-9e76-4cfe-9903-36363464ab16/33500820343.jpg",
-        "types": [
-          "Front"
-        ]
+        "types": ["Front"]
       }
     ],
     "tracklist": [
@@ -1171,15 +866,7 @@
       "trackCount": 10,
       "duration": 2386402,
       "trackDuration": [
-        378165,
-        236842,
-        202113,
-        140656,
-        366400,
-        195771,
-        171873,
-        277895,
-        129473,
+        378165, 236842, 202113, 140656, 366400, 195771, 171873, 277895, 129473,
         287214
       ]
     },
@@ -1194,48 +881,31 @@
     "coverImages": [
       {
         "url": "http://coverartarchive.org/release/00b4a85c-fd14-44c0-a6ad-43a9e74ffa10/34645292279.jpg",
-        "types": [
-          "Front",
-          "Booklet"
-        ]
+        "types": ["Front", "Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/00b4a85c-fd14-44c0-a6ad-43a9e74ffa10/34645292862.jpg",
-        "types": [
-          "Front",
-          "Booklet"
-        ]
+        "types": ["Front", "Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/00b4a85c-fd14-44c0-a6ad-43a9e74ffa10/34645321169.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/00b4a85c-fd14-44c0-a6ad-43a9e74ffa10/34645354186.jpg",
-        "types": [
-          "Back",
-          "Spine"
-        ]
+        "types": ["Back", "Spine"]
       },
       {
         "url": "http://coverartarchive.org/release/00b4a85c-fd14-44c0-a6ad-43a9e74ffa10/34645380579.jpg",
-        "types": [
-          "Tray"
-        ]
+        "types": ["Tray"]
       },
       {
         "url": "http://coverartarchive.org/release/00b4a85c-fd14-44c0-a6ad-43a9e74ffa10/34645421074.jpg",
-        "types": [
-          "Medium"
-        ]
+        "types": ["Medium"]
       },
       {
         "url": "http://coverartarchive.org/release/00b4a85c-fd14-44c0-a6ad-43a9e74ffa10/34645520658.jpg",
-        "types": [
-          "Matrix/Runout"
-        ]
+        "types": ["Matrix/Runout"]
       }
     ],
     "tracklist": [
@@ -1259,18 +929,8 @@
       "trackCount": 12,
       "duration": 1944755,
       "trackDuration": [
-        184026,
-        168666,
-        158773,
-        174466,
-        151706,
-        207520,
-        219786,
-        167480,
-        149653,
-        126360,
-        125333,
-        110986
+        184026, 168666, 158773, 174466, 151706, 207520, 219786, 167480, 149653,
+        126360, 125333, 110986
       ]
     },
     "price": "97.40",
@@ -1284,27 +944,19 @@
     "coverImages": [
       {
         "url": "http://coverartarchive.org/release/12110e73-21ab-44b5-b985-426aeda17b9b/4827808471.jpg",
-        "types": [
-          "Obi"
-        ]
+        "types": ["Obi"]
       },
       {
         "url": "http://coverartarchive.org/release/12110e73-21ab-44b5-b985-426aeda17b9b/4827811841.jpg",
-        "types": [
-          "Front"
-        ]
+        "types": ["Front"]
       },
       {
         "url": "http://coverartarchive.org/release/12110e73-21ab-44b5-b985-426aeda17b9b/4827812964.jpg",
-        "types": [
-          "Back"
-        ]
+        "types": ["Back"]
       },
       {
         "url": "http://coverartarchive.org/release/12110e73-21ab-44b5-b985-426aeda17b9b/24241695835.jpg",
-        "types": [
-          "Medium"
-        ]
+        "types": ["Medium"]
       }
     ],
     "tracklist": [
@@ -1328,18 +980,8 @@
       "trackCount": 12,
       "duration": 2316000,
       "trackDuration": [
-        221000,
-        126000,
-        200000,
-        130000,
-        166000,
-        255000,
-        137000,
-        199000,
-        231000,
-        192000,
-        164000,
-        295000
+        221000, 126000, 200000, 130000, 166000, 255000, 137000, 199000, 231000,
+        192000, 164000, 295000
       ]
     },
     "price": "49.98",
@@ -1353,71 +995,47 @@
     "coverImages": [
       {
         "url": "http://coverartarchive.org/release/0808d7b6-bec6-4f30-9c50-c42f78c63b85/30493130976.png",
-        "types": [
-          "Front",
-          "Booklet"
-        ]
+        "types": ["Front", "Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/0808d7b6-bec6-4f30-9c50-c42f78c63b85/30493131632.jpg",
-        "types": [
-          "Front",
-          "Booklet"
-        ]
+        "types": ["Front", "Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/0808d7b6-bec6-4f30-9c50-c42f78c63b85/24268866055.jpg",
-        "types": [
-          "Back"
-        ]
+        "types": ["Back"]
       },
       {
         "url": "http://coverartarchive.org/release/0808d7b6-bec6-4f30-9c50-c42f78c63b85/24268868055.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/0808d7b6-bec6-4f30-9c50-c42f78c63b85/24268869482.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/0808d7b6-bec6-4f30-9c50-c42f78c63b85/24268870500.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/0808d7b6-bec6-4f30-9c50-c42f78c63b85/24268872751.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/0808d7b6-bec6-4f30-9c50-c42f78c63b85/24268874486.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/0808d7b6-bec6-4f30-9c50-c42f78c63b85/24268877288.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/0808d7b6-bec6-4f30-9c50-c42f78c63b85/24268878547.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/0808d7b6-bec6-4f30-9c50-c42f78c63b85/24268881638.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       }
     ],
     "tracklist": [
@@ -1438,15 +1056,7 @@
       "trackCount": 9,
       "duration": 2584503,
       "trackDuration": [
-        275506,
-        264626,
-        191266,
-        215600,
-        332266,
-        419733,
-        176866,
-        256200,
-        452440
+        275506, 264626, 191266, 215600, 332266, 419733, 176866, 256200, 452440
       ]
     },
     "price": "81.02",
@@ -1460,9 +1070,7 @@
     "coverImages": [
       {
         "url": "http://coverartarchive.org/release/088fe5c7-d58f-4868-b1a9-548e590a5a35/9508733927.jpg",
-        "types": [
-          "Front"
-        ]
+        "types": ["Front"]
       }
     ],
     "tracklist": [
@@ -1486,18 +1094,8 @@
       "trackCount": 12,
       "duration": 2004062,
       "trackDuration": [
-        145133,
-        141466,
-        134026,
-        218200,
-        154733,
-        164373,
-        159266,
-        158293,
-        232533,
-        179466,
-        126573,
-        190000
+        145133, 141466, 134026, 218200, 154733, 164373, 159266, 158293, 232533,
+        179466, 126573, 190000
       ]
     },
     "price": "99.79",
@@ -1511,28 +1109,19 @@
     "coverImages": [
       {
         "url": "http://coverartarchive.org/release/014eef07-3134-31fd-8e1c-e493f30046f0/11733862855.jpg",
-        "types": [
-          "Front"
-        ]
+        "types": ["Front"]
       },
       {
         "url": "http://coverartarchive.org/release/014eef07-3134-31fd-8e1c-e493f30046f0/11733864829.jpg",
-        "types": [
-          "Back",
-          "Spine"
-        ]
+        "types": ["Back", "Spine"]
       },
       {
         "url": "http://coverartarchive.org/release/014eef07-3134-31fd-8e1c-e493f30046f0/11733866078.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/014eef07-3134-31fd-8e1c-e493f30046f0/11733867310.jpg",
-        "types": [
-          "Medium"
-        ]
+        "types": ["Medium"]
       }
     ],
     "tracklist": [
@@ -1552,14 +1141,7 @@
       "trackCount": 8,
       "duration": 2484623,
       "trackDuration": [
-        321066,
-        267933,
-        237466,
-        429226,
-        299466,
-        349600,
-        305533,
-        274333
+        321066, 267933, 237466, 429226, 299466, 349600, 305533, 274333
       ]
     },
     "price": "120.23",
@@ -1573,9 +1155,7 @@
     "coverImages": [
       {
         "url": "http://coverartarchive.org/release/019e05a2-fa91-43ac-8ef0-40977f0e9805/14814417762.jpg",
-        "types": [
-          "Front"
-        ]
+        "types": ["Front"]
       }
     ],
     "tracklist": [
@@ -1600,19 +1180,8 @@
       "trackCount": 13,
       "duration": 3741212,
       "trackDuration": [
-        207000,
-        271000,
-        265000,
-        324000,
-        302066,
-        222666,
-        283360,
-        314000,
-        323360,
-        283000,
-        217000,
-        315760,
-        413000
+        207000, 271000, 265000, 324000, 302066, 222666, 283360, 314000, 323360,
+        283000, 217000, 315760, 413000
       ]
     },
     "price": "61.96",
@@ -1626,10 +1195,7 @@
     "coverImages": [
       {
         "url": "http://coverartarchive.org/release/028fbee9-0f73-4a14-988e-b20c103c1d49/33105533681.jpg",
-        "types": [
-          "Front",
-          "Obi"
-        ]
+        "types": ["Front", "Obi"]
       }
     ],
     "tracklist": [],
@@ -1640,17 +1206,8 @@
       "trackCount": 11,
       "duration": 2403370,
       "trackDuration": [
-        286000,
-        190426,
-        206000,
-        233266,
-        193173,
-        273266,
-        240933,
-        233866,
-        200000,
-        313000,
-        33440
+        286000, 190426, 206000, 233266, 193173, 273266, 240933, 233866, 200000,
+        313000, 33440
       ]
     },
     "price": "40.77",
@@ -1664,47 +1221,31 @@
     "coverImages": [
       {
         "url": "http://coverartarchive.org/release/1189f722-b715-4e32-8c11-e0baccf80749/24292926561.jpg",
-        "types": [
-          "Front",
-          "Sticker"
-        ]
+        "types": ["Front", "Sticker"]
       },
       {
         "url": "http://coverartarchive.org/release/1189f722-b715-4e32-8c11-e0baccf80749/24292930560.jpg",
-        "types": [
-          "Back",
-          "Sticker"
-        ]
+        "types": ["Back", "Sticker"]
       },
       {
         "url": "http://coverartarchive.org/release/1189f722-b715-4e32-8c11-e0baccf80749/24292931975.jpg",
-        "types": [
-          "Front"
-        ]
+        "types": ["Front"]
       },
       {
         "url": "http://coverartarchive.org/release/1189f722-b715-4e32-8c11-e0baccf80749/24292934749.jpg",
-        "types": [
-          "Back"
-        ]
+        "types": ["Back"]
       },
       {
         "url": "http://coverartarchive.org/release/1189f722-b715-4e32-8c11-e0baccf80749/24292935961.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/1189f722-b715-4e32-8c11-e0baccf80749/24292937301.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/1189f722-b715-4e32-8c11-e0baccf80749/24292940816.jpg",
-        "types": [
-          "Medium"
-        ]
+        "types": ["Medium"]
       }
     ],
     "tracklist": [
@@ -1727,17 +1268,8 @@
       "trackCount": 11,
       "duration": 2664025,
       "trackDuration": [
-        213560,
-        140840,
-        392333,
-        203360,
-        213533,
-        213400,
-        316840,
-        228026,
-        262040,
-        205800,
-        274293
+        213560, 140840, 392333, 203360, 213533, 213400, 316840, 228026, 262040,
+        205800, 274293
       ]
     },
     "price": "85.89",
@@ -1751,27 +1283,19 @@
     "coverImages": [
       {
         "url": "http://coverartarchive.org/release/006cb56d-6eff-4b7d-853f-ecd2db97f3b2/31428898855.jpg",
-        "types": [
-          "Front"
-        ]
+        "types": ["Front"]
       },
       {
         "url": "http://coverartarchive.org/release/006cb56d-6eff-4b7d-853f-ecd2db97f3b2/31428899733.jpg",
-        "types": [
-          "Back"
-        ]
+        "types": ["Back"]
       },
       {
         "url": "http://coverartarchive.org/release/006cb56d-6eff-4b7d-853f-ecd2db97f3b2/31428900589.jpg",
-        "types": [
-          "Medium"
-        ]
+        "types": ["Medium"]
       },
       {
         "url": "http://coverartarchive.org/release/006cb56d-6eff-4b7d-853f-ecd2db97f3b2/31428901803.jpg",
-        "types": [
-          "Medium"
-        ]
+        "types": ["Medium"]
       },
       {
         "url": "http://coverartarchive.org/release/006cb56d-6eff-4b7d-853f-ecd2db97f3b2/31428902306.jpg",
@@ -1803,18 +1327,8 @@
       "trackCount": 12,
       "duration": 2558396,
       "trackDuration": [
-        301240,
-        254760,
-        219106,
-        183826,
-        257040,
-        176933,
-        142933,
-        224000,
-        156933,
-        212266,
-        196493,
-        232866
+        301240, 254760, 219106, 183826, 257040, 176933, 142933, 224000, 156933,
+        212266, 196493, 232866
       ]
     },
     "price": "112.88",
@@ -1828,27 +1342,19 @@
     "coverImages": [
       {
         "url": "http://coverartarchive.org/release/100c2634-15db-4209-ac04-cf1722e5f3ba/21593327662.jpg",
-        "types": [
-          "Front"
-        ]
+        "types": ["Front"]
       },
       {
         "url": "http://coverartarchive.org/release/100c2634-15db-4209-ac04-cf1722e5f3ba/21736691698.jpg",
-        "types": [
-          "Back"
-        ]
+        "types": ["Back"]
       },
       {
         "url": "http://coverartarchive.org/release/100c2634-15db-4209-ac04-cf1722e5f3ba/21736692316.jpg",
-        "types": [
-          "Medium"
-        ]
+        "types": ["Medium"]
       },
       {
         "url": "http://coverartarchive.org/release/100c2634-15db-4209-ac04-cf1722e5f3ba/21736692850.jpg",
-        "types": [
-          "Medium"
-        ]
+        "types": ["Medium"]
       }
     ],
     "tracklist": [
@@ -1872,18 +1378,8 @@
       "trackCount": 12,
       "duration": 1861000,
       "trackDuration": [
-        161000,
-        195000,
-        164000,
-        146000,
-        140000,
-        126000,
-        149000,
-        162000,
-        200000,
-        133000,
-        146000,
-        139000
+        161000, 195000, 164000, 146000, 140000, 126000, 149000, 162000, 200000,
+        133000, 146000, 139000
       ]
     },
     "price": "67.77",
@@ -1897,58 +1393,39 @@
     "coverImages": [
       {
         "url": "http://coverartarchive.org/release/1c082ae7-b02a-4485-808c-bac92b183c88/4507563553.jpg",
-        "types": [
-          "Front"
-        ]
+        "types": ["Front"]
       },
       {
         "url": "http://coverartarchive.org/release/1c082ae7-b02a-4485-808c-bac92b183c88/4507575599.jpg",
-        "types": [
-          "Back",
-          "Spine"
-        ]
+        "types": ["Back", "Spine"]
       },
       {
         "url": "http://coverartarchive.org/release/1c082ae7-b02a-4485-808c-bac92b183c88/4507585060.jpg",
-        "types": [
-          "Medium"
-        ]
+        "types": ["Medium"]
       },
       {
         "url": "http://coverartarchive.org/release/1c082ae7-b02a-4485-808c-bac92b183c88/4507589456.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/1c082ae7-b02a-4485-808c-bac92b183c88/4507598761.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/1c082ae7-b02a-4485-808c-bac92b183c88/4507609314.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/1c082ae7-b02a-4485-808c-bac92b183c88/4507616376.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/1c082ae7-b02a-4485-808c-bac92b183c88/4507625284.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/1c082ae7-b02a-4485-808c-bac92b183c88/4507634595.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       }
     ],
     "tracklist": [
@@ -1973,73 +1450,14 @@
       "trackCount": 13,
       "duration": 2236000,
       "trackDuration": [
-        193000,
-        138000,
-        244000,
-        124000,
-        179000,
-        200000,
-        128000,
-        208000,
-        162000,
-        141000,
-        180000,
-        167000,
-        172000
+        193000, 138000, 244000, 124000, 179000, 200000, 128000, 208000, 162000,
+        141000, 180000, 167000, 172000
       ]
     },
     "price": "40.03",
     "count": 4
   },
-  {
-    "id": 42,
-    "artist": "Ramones",
-    "title": "Subterranean Jungle",
-    "releaseDate": "1983-02",
-    "coverImages": [
-      {
-        "url": "http://coverartarchive.org/release/5a1d89d4-eeb9-4349-b15d-866f48e9cfe7/33099131827.jpg",
-        "types": []
-      }
-    ],
-    "tracklist": [
-      "Little Bit o’ Soul",
-      "I Need Your Love",
-      "Outsider",
-      "What’d Ya Do?",
-      "Highest Trails Above",
-      "Somebody Like Me",
-      "Psycho Therapy",
-      "Time Has Come Today",
-      "My‐My Kind of a Girl",
-      "In the Park",
-      "Time Bomb",
-      "Everytime I Eat Vegetables It Makes Me Think of You"
-    ],
-    "extra": {
-      "date": "2014-08-09",
-      "producer": null,
-      "format": "Digital Media",
-      "trackCount": 12,
-      "duration": 2001000,
-      "trackDuration": [
-        163000,
-        183000,
-        130000,
-        144000,
-        129000,
-        154000,
-        155000,
-        265000,
-        211000,
-        154000,
-        129000,
-        184000
-      ]
-    },
-    "price": "37.00",
-    "count": 3
-  },
+
   {
     "id": 43,
     "artist": "Ramones",
@@ -2048,15 +1466,11 @@
     "coverImages": [
       {
         "url": "http://coverartarchive.org/release/06bf2bf2-c8a4-403c-b0e7-78dec51abfbd/16196119943.jpg",
-        "types": [
-          "Front"
-        ]
+        "types": ["Front"]
       },
       {
         "url": "http://coverartarchive.org/release/06bf2bf2-c8a4-403c-b0e7-78dec51abfbd/21075452305.jpg",
-        "types": [
-          "Front"
-        ]
+        "types": ["Front"]
       }
     ],
     "tracklist": [
@@ -2096,33 +1510,9 @@
       "trackCount": 28,
       "duration": 3496884,
       "trackDuration": [
-        134466,
-        151960,
-        92533,
-        144306,
-        116413,
-        95973,
-        160946,
-        135066,
-        117066,
-        118653,
-        141333,
-        111866,
-        102813,
-        134960,
-        132520,
-        151640,
-        91760,
-        144880,
-        113866,
-        95213,
-        157066,
-        133853,
-        116560,
-        116120,
-        138733,
-        111133,
-        104920,
+        134466, 151960, 92533, 144306, 116413, 95973, 160946, 135066, 117066,
+        118653, 141333, 111866, 102813, 134960, 132520, 151640, 91760, 144880,
+        113866, 95213, 157066, 133853, 116560, 116120, 138733, 111133, 104920,
         130266
       ]
     },
@@ -2137,108 +1527,71 @@
     "coverImages": [
       {
         "url": "http://coverartarchive.org/release/022f0fb3-559c-487a-8550-5b335dc0169b/32910050593.png",
-        "types": [
-          "Front"
-        ]
+        "types": ["Front"]
       },
       {
         "url": "http://coverartarchive.org/release/022f0fb3-559c-487a-8550-5b335dc0169b/32910055767.png",
-        "types": [
-          "Back",
-          "Spine"
-        ]
+        "types": ["Back", "Spine"]
       },
       {
         "url": "http://coverartarchive.org/release/022f0fb3-559c-487a-8550-5b335dc0169b/32910062405.png",
-        "types": [
-          "Tray"
-        ]
+        "types": ["Tray"]
       },
       {
         "url": "http://coverartarchive.org/release/022f0fb3-559c-487a-8550-5b335dc0169b/32910065327.png",
-        "types": [
-          "Medium"
-        ]
+        "types": ["Medium"]
       },
       {
         "url": "http://coverartarchive.org/release/022f0fb3-559c-487a-8550-5b335dc0169b/32910068855.png",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/022f0fb3-559c-487a-8550-5b335dc0169b/32910078296.png",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/022f0fb3-559c-487a-8550-5b335dc0169b/32910088107.png",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/022f0fb3-559c-487a-8550-5b335dc0169b/32910094659.png",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/022f0fb3-559c-487a-8550-5b335dc0169b/32910103960.png",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/022f0fb3-559c-487a-8550-5b335dc0169b/32910113358.png",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/022f0fb3-559c-487a-8550-5b335dc0169b/32910124194.png",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/022f0fb3-559c-487a-8550-5b335dc0169b/32910133164.png",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/022f0fb3-559c-487a-8550-5b335dc0169b/32910136075.png",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/022f0fb3-559c-487a-8550-5b335dc0169b/32910139443.png",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/022f0fb3-559c-487a-8550-5b335dc0169b/32910148537.png",
-        "types": [
-          "Matrix/Runout"
-        ]
+        "types": ["Matrix/Runout"]
       },
       {
         "url": "http://coverartarchive.org/release/022f0fb3-559c-487a-8550-5b335dc0169b/32910149422.png",
-        "types": [
-          "Front",
-          "Spine"
-        ]
+        "types": ["Front", "Spine"]
       },
       {
         "url": "http://coverartarchive.org/release/022f0fb3-559c-487a-8550-5b335dc0169b/32910155930.png",
-        "types": [
-          "Back",
-          "Spine"
-        ]
+        "types": ["Back", "Spine"]
       }
     ],
     "tracklist": [
@@ -2269,24 +1622,8 @@
       "trackCount": 19,
       "duration": 3140887,
       "trackDuration": [
-        231666,
-        175133,
-        189826,
-        151373,
-        195400,
-        157200,
-        231093,
-        154333,
-        139800,
-        161400,
-        149933,
-        134600,
-        185200,
-        139706,
-        167066,
-        142226,
-        151800,
-        223466,
+        231666, 175133, 189826, 151373, 195400, 157200, 231093, 154333, 139800,
+        161400, 149933, 134600, 185200, 139706, 167066, 142226, 151800, 223466,
         59666
       ]
     },
@@ -2301,9 +1638,7 @@
     "coverImages": [
       {
         "url": "http://coverartarchive.org/release/1db46146-479d-4aa7-8044-eeab915ce9e9/12483445280.jpg",
-        "types": [
-          "Front"
-        ]
+        "types": ["Front"]
       }
     ],
     "tracklist": [
@@ -2329,20 +1664,8 @@
       "trackCount": 14,
       "duration": 1912997,
       "trackDuration": [
-        133333,
-        103160,
-        140133,
-        126373,
-        168466,
-        132760,
-        166040,
-        135160,
-        128666,
-        158373,
-        126866,
-        115293,
-        162600,
-        115774
+        133333, 103160, 140133, 126373, 168466, 132760, 166040, 135160, 128666,
+        158373, 126866, 115293, 162600, 115774
       ]
     },
     "price": "43.64",
@@ -2356,46 +1679,31 @@
     "coverImages": [
       {
         "url": "http://coverartarchive.org/release/04a8bd35-2aec-492b-9d74-91f795c36adc/4507364019.jpg",
-        "types": [
-          "Front"
-        ]
+        "types": ["Front"]
       },
       {
         "url": "http://coverartarchive.org/release/04a8bd35-2aec-492b-9d74-91f795c36adc/4507382886.jpg",
-        "types": [
-          "Back",
-          "Spine"
-        ]
+        "types": ["Back", "Spine"]
       },
       {
         "url": "http://coverartarchive.org/release/04a8bd35-2aec-492b-9d74-91f795c36adc/4507408191.jpg",
-        "types": [
-          "Medium"
-        ]
+        "types": ["Medium"]
       },
       {
         "url": "http://coverartarchive.org/release/04a8bd35-2aec-492b-9d74-91f795c36adc/4507413759.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/04a8bd35-2aec-492b-9d74-91f795c36adc/4507453732.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/04a8bd35-2aec-492b-9d74-91f795c36adc/4507474900.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/04a8bd35-2aec-492b-9d74-91f795c36adc/2572389615.jpg",
-        "types": [
-          "Front"
-        ]
+        "types": ["Front"]
       }
     ],
     "tracklist": [
@@ -2419,18 +1727,8 @@
       "trackCount": 12,
       "duration": 2105995,
       "trackDuration": [
-        200266,
-        145000,
-        148493,
-        185066,
-        239733,
-        139866,
-        210266,
-        110640,
-        201760,
-        158506,
-        241226,
-        125173
+        200266, 145000, 148493, 185066, 239733, 139866, 210266, 110640, 201760,
+        158506, 241226, 125173
       ]
     },
     "price": "70.15",
@@ -2444,9 +1742,7 @@
     "coverImages": [
       {
         "url": "http://coverartarchive.org/release/0ea7d662-9d0b-44f3-9708-213decf9272f/13215218385.png",
-        "types": [
-          "Front"
-        ]
+        "types": ["Front"]
       }
     ],
     "tracklist": [
@@ -2483,31 +1779,9 @@
       "trackCount": 25,
       "duration": 4247486,
       "trackDuration": [
-        131893,
-        193906,
-        157533,
-        55066,
-        114200,
-        128400,
-        267933,
-        247493,
-        272440,
-        174666,
-        162866,
-        109200,
-        188960,
-        176840,
-        143400,
-        197400,
-        182293,
-        246133,
-        106173,
-        127560,
-        250506,
-        135133,
-        136533,
-        155093,
-        185866
+        131893, 193906, 157533, 55066, 114200, 128400, 267933, 247493, 272440,
+        174666, 162866, 109200, 188960, 176840, 143400, 197400, 182293, 246133,
+        106173, 127560, 250506, 135133, 136533, 155093, 185866
       ]
     },
     "price": "41.15",
@@ -2521,9 +1795,7 @@
     "coverImages": [
       {
         "url": "https://coverartarchive.org/release/0b3b4095-b4b9-3a57-8556-e800064aabc7/7946135858.jpg",
-        "types": [
-          "Front"
-        ]
+        "types": ["Front"]
       }
     ],
     "tracklist": [
@@ -2545,15 +1817,7 @@
       "trackCount": 10,
       "duration": 1983000,
       "trackDuration": [
-        197000,
-        125000,
-        231000,
-        162000,
-        205000,
-        197000,
-        230000,
-        223000,
-        225000,
+        197000, 125000, 231000, 162000, 205000, 197000, 230000, 223000, 225000,
         188000
       ]
     },
@@ -2568,9 +1832,7 @@
     "coverImages": [
       {
         "url": "http://coverartarchive.org/release/0da62b86-1108-4537-bfa3-84d9531aff1a/31563230487.jpg",
-        "types": [
-          "Front"
-        ]
+        "types": ["Front"]
       }
     ],
     "tracklist": [
@@ -2594,18 +1856,8 @@
       "trackCount": 12,
       "duration": 2781249,
       "trackDuration": [
-        220906,
-        239813,
-        188986,
-        222426,
-        224240,
-        330506,
-        292026,
-        150000,
-        271133,
-        283373,
-        162000,
-        195840
+        220906, 239813, 188986, 222426, 224240, 330506, 292026, 150000, 271133,
+        283373, 162000, 195840
       ]
     },
     "price": "115.85",
@@ -2619,9 +1871,7 @@
     "coverImages": [
       {
         "url": "http://coverartarchive.org/release/04ea7e09-bda2-4d27-8494-d5dab244e933/7761598656.jpg",
-        "types": [
-          "Front"
-        ]
+        "types": ["Front"]
       }
     ],
     "tracklist": [
@@ -2645,18 +1895,8 @@
       "trackCount": 12,
       "duration": 2318000,
       "trackDuration": [
-        182000,
-        192000,
-        185000,
-        182000,
-        204000,
-        184000,
-        233000,
-        191000,
-        189000,
-        205000,
-        212000,
-        159000
+        182000, 192000, 185000, 182000, 204000, 184000, 233000, 191000, 189000,
+        205000, 212000, 159000
       ]
     },
     "price": "92.94",
@@ -2670,9 +1910,7 @@
     "coverImages": [
       {
         "url": "http://coverartarchive.org/release/0dec219f-76b0-4e6c-ac07-4d41b107de34/25627399624.jpg",
-        "types": [
-          "Front"
-        ]
+        "types": ["Front"]
       }
     ],
     "tracklist": [
@@ -2698,20 +1936,8 @@
       "trackCount": 14,
       "duration": 2120008,
       "trackDuration": [
-        128626,
-        183266,
-        144666,
-        116000,
-        126933,
-        101400,
-        186560,
-        131000,
-        114466,
-        126266,
-        107066,
-        363333,
-        96426,
-        194000
+        128626, 183266, 144666, 116000, 126933, 101400, 186560, 131000, 114466,
+        126266, 107066, 363333, 96426, 194000
       ]
     },
     "price": "59.70",
@@ -2725,27 +1951,19 @@
     "coverImages": [
       {
         "url": "http://coverartarchive.org/release/01ca78a3-0722-4c7b-971f-e174e5d2d1bc/4058211639.jpg",
-        "types": [
-          "Front"
-        ]
+        "types": ["Front"]
       },
       {
         "url": "http://coverartarchive.org/release/01ca78a3-0722-4c7b-971f-e174e5d2d1bc/4081635023.jpg",
-        "types": [
-          "Back"
-        ]
+        "types": ["Back"]
       },
       {
         "url": "http://coverartarchive.org/release/01ca78a3-0722-4c7b-971f-e174e5d2d1bc/4058223426.jpg",
-        "types": [
-          "Other"
-        ]
+        "types": ["Other"]
       },
       {
         "url": "http://coverartarchive.org/release/01ca78a3-0722-4c7b-971f-e174e5d2d1bc/4058236844.jpg",
-        "types": [
-          "Other"
-        ]
+        "types": ["Other"]
       }
     ],
     "tracklist": [
@@ -2767,15 +1985,7 @@
       "trackCount": 10,
       "duration": 2456424,
       "trackDuration": [
-        291933,
-        286093,
-        195333,
-        258240,
-        274760,
-        283506,
-        186400,
-        184666,
-        192200,
+        291933, 286093, 195333, 258240, 274760, 283506, 186400, 184666, 192200,
         303293
       ]
     },
@@ -2790,9 +2000,7 @@
     "coverImages": [
       {
         "url": "http://coverartarchive.org/release/0065353d-17ff-44eb-bfe4-156a7210e417/15860978275.jpg",
-        "types": [
-          "Front"
-        ]
+        "types": ["Front"]
       }
     ],
     "tracklist": [
@@ -2816,18 +2024,8 @@
       "trackCount": 12,
       "duration": 2958142,
       "trackDuration": [
-        342000,
-        299142,
-        228000,
-        194000,
-        229000,
-        291000,
-        144000,
-        197000,
-        269000,
-        265000,
-        193000,
-        307000
+        342000, 299142, 228000, 194000, 229000, 291000, 144000, 197000, 269000,
+        265000, 193000, 307000
       ]
     },
     "price": "113.37",
@@ -2841,41 +2039,27 @@
     "coverImages": [
       {
         "url": "http://coverartarchive.org/release/1a98a5c1-d369-43a9-83e9-894078c9e58d/28865423234.jpg",
-        "types": [
-          "Front"
-        ]
+        "types": ["Front"]
       },
       {
         "url": "http://coverartarchive.org/release/1a98a5c1-d369-43a9-83e9-894078c9e58d/28865425146.jpg",
-        "types": [
-          "Raw/Unedited"
-        ]
+        "types": ["Raw/Unedited"]
       },
       {
         "url": "http://coverartarchive.org/release/1a98a5c1-d369-43a9-83e9-894078c9e58d/28865426209.jpg",
-        "types": [
-          "Raw/Unedited"
-        ]
+        "types": ["Raw/Unedited"]
       },
       {
         "url": "http://coverartarchive.org/release/1a98a5c1-d369-43a9-83e9-894078c9e58d/28865426832.jpg",
-        "types": [
-          "Raw/Unedited"
-        ]
+        "types": ["Raw/Unedited"]
       },
       {
         "url": "http://coverartarchive.org/release/1a98a5c1-d369-43a9-83e9-894078c9e58d/28865427230.jpg",
-        "types": [
-          "Medium",
-          "Raw/Unedited"
-        ]
+        "types": ["Medium", "Raw/Unedited"]
       },
       {
         "url": "http://coverartarchive.org/release/1a98a5c1-d369-43a9-83e9-894078c9e58d/28865428456.jpg",
-        "types": [
-          "Medium",
-          "Raw/Unedited"
-        ]
+        "types": ["Medium", "Raw/Unedited"]
       }
     ],
     "tracklist": [
@@ -2892,14 +2076,7 @@
       "format": "12\" Vinyl",
       "trackCount": 6,
       "duration": 1496000,
-      "trackDuration": [
-        250000,
-        224000,
-        233000,
-        297000,
-        247000,
-        245000
-      ]
+      "trackDuration": [250000, 224000, 233000, 297000, 247000, 245000]
     },
     "price": "96.33",
     "count": 8
@@ -2912,76 +2089,51 @@
     "coverImages": [
       {
         "url": "http://coverartarchive.org/release/1dfc9fed-b979-472b-9d15-b38531f08451/35223795473.jpg",
-        "types": [
-          "Front"
-        ]
+        "types": ["Front"]
       },
       {
         "url": "http://coverartarchive.org/release/1dfc9fed-b979-472b-9d15-b38531f08451/35275302858.jpg",
-        "types": [
-          "Front"
-        ]
+        "types": ["Front"]
       },
       {
         "url": "http://coverartarchive.org/release/1dfc9fed-b979-472b-9d15-b38531f08451/35275306851.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/1dfc9fed-b979-472b-9d15-b38531f08451/35275313507.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/1dfc9fed-b979-472b-9d15-b38531f08451/35275314943.jpg",
-        "types": [
-          "Booklet",
-          "Spine"
-        ]
+        "types": ["Booklet", "Spine"]
       },
       {
         "url": "http://coverartarchive.org/release/1dfc9fed-b979-472b-9d15-b38531f08451/35275308000.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/1dfc9fed-b979-472b-9d15-b38531f08451/35275304536.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/1dfc9fed-b979-472b-9d15-b38531f08451/35275310997.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/1dfc9fed-b979-472b-9d15-b38531f08451/35275305878.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/1dfc9fed-b979-472b-9d15-b38531f08451/35275312382.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/1dfc9fed-b979-472b-9d15-b38531f08451/35275315915.jpg",
-        "types": [
-          "Medium"
-        ]
+        "types": ["Medium"]
       },
       {
         "url": "http://coverartarchive.org/release/1dfc9fed-b979-472b-9d15-b38531f08451/35275303354.jpg",
-        "types": [
-          "Back"
-        ]
+        "types": ["Back"]
       }
     ],
     "tracklist": [
@@ -3005,18 +2157,8 @@
       "trackCount": 12,
       "duration": 3028901,
       "trackDuration": [
-        317946,
-        204653,
-        238933,
-        228480,
-        237293,
-        255013,
-        256586,
-        245213,
-        264026,
-        258959,
-        243853,
-        277946
+        317946, 204653, 238933, 228480, 237293, 255013, 256586, 245213, 264026,
+        258959, 243853, 277946
       ]
     },
     "price": "48.50",
@@ -3030,22 +2172,15 @@
     "coverImages": [
       {
         "url": "http://coverartarchive.org/release/0644af17-471f-3736-830c-888b3205c009/4135620147.jpg",
-        "types": [
-          "Front"
-        ]
+        "types": ["Front"]
       },
       {
         "url": "http://coverartarchive.org/release/0644af17-471f-3736-830c-888b3205c009/18535472176.jpg",
-        "types": [
-          "Back",
-          "Spine"
-        ]
+        "types": ["Back", "Spine"]
       },
       {
         "url": "http://coverartarchive.org/release/0644af17-471f-3736-830c-888b3205c009/30493882405.jpg",
-        "types": [
-          "Medium"
-        ]
+        "types": ["Medium"]
       }
     ],
     "tracklist": [
@@ -3066,15 +2201,7 @@
       "trackCount": 9,
       "duration": 2822425,
       "trackDuration": [
-        266200,
-        283800,
-        296000,
-        270133,
-        367400,
-        372893,
-        295173,
-        341960,
-        328866
+        266200, 283800, 296000, 270133, 367400, 372893, 295173, 341960, 328866
       ]
     },
     "price": "42.64",
@@ -3088,58 +2215,39 @@
     "coverImages": [
       {
         "url": "http://coverartarchive.org/release/02e64ff0-8d47-426c-9a0a-ec15e167c196/28833993257.jpg",
-        "types": [
-          "Front",
-          "Obi"
-        ]
+        "types": ["Front", "Obi"]
       },
       {
         "url": "http://coverartarchive.org/release/02e64ff0-8d47-426c-9a0a-ec15e167c196/28833997150.jpg",
-        "types": [
-          "Front"
-        ]
+        "types": ["Front"]
       },
       {
         "url": "http://coverartarchive.org/release/02e64ff0-8d47-426c-9a0a-ec15e167c196/28833998875.jpg",
-        "types": [
-          "Back"
-        ]
+        "types": ["Back"]
       },
       {
         "url": "http://coverartarchive.org/release/02e64ff0-8d47-426c-9a0a-ec15e167c196/28834000215.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/02e64ff0-8d47-426c-9a0a-ec15e167c196/28834001306.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/02e64ff0-8d47-426c-9a0a-ec15e167c196/28834002417.jpg",
-        "types": [
-          "Obi"
-        ]
+        "types": ["Obi"]
       },
       {
         "url": "http://coverartarchive.org/release/02e64ff0-8d47-426c-9a0a-ec15e167c196/28834003028.jpg",
-        "types": [
-          "Obi"
-        ]
+        "types": ["Obi"]
       },
       {
         "url": "http://coverartarchive.org/release/02e64ff0-8d47-426c-9a0a-ec15e167c196/28834003678.jpg",
-        "types": [
-          "Medium"
-        ]
+        "types": ["Medium"]
       },
       {
         "url": "http://coverartarchive.org/release/02e64ff0-8d47-426c-9a0a-ec15e167c196/28834004687.jpg",
-        "types": [
-          "Medium"
-        ]
+        "types": ["Medium"]
       }
     ],
     "tracklist": [
@@ -3162,17 +2270,8 @@
       "trackCount": 11,
       "duration": 2670000,
       "trackDuration": [
-        236000,
-        237000,
-        222000,
-        184000,
-        253000,
-        161000,
-        298000,
-        264000,
-        261000,
-        153000,
-        401000
+        236000, 237000, 222000, 184000, 253000, 161000, 298000, 264000, 261000,
+        153000, 401000
       ]
     },
     "price": "53.58",
@@ -3186,15 +2285,11 @@
     "coverImages": [
       {
         "url": "http://coverartarchive.org/release/035f7624-347d-44f8-9bb9-3e9b9ce9ca62/1932442965.jpg",
-        "types": [
-          "Front"
-        ]
+        "types": ["Front"]
       },
       {
         "url": "http://coverartarchive.org/release/035f7624-347d-44f8-9bb9-3e9b9ce9ca62/28866039324.jpg",
-        "types": [
-          "Front"
-        ]
+        "types": ["Front"]
       },
       {
         "url": "http://coverartarchive.org/release/035f7624-347d-44f8-9bb9-3e9b9ce9ca62/28866040043.jpg",
@@ -3218,45 +2313,31 @@
       },
       {
         "url": "http://coverartarchive.org/release/035f7624-347d-44f8-9bb9-3e9b9ce9ca62/28866042116.jpg",
-        "types": [
-          "Medium"
-        ]
+        "types": ["Medium"]
       },
       {
         "url": "http://coverartarchive.org/release/035f7624-347d-44f8-9bb9-3e9b9ce9ca62/28866042649.jpg",
-        "types": [
-          "Medium"
-        ]
+        "types": ["Medium"]
       },
       {
         "url": "http://coverartarchive.org/release/035f7624-347d-44f8-9bb9-3e9b9ce9ca62/28866043009.jpg",
-        "types": [
-          "Medium"
-        ]
+        "types": ["Medium"]
       },
       {
         "url": "http://coverartarchive.org/release/035f7624-347d-44f8-9bb9-3e9b9ce9ca62/28866043381.jpg",
-        "types": [
-          "Medium"
-        ]
+        "types": ["Medium"]
       },
       {
         "url": "http://coverartarchive.org/release/035f7624-347d-44f8-9bb9-3e9b9ce9ca62/28866043785.jpg",
-        "types": [
-          "Raw/Unedited"
-        ]
+        "types": ["Raw/Unedited"]
       },
       {
         "url": "http://coverartarchive.org/release/035f7624-347d-44f8-9bb9-3e9b9ce9ca62/28866044350.jpg",
-        "types": [
-          "Raw/Unedited"
-        ]
+        "types": ["Raw/Unedited"]
       },
       {
         "url": "http://coverartarchive.org/release/035f7624-347d-44f8-9bb9-3e9b9ce9ca62/28866045105.jpg",
-        "types": [
-          "Raw/Unedited"
-        ]
+        "types": ["Raw/Unedited"]
       }
     ],
     "tracklist": [
@@ -3273,14 +2354,7 @@
       "format": "12\" Vinyl",
       "trackCount": 6,
       "duration": 1599000,
-      "trackDuration": [
-        413000,
-        239000,
-        193000,
-        249000,
-        211000,
-        294000
-      ]
+      "trackDuration": [413000, 239000, 193000, 249000, 211000, 294000]
     },
     "price": "109.13",
     "count": 7
@@ -3293,21 +2367,15 @@
     "coverImages": [
       {
         "url": "http://coverartarchive.org/release/00b03154-43dc-4092-8997-26aaaab6acc7/36545076856.jpg",
-        "types": [
-          "Front"
-        ]
+        "types": ["Front"]
       },
       {
         "url": "http://coverartarchive.org/release/00b03154-43dc-4092-8997-26aaaab6acc7/36545082209.jpg",
-        "types": [
-          "Back"
-        ]
+        "types": ["Back"]
       },
       {
         "url": "http://coverartarchive.org/release/00b03154-43dc-4092-8997-26aaaab6acc7/36545086601.jpg",
-        "types": [
-          "Spine"
-        ]
+        "types": ["Spine"]
       }
     ],
     "tracklist": [
@@ -3331,18 +2399,8 @@
       "trackCount": 12,
       "duration": 3611169,
       "trackDuration": [
-        335506,
-        394200,
-        342893,
-        358533,
-        141240,
-        312266,
-        364400,
-        174933,
-        403866,
-        266893,
-        386666,
-        129773
+        335506, 394200, 342893, 358533, 141240, 312266, 364400, 174933, 403866,
+        266893, 386666, 129773
       ]
     },
     "price": "110.97",
@@ -3356,9 +2414,7 @@
     "coverImages": [
       {
         "url": "http://coverartarchive.org/release/049ce193-786c-4eff-9881-c67a79152790/11271209064.jpg",
-        "types": [
-          "Front"
-        ]
+        "types": ["Front"]
       }
     ],
     "tracklist": [
@@ -3379,15 +2435,7 @@
       "trackCount": 9,
       "duration": 2421000,
       "trackDuration": [
-        227000,
-        303000,
-        232000,
-        285000,
-        194000,
-        267000,
-        252000,
-        280000,
-        381000
+        227000, 303000, 232000, 285000, 194000, 267000, 252000, 280000, 381000
       ]
     },
     "price": "41.96",
@@ -3401,144 +2449,95 @@
     "coverImages": [
       {
         "url": "http://coverartarchive.org/release/12bae310-4942-4ee0-aedc-a5dc86eb1059/20948272626.jpg",
-        "types": [
-          "Front",
-          "Booklet"
-        ]
+        "types": ["Front", "Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/12bae310-4942-4ee0-aedc-a5dc86eb1059/20948273333.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/12bae310-4942-4ee0-aedc-a5dc86eb1059/20948274539.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/12bae310-4942-4ee0-aedc-a5dc86eb1059/20948275402.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/12bae310-4942-4ee0-aedc-a5dc86eb1059/20948276195.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/12bae310-4942-4ee0-aedc-a5dc86eb1059/20948276976.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/12bae310-4942-4ee0-aedc-a5dc86eb1059/20948277752.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/12bae310-4942-4ee0-aedc-a5dc86eb1059/20948278548.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/12bae310-4942-4ee0-aedc-a5dc86eb1059/20948279257.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/12bae310-4942-4ee0-aedc-a5dc86eb1059/20948279801.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/12bae310-4942-4ee0-aedc-a5dc86eb1059/20948280473.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/12bae310-4942-4ee0-aedc-a5dc86eb1059/20948281008.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/12bae310-4942-4ee0-aedc-a5dc86eb1059/20948281467.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/12bae310-4942-4ee0-aedc-a5dc86eb1059/20948282159.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/12bae310-4942-4ee0-aedc-a5dc86eb1059/20948282975.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/12bae310-4942-4ee0-aedc-a5dc86eb1059/20948283753.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/12bae310-4942-4ee0-aedc-a5dc86eb1059/20948284268.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/12bae310-4942-4ee0-aedc-a5dc86eb1059/20948284767.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/12bae310-4942-4ee0-aedc-a5dc86eb1059/20948285538.jpg",
-        "types": [
-          "Medium"
-        ]
+        "types": ["Medium"]
       },
       {
         "url": "http://coverartarchive.org/release/12bae310-4942-4ee0-aedc-a5dc86eb1059/20948286351.jpg",
-        "types": [
-          "Medium",
-          "Other"
-        ]
+        "types": ["Medium", "Other"]
       },
       {
         "url": "http://coverartarchive.org/release/12bae310-4942-4ee0-aedc-a5dc86eb1059/20948287034.jpg",
-        "types": [
-          "Tray"
-        ]
+        "types": ["Tray"]
       },
       {
         "url": "http://coverartarchive.org/release/12bae310-4942-4ee0-aedc-a5dc86eb1059/20948287983.jpg",
-        "types": [
-          "Back",
-          "Spine"
-        ]
+        "types": ["Back", "Spine"]
       },
       {
         "url": "http://coverartarchive.org/release/12bae310-4942-4ee0-aedc-a5dc86eb1059/20948288708.jpg",
-        "types": [
-          "Obi"
-        ]
+        "types": ["Obi"]
       }
     ],
     "tracklist": [
@@ -3560,15 +2559,7 @@
       "trackCount": 10,
       "duration": 2837000,
       "trackDuration": [
-        275000,
-        335000,
-        199000,
-        257000,
-        313000,
-        384000,
-        232000,
-        276000,
-        210000,
+        275000, 335000, 199000, 257000, 313000, 384000, 232000, 276000, 210000,
         356000
       ]
     },
@@ -3583,27 +2574,19 @@
     "coverImages": [
       {
         "url": "http://coverartarchive.org/release/0f9050c8-fbd9-4167-b815-60cdd68f3112/11575872144.jpg",
-        "types": [
-          "Front"
-        ]
+        "types": ["Front"]
       },
       {
         "url": "http://coverartarchive.org/release/0f9050c8-fbd9-4167-b815-60cdd68f3112/11575873438.jpg",
-        "types": [
-          "Other"
-        ]
+        "types": ["Other"]
       },
       {
         "url": "http://coverartarchive.org/release/0f9050c8-fbd9-4167-b815-60cdd68f3112/11575874011.jpg",
-        "types": [
-          "Medium"
-        ]
+        "types": ["Medium"]
       },
       {
         "url": "http://coverartarchive.org/release/0f9050c8-fbd9-4167-b815-60cdd68f3112/11575874953.jpg",
-        "types": [
-          "Medium"
-        ]
+        "types": ["Medium"]
       }
     ],
     "tracklist": [
@@ -3625,15 +2608,7 @@
       "trackCount": 10,
       "duration": 2644784,
       "trackDuration": [
-        288466,
-        242773,
-        294653,
-        289773,
-        258920,
-        318040,
-        224533,
-        171520,
-        258106,
+        288466, 242773, 294653, 289773, 258920, 318040, 224533, 171520, 258106,
         298000
       ]
     },
@@ -3648,83 +2623,55 @@
     "coverImages": [
       {
         "url": "http://coverartarchive.org/release/1532c126-7651-32b2-96c3-50dc8c76952f/1916139180.jpg",
-        "types": [
-          "Front"
-        ]
+        "types": ["Front"]
       },
       {
         "url": "http://coverartarchive.org/release/1532c126-7651-32b2-96c3-50dc8c76952f/12733191212.jpg",
-        "types": [
-          "Front"
-        ]
+        "types": ["Front"]
       },
       {
         "url": "http://coverartarchive.org/release/1532c126-7651-32b2-96c3-50dc8c76952f/12733192009.jpg",
-        "types": [
-          "Back",
-          "Spine"
-        ]
+        "types": ["Back", "Spine"]
       },
       {
         "url": "http://coverartarchive.org/release/1532c126-7651-32b2-96c3-50dc8c76952f/33425086128.jpg",
-        "types": [
-          "Back"
-        ]
+        "types": ["Back"]
       },
       {
         "url": "http://coverartarchive.org/release/1532c126-7651-32b2-96c3-50dc8c76952f/33425087712.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/1532c126-7651-32b2-96c3-50dc8c76952f/33425089257.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/1532c126-7651-32b2-96c3-50dc8c76952f/33425090756.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/1532c126-7651-32b2-96c3-50dc8c76952f/33425091941.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/1532c126-7651-32b2-96c3-50dc8c76952f/33425094039.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/1532c126-7651-32b2-96c3-50dc8c76952f/33425096373.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/1532c126-7651-32b2-96c3-50dc8c76952f/33425097985.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/1532c126-7651-32b2-96c3-50dc8c76952f/33425099477.jpg",
-        "types": [
-          "Medium"
-        ]
+        "types": ["Medium"]
       },
       {
         "url": "http://coverartarchive.org/release/1532c126-7651-32b2-96c3-50dc8c76952f/33425099963.jpg",
-        "types": [
-          "Front",
-          "Booklet"
-        ]
+        "types": ["Front", "Booklet"]
       }
     ],
     "tracklist": [
@@ -3746,15 +2693,7 @@
       "trackCount": 10,
       "duration": 2997370,
       "trackDuration": [
-        269333,
-        285533,
-        354973,
-        262293,
-        253506,
-        231960,
-        289106,
-        267133,
-        342733,
+        269333, 285533, 354973, 262293, 253506, 231960, 289106, 267133, 342733,
         440800
       ]
     },
@@ -3769,63 +2708,43 @@
     "coverImages": [
       {
         "url": "http://coverartarchive.org/release/15ddcc8d-968e-49a1-bd14-b05a718d2b24/3172527828.jpg",
-        "types": [
-          "Front"
-        ]
+        "types": ["Front"]
       },
       {
         "url": "http://coverartarchive.org/release/15ddcc8d-968e-49a1-bd14-b05a718d2b24/3172535730.jpg",
-        "types": [
-          "Back"
-        ]
+        "types": ["Back"]
       },
       {
         "url": "http://coverartarchive.org/release/15ddcc8d-968e-49a1-bd14-b05a718d2b24/3172541991.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/15ddcc8d-968e-49a1-bd14-b05a718d2b24/3172552065.jpg",
-        "types": [
-          "Medium"
-        ]
+        "types": ["Medium"]
       },
       {
         "url": "http://coverartarchive.org/release/15ddcc8d-968e-49a1-bd14-b05a718d2b24/3172563539.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/15ddcc8d-968e-49a1-bd14-b05a718d2b24/3172571451.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/15ddcc8d-968e-49a1-bd14-b05a718d2b24/3172580682.jpg",
-        "types": [
-          "Medium"
-        ]
+        "types": ["Medium"]
       },
       {
         "url": "http://coverartarchive.org/release/15ddcc8d-968e-49a1-bd14-b05a718d2b24/3172592547.jpg",
-        "types": [
-          "Medium"
-        ]
+        "types": ["Medium"]
       },
       {
         "url": "http://coverartarchive.org/release/15ddcc8d-968e-49a1-bd14-b05a718d2b24/3172601936.jpg",
-        "types": [
-          "Medium"
-        ]
+        "types": ["Medium"]
       },
       {
         "url": "http://coverartarchive.org/release/15ddcc8d-968e-49a1-bd14-b05a718d2b24/3172612688.jpg",
-        "types": [
-          "Medium"
-        ]
+        "types": ["Medium"]
       }
     ],
     "tracklist": [
@@ -3843,15 +2762,7 @@
       "format": "12\" Vinyl",
       "trackCount": 7,
       "duration": 1853465,
-      "trackDuration": [
-        306533,
-        301466,
-        269800,
-        248200,
-        259333,
-        212573,
-        255560
-      ]
+      "trackDuration": [306533, 301466, 269800, 248200, 259333, 212573, 255560]
     },
     "price": "40.50",
     "count": 5
@@ -3864,27 +2775,19 @@
     "coverImages": [
       {
         "url": "http://coverartarchive.org/release/0cc7ebf4-cba0-3821-932b-ea132950ba7d/3172641182.jpg",
-        "types": [
-          "Front"
-        ]
+        "types": ["Front"]
       },
       {
         "url": "http://coverartarchive.org/release/0cc7ebf4-cba0-3821-932b-ea132950ba7d/3172651133.jpg",
-        "types": [
-          "Back"
-        ]
+        "types": ["Back"]
       },
       {
         "url": "http://coverartarchive.org/release/0cc7ebf4-cba0-3821-932b-ea132950ba7d/3172793934.jpg",
-        "types": [
-          "Medium"
-        ]
+        "types": ["Medium"]
       },
       {
         "url": "http://coverartarchive.org/release/0cc7ebf4-cba0-3821-932b-ea132950ba7d/3172799957.jpg",
-        "types": [
-          "Medium"
-        ]
+        "types": ["Medium"]
       }
     ],
     "tracklist": [
@@ -3906,15 +2809,7 @@
       "trackCount": 10,
       "duration": 2453730,
       "trackDuration": [
-        295800,
-        245240,
-        317426,
-        222933,
-        171973,
-        220626,
-        220973,
-        156026,
-        192133,
+        295800, 245240, 317426, 222933, 171973, 220626, 220973, 156026, 192133,
         410600
       ]
     },
@@ -3929,9 +2824,7 @@
     "coverImages": [
       {
         "url": "http://coverartarchive.org/release/044e9324-d432-40d7-aa66-a6b64c007555/25020563087.jpg",
-        "types": [
-          "Front"
-        ]
+        "types": ["Front"]
       }
     ],
     "tracklist": [
@@ -3955,18 +2848,8 @@
       "trackCount": 12,
       "duration": 4325154,
       "trackDuration": [
-        317346,
-        448306,
-        258346,
-        208266,
-        283880,
-        248186,
-        315186,
-        367426,
-        562133,
-        499853,
-        426013,
-        390213
+        317346, 448306, 258346, 208266, 283880, 248186, 315186, 367426, 562133,
+        499853, 426013, 390213
       ]
     },
     "price": "55.06",
@@ -3980,46 +2863,31 @@
     "coverImages": [
       {
         "url": "http://coverartarchive.org/release/2798e8ac-70c6-39fb-84ab-ad226d4ed6a0/28750886884.jpg",
-        "types": [
-          "Front"
-        ]
+        "types": ["Front"]
       },
       {
         "url": "http://coverartarchive.org/release/2798e8ac-70c6-39fb-84ab-ad226d4ed6a0/28750888238.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/2798e8ac-70c6-39fb-84ab-ad226d4ed6a0/28750891472.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/2798e8ac-70c6-39fb-84ab-ad226d4ed6a0/28750892873.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/2798e8ac-70c6-39fb-84ab-ad226d4ed6a0/28750893583.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/2798e8ac-70c6-39fb-84ab-ad226d4ed6a0/28750894826.jpg",
-        "types": [
-          "Back",
-          "Spine"
-        ]
+        "types": ["Back", "Spine"]
       },
       {
         "url": "http://coverartarchive.org/release/2798e8ac-70c6-39fb-84ab-ad226d4ed6a0/28750896152.jpg",
-        "types": [
-          "Medium"
-        ]
+        "types": ["Medium"]
       }
     ],
     "tracklist": [
@@ -4039,14 +2907,7 @@
       "trackCount": 8,
       "duration": 2599665,
       "trackDuration": [
-        401000,
-        262493,
-        274240,
-        328360,
-        375173,
-        303960,
-        266573,
-        387866
+        401000, 262493, 274240, 328360, 375173, 303960, 266573, 387866
       ]
     },
     "price": "35.97",
@@ -4060,27 +2921,19 @@
     "coverImages": [
       {
         "url": "https://coverartarchive.org/release/2207aa68-71c6-3371-986f-0d56ab63de56/38964830005.jpg",
-        "types": [
-          "Front"
-        ]
+        "types": ["Front"]
       },
       {
         "url": "https://coverartarchive.org/release/2207aa68-71c6-3371-986f-0d56ab63de56/38964830573.jpg",
-        "types": [
-          "Back"
-        ]
+        "types": ["Back"]
       },
       {
         "url": "https://coverartarchive.org/release/2207aa68-71c6-3371-986f-0d56ab63de56/38964831109.jpg",
-        "types": [
-          "Medium"
-        ]
+        "types": ["Medium"]
       },
       {
         "url": "https://coverartarchive.org/release/2207aa68-71c6-3371-986f-0d56ab63de56/38964831468.jpg",
-        "types": [
-          "Medium"
-        ]
+        "types": ["Medium"]
       },
       {
         "url": "https://coverartarchive.org/release/2207aa68-71c6-3371-986f-0d56ab63de56/38964831844.jpg",
@@ -4112,18 +2965,8 @@
       "trackCount": 12,
       "duration": 2094000,
       "trackDuration": [
-        220000,
-        135000,
-        168000,
-        219000,
-        178000,
-        118000,
-        145000,
-        136000,
-        154000,
-        199000,
-        161000,
-        261000
+        220000, 135000, 168000, 219000, 178000, 118000, 145000, 136000, 154000,
+        199000, 161000, 261000
       ]
     },
     "price": "87.46",
@@ -4137,58 +2980,39 @@
     "coverImages": [
       {
         "url": "http://coverartarchive.org/release/10100fe2-5f28-4680-b9cf-3912fe8041c9/32699307374.jpg",
-        "types": [
-          "Front"
-        ]
+        "types": ["Front"]
       },
       {
         "url": "http://coverartarchive.org/release/10100fe2-5f28-4680-b9cf-3912fe8041c9/32699290665.jpg",
-        "types": [
-          "Back",
-          "Spine"
-        ]
+        "types": ["Back", "Spine"]
       },
       {
         "url": "http://coverartarchive.org/release/10100fe2-5f28-4680-b9cf-3912fe8041c9/32699291184.jpg",
-        "types": [
-          "Medium"
-        ]
+        "types": ["Medium"]
       },
       {
         "url": "http://coverartarchive.org/release/10100fe2-5f28-4680-b9cf-3912fe8041c9/32699291829.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/10100fe2-5f28-4680-b9cf-3912fe8041c9/32699293068.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/10100fe2-5f28-4680-b9cf-3912fe8041c9/32699294264.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/10100fe2-5f28-4680-b9cf-3912fe8041c9/32699295650.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/10100fe2-5f28-4680-b9cf-3912fe8041c9/32699296325.jpg",
-        "types": [
-          "Tray"
-        ]
+        "types": ["Tray"]
       },
       {
         "url": "http://coverartarchive.org/release/10100fe2-5f28-4680-b9cf-3912fe8041c9/32699297105.jpg",
-        "types": [
-          "Matrix/Runout"
-        ]
+        "types": ["Matrix/Runout"]
       }
     ],
     "tracklist": [
@@ -4210,15 +3034,7 @@
       "trackCount": 10,
       "duration": 2143331,
       "trackDuration": [
-        132493,
-        220640,
-        200160,
-        247533,
-        156333,
-        52306,
-        354933,
-        184293,
-        354240,
+        132493, 220640, 200160, 247533, 156333, 52306, 354933, 184293, 354240,
         240400
       ]
     },
@@ -4233,22 +3049,15 @@
     "coverImages": [
       {
         "url": "https://coverartarchive.org/release/0f9ae859-00e4-4a32-8d96-f9797bd211ba/38966713008.jpg",
-        "types": [
-          "Front"
-        ]
+        "types": ["Front"]
       },
       {
         "url": "https://coverartarchive.org/release/0f9ae859-00e4-4a32-8d96-f9797bd211ba/38966713864.jpg",
-        "types": [
-          "Back",
-          "Spine"
-        ]
+        "types": ["Back", "Spine"]
       },
       {
         "url": "https://coverartarchive.org/release/0f9ae859-00e4-4a32-8d96-f9797bd211ba/38966714428.jpg",
-        "types": [
-          "Medium"
-        ]
+        "types": ["Medium"]
       }
     ],
     "tracklist": [
@@ -4272,18 +3081,8 @@
       "trackCount": 12,
       "duration": 3299996,
       "trackDuration": [
-        247506,
-        314306,
-        280253,
-        223760,
-        262933,
-        249386,
-        270720,
-        177720,
-        199546,
-        244933,
-        621053,
-        207880
+        247506, 314306, 280253, 223760, 262933, 249386, 270720, 177720, 199546,
+        244933, 621053, 207880
       ]
     },
     "price": "65.08",
@@ -4297,33 +3096,23 @@
     "coverImages": [
       {
         "url": "http://coverartarchive.org/release/0d5f0ccc-e41a-451d-8845-4675921982cc/34220773761.jpg",
-        "types": [
-          "Front"
-        ]
+        "types": ["Front"]
       },
       {
         "url": "http://coverartarchive.org/release/0d5f0ccc-e41a-451d-8845-4675921982cc/34220774311.jpg",
-        "types": [
-          "Back"
-        ]
+        "types": ["Back"]
       },
       {
         "url": "http://coverartarchive.org/release/0d5f0ccc-e41a-451d-8845-4675921982cc/34220774906.jpg",
-        "types": [
-          "Medium"
-        ]
+        "types": ["Medium"]
       },
       {
         "url": "http://coverartarchive.org/release/0d5f0ccc-e41a-451d-8845-4675921982cc/34220775433.jpg",
-        "types": [
-          "Medium"
-        ]
+        "types": ["Medium"]
       },
       {
         "url": "http://coverartarchive.org/release/0d5f0ccc-e41a-451d-8845-4675921982cc/34220775872.jpg",
-        "types": [
-          "Medium"
-        ]
+        "types": ["Medium"]
       },
       {
         "url": "http://coverartarchive.org/release/0d5f0ccc-e41a-451d-8845-4675921982cc/34220776226.jpg",
@@ -4331,57 +3120,39 @@
       },
       {
         "url": "http://coverartarchive.org/release/0d5f0ccc-e41a-451d-8845-4675921982cc/34220776838.jpg",
-        "types": [
-          "Liner"
-        ]
+        "types": ["Liner"]
       },
       {
         "url": "http://coverartarchive.org/release/0d5f0ccc-e41a-451d-8845-4675921982cc/34220777317.jpg",
-        "types": [
-          "Liner"
-        ]
+        "types": ["Liner"]
       },
       {
         "url": "http://coverartarchive.org/release/0d5f0ccc-e41a-451d-8845-4675921982cc/34220777591.jpg",
-        "types": [
-          "Liner"
-        ]
+        "types": ["Liner"]
       },
       {
         "url": "http://coverartarchive.org/release/0d5f0ccc-e41a-451d-8845-4675921982cc/34220777911.jpg",
-        "types": [
-          "Liner"
-        ]
+        "types": ["Liner"]
       },
       {
         "url": "http://coverartarchive.org/release/0d5f0ccc-e41a-451d-8845-4675921982cc/34220778256.jpg",
-        "types": [
-          "Other"
-        ]
+        "types": ["Other"]
       },
       {
         "url": "http://coverartarchive.org/release/0d5f0ccc-e41a-451d-8845-4675921982cc/34220778578.jpg",
-        "types": [
-          "Other"
-        ]
+        "types": ["Other"]
       },
       {
         "url": "http://coverartarchive.org/release/0d5f0ccc-e41a-451d-8845-4675921982cc/34220779064.jpg",
-        "types": [
-          "Other"
-        ]
+        "types": ["Other"]
       },
       {
         "url": "http://coverartarchive.org/release/0d5f0ccc-e41a-451d-8845-4675921982cc/34220779425.jpg",
-        "types": [
-          "Other"
-        ]
+        "types": ["Other"]
       },
       {
         "url": "http://coverartarchive.org/release/0d5f0ccc-e41a-451d-8845-4675921982cc/34220779979.jpg",
-        "types": [
-          "Sticker"
-        ]
+        "types": ["Sticker"]
       }
     ],
     "tracklist": [
@@ -4398,14 +3169,7 @@
       "format": "12\" Vinyl",
       "trackCount": 6,
       "duration": 2067998,
-      "trackDuration": [
-        411000,
-        217306,
-        398426,
-        464000,
-        313266,
-        264000
-      ]
+      "trackDuration": [411000, 217306, 398426, 464000, 313266, 264000]
     },
     "price": "108.90",
     "count": 6
@@ -4418,64 +3182,43 @@
     "coverImages": [
       {
         "url": "https://coverartarchive.org/release/03a3acfb-67ee-3353-a3f9-65a1af3a626e/7947298813.jpg",
-        "types": [
-          "Front"
-        ]
+        "types": ["Front"]
       },
       {
         "url": "https://coverartarchive.org/release/03a3acfb-67ee-3353-a3f9-65a1af3a626e/12127596102.jpg",
-        "types": [
-          "Front"
-        ]
+        "types": ["Front"]
       },
       {
         "url": "https://coverartarchive.org/release/03a3acfb-67ee-3353-a3f9-65a1af3a626e/12127597318.jpg",
-        "types": [
-          "Back",
-          "Spine"
-        ]
+        "types": ["Back", "Spine"]
       },
       {
         "url": "https://coverartarchive.org/release/03a3acfb-67ee-3353-a3f9-65a1af3a626e/40484719033.png",
-        "types": [
-          "Medium"
-        ]
+        "types": ["Medium"]
       },
       {
         "url": "https://coverartarchive.org/release/03a3acfb-67ee-3353-a3f9-65a1af3a626e/40484721451.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "https://coverartarchive.org/release/03a3acfb-67ee-3353-a3f9-65a1af3a626e/40484727157.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "https://coverartarchive.org/release/03a3acfb-67ee-3353-a3f9-65a1af3a626e/40484731163.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "https://coverartarchive.org/release/03a3acfb-67ee-3353-a3f9-65a1af3a626e/40484734547.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "https://coverartarchive.org/release/03a3acfb-67ee-3353-a3f9-65a1af3a626e/40484738360.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "https://coverartarchive.org/release/03a3acfb-67ee-3353-a3f9-65a1af3a626e/40484742581.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       }
     ],
     "tracklist": [
@@ -4504,23 +3247,8 @@
       "trackCount": 17,
       "duration": 4327527,
       "trackDuration": [
-        374840,
-        164200,
-        258266,
-        293266,
-        194533,
-        314200,
-        419226,
-        212866,
-        322533,
-        215306,
-        272400,
-        220000,
-        229360,
-        155106,
-        204026,
-        209733,
-        267666
+        374840, 164200, 258266, 293266, 194533, 314200, 419226, 212866, 322533,
+        215306, 272400, 220000, 229360, 155106, 204026, 209733, 267666
       ]
     },
     "price": "98.85",
@@ -4534,118 +3262,79 @@
     "coverImages": [
       {
         "url": "https://coverartarchive.org/release/1eb113c4-cd93-4599-b26b-49c2b0cc8ca2/38964811768.jpg",
-        "types": [
-          "Front"
-        ]
+        "types": ["Front"]
       },
       {
         "url": "https://coverartarchive.org/release/1eb113c4-cd93-4599-b26b-49c2b0cc8ca2/38964812598.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "https://coverartarchive.org/release/1eb113c4-cd93-4599-b26b-49c2b0cc8ca2/38964812904.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "https://coverartarchive.org/release/1eb113c4-cd93-4599-b26b-49c2b0cc8ca2/38964813261.jpg",
-        "types": [
-          "Back",
-          "Spine"
-        ]
+        "types": ["Back", "Spine"]
       },
       {
         "url": "https://coverartarchive.org/release/1eb113c4-cd93-4599-b26b-49c2b0cc8ca2/38964813566.jpg",
-        "types": [
-          "Medium"
-        ]
+        "types": ["Medium"]
       },
       {
         "url": "https://coverartarchive.org/release/1eb113c4-cd93-4599-b26b-49c2b0cc8ca2/38964814016.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "https://coverartarchive.org/release/1eb113c4-cd93-4599-b26b-49c2b0cc8ca2/38964814319.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "https://coverartarchive.org/release/1eb113c4-cd93-4599-b26b-49c2b0cc8ca2/38964814627.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "https://coverartarchive.org/release/1eb113c4-cd93-4599-b26b-49c2b0cc8ca2/38964814962.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "https://coverartarchive.org/release/1eb113c4-cd93-4599-b26b-49c2b0cc8ca2/38964815303.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "https://coverartarchive.org/release/1eb113c4-cd93-4599-b26b-49c2b0cc8ca2/38964815617.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "https://coverartarchive.org/release/1eb113c4-cd93-4599-b26b-49c2b0cc8ca2/38964815951.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "https://coverartarchive.org/release/1eb113c4-cd93-4599-b26b-49c2b0cc8ca2/38964816473.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "https://coverartarchive.org/release/1eb113c4-cd93-4599-b26b-49c2b0cc8ca2/38964816862.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "https://coverartarchive.org/release/1eb113c4-cd93-4599-b26b-49c2b0cc8ca2/38964817313.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "https://coverartarchive.org/release/1eb113c4-cd93-4599-b26b-49c2b0cc8ca2/38964817642.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "https://coverartarchive.org/release/1eb113c4-cd93-4599-b26b-49c2b0cc8ca2/38964818137.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "https://coverartarchive.org/release/1eb113c4-cd93-4599-b26b-49c2b0cc8ca2/38964818434.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "https://coverartarchive.org/release/1eb113c4-cd93-4599-b26b-49c2b0cc8ca2/38964818710.jpg",
-        "types": [
-          "Front"
-        ]
+        "types": ["Front"]
       }
     ],
     "tracklist": [
@@ -4666,15 +3355,7 @@
       "trackCount": 9,
       "duration": 3485197,
       "trackDuration": [
-        403960,
-        674306,
-        343800,
-        306826,
-        335640,
-        222866,
-        310293,
-        439333,
-        448173
+        403960, 674306, 343800, 306826, 335640, 222866, 310293, 439333, 448173
       ]
     },
     "price": "119.04",
@@ -4692,23 +3373,15 @@
       },
       {
         "url": "http://coverartarchive.org/release/040e7d89-5f6f-4d72-94ff-2956b6da0cbb/24459026068.jpg",
-        "types": [
-          "Spine"
-        ]
+        "types": ["Spine"]
       },
       {
         "url": "http://coverartarchive.org/release/040e7d89-5f6f-4d72-94ff-2956b6da0cbb/24459026771.jpg",
-        "types": [
-          "Front",
-          "Medium"
-        ]
+        "types": ["Front", "Medium"]
       },
       {
         "url": "http://coverartarchive.org/release/040e7d89-5f6f-4d72-94ff-2956b6da0cbb/24459027688.jpg",
-        "types": [
-          "Back",
-          "Medium"
-        ]
+        "types": ["Back", "Medium"]
       }
     ],
     "tracklist": [
@@ -4729,15 +3402,7 @@
       "trackCount": 9,
       "duration": 3830038,
       "trackDuration": [
-        265573,
-        214760,
-        267933,
-        326640,
-        253933,
-        191533,
-        288866,
-        400800,
-        1620000
+        265573, 214760, 267933, 326640, 253933, 191533, 288866, 400800, 1620000
       ]
     },
     "price": "78.94",
@@ -4751,39 +3416,27 @@
     "coverImages": [
       {
         "url": "https://coverartarchive.org/release/11c424de-cff6-4a60-a443-3f23c867dacd/38966750463.jpg",
-        "types": [
-          "Front"
-        ]
+        "types": ["Front"]
       },
       {
         "url": "https://coverartarchive.org/release/11c424de-cff6-4a60-a443-3f23c867dacd/38966751071.jpg",
-        "types": [
-          "Back"
-        ]
+        "types": ["Back"]
       },
       {
         "url": "https://coverartarchive.org/release/11c424de-cff6-4a60-a443-3f23c867dacd/38966752433.jpg",
-        "types": [
-          "Medium"
-        ]
+        "types": ["Medium"]
       },
       {
         "url": "https://coverartarchive.org/release/11c424de-cff6-4a60-a443-3f23c867dacd/38966753310.jpg",
-        "types": [
-          "Medium"
-        ]
+        "types": ["Medium"]
       },
       {
         "url": "https://coverartarchive.org/release/11c424de-cff6-4a60-a443-3f23c867dacd/38966754169.jpg",
-        "types": [
-          "Medium"
-        ]
+        "types": ["Medium"]
       },
       {
         "url": "https://coverartarchive.org/release/11c424de-cff6-4a60-a443-3f23c867dacd/38966754797.jpg",
-        "types": [
-          "Medium"
-        ]
+        "types": ["Medium"]
       },
       {
         "url": "https://coverartarchive.org/release/11c424de-cff6-4a60-a443-3f23c867dacd/38966755072.jpg",
@@ -4829,15 +3482,7 @@
       "format": "12\" Vinyl",
       "trackCount": 7,
       "duration": 1736117,
-      "trackDuration": [
-        377653,
-        237146,
-        275426,
-        150400,
-        142506,
-        283413,
-        269573
-      ]
+      "trackDuration": [377653, 237146, 275426, 150400, 142506, 283413, 269573]
     },
     "price": "53.16",
     "count": 7
@@ -4850,76 +3495,51 @@
     "coverImages": [
       {
         "url": "http://coverartarchive.org/release/011f3f7f-90dd-4498-bc75-b7c1b0bb0157/25554731688.jpg",
-        "types": [
-          "Front"
-        ]
+        "types": ["Front"]
       },
       {
         "url": "http://coverartarchive.org/release/011f3f7f-90dd-4498-bc75-b7c1b0bb0157/25554735637.jpg",
-        "types": [
-          "Back",
-          "Spine"
-        ]
+        "types": ["Back", "Spine"]
       },
       {
         "url": "http://coverartarchive.org/release/011f3f7f-90dd-4498-bc75-b7c1b0bb0157/25554736773.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/011f3f7f-90dd-4498-bc75-b7c1b0bb0157/25554739185.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/011f3f7f-90dd-4498-bc75-b7c1b0bb0157/25554741344.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/011f3f7f-90dd-4498-bc75-b7c1b0bb0157/25554743214.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/011f3f7f-90dd-4498-bc75-b7c1b0bb0157/25554745442.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/011f3f7f-90dd-4498-bc75-b7c1b0bb0157/25554747236.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/011f3f7f-90dd-4498-bc75-b7c1b0bb0157/25554749040.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/011f3f7f-90dd-4498-bc75-b7c1b0bb0157/25554751056.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/011f3f7f-90dd-4498-bc75-b7c1b0bb0157/25554753066.jpg",
-        "types": [
-          "Medium"
-        ]
+        "types": ["Medium"]
       },
       {
         "url": "http://coverartarchive.org/release/011f3f7f-90dd-4498-bc75-b7c1b0bb0157/25554753864.jpg",
-        "types": [
-          "Medium"
-        ]
+        "types": ["Medium"]
       }
     ],
     "tracklist": [
@@ -4942,17 +3562,8 @@
       "trackCount": 11,
       "duration": 3165491,
       "trackDuration": [
-        299560,
-        260040,
-        251560,
-        230333,
-        335706,
-        304400,
-        388533,
-        238200,
-        338293,
-        202733,
-        316133
+        299560, 260040, 251560, 230333, 335706, 304400, 388533, 238200, 338293,
+        202733, 316133
       ]
     },
     "price": "121.50",
@@ -4966,64 +3577,43 @@
     "coverImages": [
       {
         "url": "https://coverartarchive.org/release/005efdcc-794f-479c-919b-e604ee61f2d9/37292298243.jpg",
-        "types": [
-          "Front"
-        ]
+        "types": ["Front"]
       },
       {
         "url": "https://coverartarchive.org/release/005efdcc-794f-479c-919b-e604ee61f2d9/40656859369.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "https://coverartarchive.org/release/005efdcc-794f-479c-919b-e604ee61f2d9/40656807464.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "https://coverartarchive.org/release/005efdcc-794f-479c-919b-e604ee61f2d9/40656807967.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "https://coverartarchive.org/release/005efdcc-794f-479c-919b-e604ee61f2d9/40656808434.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "https://coverartarchive.org/release/005efdcc-794f-479c-919b-e604ee61f2d9/40656808976.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "https://coverartarchive.org/release/005efdcc-794f-479c-919b-e604ee61f2d9/40656809777.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "https://coverartarchive.org/release/005efdcc-794f-479c-919b-e604ee61f2d9/40656810331.jpg",
-        "types": [
-          "Back",
-          "Spine"
-        ]
+        "types": ["Back", "Spine"]
       },
       {
         "url": "https://coverartarchive.org/release/005efdcc-794f-479c-919b-e604ee61f2d9/40656811177.jpg",
-        "types": [
-          "Medium"
-        ]
+        "types": ["Medium"]
       },
       {
         "url": "https://coverartarchive.org/release/005efdcc-794f-479c-919b-e604ee61f2d9/40656812014.jpg",
-        "types": [
-          "Matrix/Runout"
-        ]
+        "types": ["Matrix/Runout"]
       }
     ],
     "tracklist": [
@@ -5046,17 +3636,8 @@
       "trackCount": 11,
       "duration": 2505756,
       "trackDuration": [
-        131560,
-        211266,
-        183773,
-        234626,
-        158400,
-        299173,
-        215626,
-        275200,
-        160573,
-        303533,
-        332026
+        131560, 211266, 183773, 234626, 158400, 299173, 215626, 275200, 160573,
+        303533, 332026
       ]
     },
     "price": "61.67",
@@ -5070,21 +3651,15 @@
     "coverImages": [
       {
         "url": "http://coverartarchive.org/release/10d6835b-3f1a-46f3-81b8-75d26186459e/27359346222.jpg",
-        "types": [
-          "Front"
-        ]
+        "types": ["Front"]
       },
       {
         "url": "http://coverartarchive.org/release/10d6835b-3f1a-46f3-81b8-75d26186459e/27359349162.jpg",
-        "types": [
-          "Back"
-        ]
+        "types": ["Back"]
       },
       {
         "url": "http://coverartarchive.org/release/10d6835b-3f1a-46f3-81b8-75d26186459e/27359349875.jpg",
-        "types": [
-          "Medium"
-        ]
+        "types": ["Medium"]
       }
     ],
     "tracklist": [
@@ -5105,15 +3680,7 @@
       "trackCount": 9,
       "duration": 2472000,
       "trackDuration": [
-        243000,
-        276000,
-        264000,
-        211000,
-        251000,
-        316000,
-        306000,
-        309000,
-        296000
+        243000, 276000, 264000, 211000, 251000, 316000, 306000, 309000, 296000
       ]
     },
     "price": "68.49",
@@ -5127,52 +3694,35 @@
     "coverImages": [
       {
         "url": "https://coverartarchive.org/release/1af103e3-cffb-4b59-b6bd-ed6c6f840c7d/40760298280.jpg",
-        "types": [
-          "Front"
-        ]
+        "types": ["Front"]
       },
       {
         "url": "https://coverartarchive.org/release/1af103e3-cffb-4b59-b6bd-ed6c6f840c7d/40760298965.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "https://coverartarchive.org/release/1af103e3-cffb-4b59-b6bd-ed6c6f840c7d/40760301843.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "https://coverartarchive.org/release/1af103e3-cffb-4b59-b6bd-ed6c6f840c7d/40760303586.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "https://coverartarchive.org/release/1af103e3-cffb-4b59-b6bd-ed6c6f840c7d/40760304181.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "https://coverartarchive.org/release/1af103e3-cffb-4b59-b6bd-ed6c6f840c7d/40760305017.jpg",
-        "types": [
-          "Back",
-          "Spine"
-        ]
+        "types": ["Back", "Spine"]
       },
       {
         "url": "https://coverartarchive.org/release/1af103e3-cffb-4b59-b6bd-ed6c6f840c7d/40760305585.jpg",
-        "types": [
-          "Medium"
-        ]
+        "types": ["Medium"]
       },
       {
         "url": "https://coverartarchive.org/release/1af103e3-cffb-4b59-b6bd-ed6c6f840c7d/40760306056.jpg",
-        "types": [
-          "Matrix/Runout"
-        ]
+        "types": ["Matrix/Runout"]
       }
     ],
     "tracklist": [
@@ -5193,15 +3743,7 @@
       "trackCount": 9,
       "duration": 2321238,
       "trackDuration": [
-        219000,
-        202373,
-        255800,
-        238560,
-        267333,
-        223973,
-        284733,
-        370466,
-        259000
+        219000, 202373, 255800, 238560, 267333, 223973, 284733, 370466, 259000
       ]
     },
     "price": "31.60",
@@ -5215,23 +3757,15 @@
     "coverImages": [
       {
         "url": "http://coverartarchive.org/release/077e89e2-3949-471c-bbbc-ec120cef022d/10970313090.jpg",
-        "types": [
-          "Front",
-          "Spine"
-        ]
+        "types": ["Front", "Spine"]
       },
       {
         "url": "http://coverartarchive.org/release/077e89e2-3949-471c-bbbc-ec120cef022d/10970315258.jpg",
-        "types": [
-          "Back",
-          "Spine"
-        ]
+        "types": ["Back", "Spine"]
       },
       {
         "url": "http://coverartarchive.org/release/077e89e2-3949-471c-bbbc-ec120cef022d/10970316139.jpg",
-        "types": [
-          "Medium"
-        ]
+        "types": ["Medium"]
       }
     ],
     "tracklist": [
@@ -5254,17 +3788,8 @@
       "trackCount": 11,
       "duration": 2317000,
       "trackDuration": [
-        168000,
-        189000,
-        184000,
-        235000,
-        101000,
-        287000,
-        246000,
-        180000,
-        199000,
-        259000,
-        269000
+        168000, 189000, 184000, 235000, 101000, 287000, 246000, 180000, 199000,
+        259000, 269000
       ]
     },
     "price": "54.59",
@@ -5278,29 +3803,19 @@
     "coverImages": [
       {
         "url": "http://coverartarchive.org/release/00f09140-c4d5-40fe-9256-cee44fc1a6d6/6699026371.jpg",
-        "types": [
-          "Front",
-          "Booklet"
-        ]
+        "types": ["Front", "Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/00f09140-c4d5-40fe-9256-cee44fc1a6d6/11999506589.jpg",
-        "types": [
-          "Back",
-          "Spine"
-        ]
+        "types": ["Back", "Spine"]
       },
       {
         "url": "http://coverartarchive.org/release/00f09140-c4d5-40fe-9256-cee44fc1a6d6/11999507621.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "http://coverartarchive.org/release/00f09140-c4d5-40fe-9256-cee44fc1a6d6/11999508207.jpg",
-        "types": [
-          "Medium"
-        ]
+        "types": ["Medium"]
       }
     ],
     "tracklist": [
@@ -5323,17 +3838,8 @@
       "trackCount": 11,
       "duration": 2440103,
       "trackDuration": [
-        188666,
-        252733,
-        159440,
-        250293,
-        221066,
-        210040,
-        214133,
-        240733,
-        210226,
-        182800,
-        309973
+        188666, 252733, 159440, 250293, 221066, 210040, 214133, 240733, 210226,
+        182800, 309973
       ]
     },
     "price": "118.67",
@@ -5347,52 +3853,35 @@
     "coverImages": [
       {
         "url": "https://coverartarchive.org/release/00517844-0d4a-4cb3-afa8-d117607a1d9c/27799541542.jpg",
-        "types": [
-          "Front"
-        ]
+        "types": ["Front"]
       },
       {
         "url": "https://coverartarchive.org/release/00517844-0d4a-4cb3-afa8-d117607a1d9c/12826202809.jpg",
-        "types": [
-          "Front"
-        ]
+        "types": ["Front"]
       },
       {
         "url": "https://coverartarchive.org/release/00517844-0d4a-4cb3-afa8-d117607a1d9c/14856151879.jpg",
-        "types": [
-          "Back",
-          "Spine"
-        ]
+        "types": ["Back", "Spine"]
       },
       {
         "url": "https://coverartarchive.org/release/00517844-0d4a-4cb3-afa8-d117607a1d9c/14856153523.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "https://coverartarchive.org/release/00517844-0d4a-4cb3-afa8-d117607a1d9c/14856154735.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "https://coverartarchive.org/release/00517844-0d4a-4cb3-afa8-d117607a1d9c/14856155744.jpg",
-        "types": [
-          "Booklet"
-        ]
+        "types": ["Booklet"]
       },
       {
         "url": "https://coverartarchive.org/release/00517844-0d4a-4cb3-afa8-d117607a1d9c/14856156712.jpg",
-        "types": [
-          "Medium"
-        ]
+        "types": ["Medium"]
       },
       {
         "url": "https://coverartarchive.org/release/00517844-0d4a-4cb3-afa8-d117607a1d9c/40965279526.jpg",
-        "types": [
-          "Matrix/Runout"
-        ]
+        "types": ["Matrix/Runout"]
       }
     ],
     "tracklist": [
@@ -5412,14 +3901,7 @@
       "trackCount": 8,
       "duration": 2410265,
       "trackDuration": [
-        349826,
-        287840,
-        387760,
-        262640,
-        273093,
-        204373,
-        283133,
-        361600
+        349826, 287840, 387760, 262640, 273093, 204373, 283133, 361600
       ]
     },
     "price": "67.13",
@@ -5433,9 +3915,7 @@
     "coverImages": [
       {
         "url": "http://coverartarchive.org/release/0f55dca9-b076-4fe6-a028-6e5cf85a4f92/25937476392.jpg",
-        "types": [
-          "Front"
-        ]
+        "types": ["Front"]
       }
     ],
     "tracklist": [
@@ -5469,28 +3949,9 @@
       "trackCount": 22,
       "duration": 5035000,
       "trackDuration": [
-        209000,
-        287000,
-        187000,
-        266000,
-        291000,
-        237000,
-        233000,
-        160000,
-        137000,
-        355000,
-        265000,
-        252000,
-        232000,
-        127000,
-        152000,
-        227000,
-        214000,
-        208000,
-        125000,
-        374000,
-        268000,
-        229000
+        209000, 287000, 187000, 266000, 291000, 237000, 233000, 160000, 137000,
+        355000, 265000, 252000, 232000, 127000, 152000, 227000, 214000, 208000,
+        125000, 374000, 268000, 229000
       ]
     },
     "price": "121.10",
@@ -5504,9 +3965,7 @@
     "coverImages": [
       {
         "url": "http://coverartarchive.org/release/040c1da8-e5e0-480b-a8ea-433d4135a9b1/33063429003.jpg",
-        "types": [
-          "Front"
-        ]
+        "types": ["Front"]
       }
     ],
     "tracklist": [
@@ -5527,15 +3986,7 @@
       "trackCount": 9,
       "duration": 2659211,
       "trackDuration": [
-        364600,
-        173266,
-        286333,
-        235373,
-        247000,
-        350640,
-        266066,
-        366933,
-        369000
+        364600, 173266, 286333, 235373, 247000, 350640, 266066, 366933, 369000
       ]
     },
     "price": "93.85",

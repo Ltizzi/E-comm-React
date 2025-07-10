@@ -22,14 +22,14 @@ const BaseModal = ({ isOpen, onClose, title, children }) => {
 
   return (
     <div
-      className="fixed inset-0 bg-black/50 flex items-center justify-center z-40"
+      className="fixed inset-0 bg-black/50 flex items-start lg:items-center justify-center z-40"
       onClick={onClose}
     >
       <div
-        className="bg-gradient-to-br from-base-100 via-base-200 to-base-300 rounded-lg pb-6 lg:max-w-4xl lg:min-w-auto w-full mx-4 text-primary-content"
+        className="bg-gradient-to-br from-base-100 via-base-200 to-base-300 rounded-lg pb-6 lg:max-w-6xl lg:min-h-4/6 lg:max-h-4/6 lg:min-w-auto w-full mx-4 text-primary-content"
         onClick={(e) => e.stopPropagation()}
       >
-        <div className="flex justify-between rounded-t-lg items-center mb-4 bg-secondary text-secondary-content px-2 w-auto">
+        <div className="flex justify-between rounded-t-lg items-center mb-4 bg-secondary text-secondary-content px-10 w-auto">
           <h2 className="text-xl font-bold px-6 py-2">{title}</h2>
           <button
             onClick={onClose}
