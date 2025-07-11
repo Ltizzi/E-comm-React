@@ -1,47 +1,24 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import BaseModal from "../common/BaseModal";
 import StepAInfo from "./FormSteps/StepAInfo";
 import StepBTracks from "./FormSteps/StepBTracks";
 import StepCExtra from "./FormSteps/StepCExtra";
 import {
+  ALBUM_TEMPLATE,
   getFront,
   getShorterString,
   getTrackDuration,
 } from "../../utils/utils";
 
 const NewProductModal = ({ isEditor, prod, showEditor, showEditorModal }) => {
-  const [product, setProduct] = useState({
-    id: 0,
-    artist: "",
-    title: "",
-    releaseDate: "",
-    coverImages: [{ url: "", types: "" }],
-    tracklist: [],
-    extra: {
-      date: "",
-      producer: "",
-      format: "",
-      trackCount: 0,
-      duration: 0,
-      trackDuration: [],
-    },
-    price: "",
-    count: 0,
-  });
+  const [product, setProduct] = useState({});
   const [extraAlbums, setExtraAlbums] = useState([]);
 
   const [activeTab, setActiveTab] = useState(0);
 
   function onClose() {
+    if (!isEditor) setProduct(ALBUM_TEMPLATE);
     showEditorModal();
-  }
-
-  function getPrice(min, max) {
-    return parseFloat(Math.random() * (max - min) + min).toFixed(2);
-  }
-
-  function getRandomNum(min, max) {
-    return Math.floor(Math.random() * (max - min)) + min;
   }
 
   function getLastId() {
@@ -123,6 +100,7 @@ const NewProductModal = ({ isEditor, prod, showEditor, showEditorModal }) => {
 
   useEffect(() => {
     if (!isEditor) {
+      setProduct(ALBUM_TEMPLATE);
       setActiveTab(0);
       fetch("/data/extra.json")
         .then((res) => {
@@ -238,7 +216,9 @@ const NewProductModal = ({ isEditor, prod, showEditor, showEditorModal }) => {
             </div>
           )}
           <div className="h-auto">
-            {activeTab === 1 && <StepAInfo />}
+            {activeTab === 1 && (
+              <StepAInfo prod={product} handleInputChange={handleInputChange} />
+            )}
             {activeTab === 2 && (
               <StepBTracks
                 prod={product}

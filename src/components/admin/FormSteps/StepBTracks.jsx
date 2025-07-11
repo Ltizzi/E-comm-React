@@ -78,7 +78,6 @@ const StepBTracks = ({ prod, addTracksDuration, handleInputChange }) => {
       <div className="flex flex-col gap-2 justify-center overflow-y-auto h-auto max-h-96 w-full">
         <div className="overflow-x-auto">
           <table className="table">
-            {/* head */}
             <thead>
               <tr>
                 <th>#</th>

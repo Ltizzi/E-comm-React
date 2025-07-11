@@ -1,3 +1,22 @@
+export const ALBUM_TEMPLATE = {
+  id: 0,
+  artist: "",
+  title: "",
+  releaseDate: "",
+  coverImages: [{ url: "", types: "" }],
+  tracklist: [],
+  extra: {
+    date: "",
+    producer: "",
+    format: "",
+    trackCount: 0,
+    duration: 0,
+    trackDuration: [],
+  },
+  price: "",
+  count: 0,
+};
+
 export function getFront(imgs) {
   if (imgs) {
     const img = imgs.find(
