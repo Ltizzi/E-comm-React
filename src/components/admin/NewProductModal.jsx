@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useEffect, useState } from "react";
 import BaseModal from "../common/BaseModal";
 import StepAInfo from "./FormSteps/StepAInfo";
 import StepBTracks from "./FormSteps/StepBTracks";
@@ -9,70 +9,81 @@ import {
   getShorterString,
   getTrackDuration,
 } from "../../utils/utils";
+import { API_URL } from "../../context/ProductContext";
 
-const NewProductModal = ({ isEditor, prod, showEditor, showEditorModal }) => {
+const NewProductModal = ({
+  isEditor,
+  prod,
+  showEditor,
+  showEditorModal,
+  callUpdate,
+}) => {
   const [product, setProduct] = useState({});
   const [extraAlbums, setExtraAlbums] = useState([]);
-
   const [activeTab, setActiveTab] = useState(0);
+  const [isLoading, setIsLoading] = useState(false);
 
-  function onClose() {
+  const onClose = () => {
     if (!isEditor) setProduct(ALBUM_TEMPLATE);
     showEditorModal();
-  }
+  };
 
-  function getLastId() {
+  const getLastId = () => {
     const id = JSON.parse(localStorage.getItem("eComLastId")) || 1000;
     if (id === 1000) return id;
     else {
       localStorage.setItem("eComLastId", JSON.stringify(id + 1));
       return id + 1;
     }
-  }
+  };
 
-  async function submit() {
-    const product = {
-      id: getLastId(),
-      artist: "",
-      title: "",
-      releaseDate: "",
-      coverImages: [{ url: "", types: "" }],
-      tracklist: [""],
-      extra: {
-        date: "",
-        producer: "",
-        format: "",
-        trackCount: 0,
-        duration: 0,
-        trackDuration: [0],
+  const submit = async () => {
+    setIsLoading(true);
+    if (isEditor) product.id = getLastId();
+    const HTTP_METHOD = isEditor ? "PUT" : "POST";
+    const URL = API_URL + (isEditor ? `/${product.id}` : "");
+    fetch(URL, {
+      method: HTTP_METHOD,
+      body: JSON.stringify(product),
+      headers: {
+        "Content-Type": "application/json",
       },
-      price: getPrice(19.99, 124.99),
-      count: getRandomNum(1, 10),
-    };
-  }
+    })
+      .then((res) => {
+        setIsLoading(false);
+        if (!res) throw new Error("Something went wrong accesing API");
+        return res.json();
+      })
+      .then(async () => {
+        const msg = isEditor ? "Product updated!" : "Product created!";
+        await callUpdate("success", msg);
+        showEditorModal();
+      })
+      .catch((err) => console.error(err));
+  };
 
-  function goPrev() {
+  const goPrev = () => {
     if (!isEditor && activeTab > 0) setActiveTab((prev) => prev - 1);
     else if (activeTab > 1) setActiveTab((prev) => prev - 1);
-  }
+  };
 
-  function goNext() {
+  const goNext = () => {
     if (activeTab < 4) setActiveTab((prev) => prev + 1);
-  }
+  };
 
-  function addAlbum(album) {
+  const addAlbum = (album) => {
     setProduct(album);
     setActiveTab(4);
-  }
+  };
 
-  function handleInputChange(field, value) {
+  const handleInputChange = (field, value) => {
     setProduct((prev) => ({
       ...prev,
       [field]: value,
     }));
-  }
+  };
 
-  function handleExtraChange(field, value) {
+  const handleExtraChange = (field, value) => {
     setProduct((prev) => ({
       ...prev,
       extra: {
@@ -80,9 +91,9 @@ const NewProductModal = ({ isEditor, prod, showEditor, showEditorModal }) => {
         [field]: value,
       },
     }));
-  }
+  };
 
-  function addTracksDuration(durations) {
+  const addTracksDuration = (durations) => {
     if (!durations || !Array.isArray(durations)) return;
 
     let totalDuration = 0;
@@ -96,7 +107,7 @@ const NewProductModal = ({ isEditor, prod, showEditor, showEditorModal }) => {
         trackCount: durations.length,
       },
     }));
-  }
+  };
 
   useEffect(() => {
     if (!isEditor) {
@@ -122,6 +133,7 @@ const NewProductModal = ({ isEditor, prod, showEditor, showEditorModal }) => {
       isOpen={showEditor}
       title={!isEditor ? "Create new Album" : "Edit Album"}
       onClose={onClose}
+      editor={true}
     >
       <div className="flex flex-col justify-between items-center h-fit gap-3 relative">
         <ul className="steps text-xs  w-3/4 text-base-content h-1/6">
@@ -170,9 +182,10 @@ const NewProductModal = ({ isEditor, prod, showEditor, showEditorModal }) => {
         <div className="w-full   h-4/6 min-h-140 lg:min-h-140 flex flex-col justify-center items-center align-top text-base-content gap-4">
           {!isEditor && activeTab === 0 && (
             <div className="flex flex-col gap-1 h-10/12">
+              success
               <div
                 tabIndex={0}
-                className="bg-secondary text-primary-content   collapse w-full"
+                className="bg-accent text-accent-content focus:bg-warning   collapse w-full"
               >
                 <div className="collapse-title font-semibold">
                   Añadiendo un nuevo album?
@@ -189,7 +202,6 @@ const NewProductModal = ({ isEditor, prod, showEditor, showEditorModal }) => {
                   </div>
                 </div>
               </div>
-
               <div className="flex flex-row gap-1 flex-wrap pt-5 overflow-y-auto overflow-x-clip h-100">
                 {extraAlbums.map((album) => (
                   <div className="tooltip tooltip-bottom">
@@ -226,6 +238,7 @@ const NewProductModal = ({ isEditor, prod, showEditor, showEditorModal }) => {
                 addTracksDuration={addTracksDuration}
               />
             )}
+            success
             {activeTab === 3 && (
               <StepCExtra
                 prod={product}
@@ -234,26 +247,64 @@ const NewProductModal = ({ isEditor, prod, showEditor, showEditorModal }) => {
               />
             )}
             {activeTab === 4 && (
-              <div>
-                <h1>Finish</h1>
-                <button className="btn btn-accent" onClick={submit}>
-                  Submit
-                </button>
+              <div className="w-fit flex flex-col justify-center items-center">
+                {product.title && product.artist && (
+                  <div className="text-sm flex flex-col gap-2 text-center">
+                    <p className="text-xl font-extrabold">
+                      {product.title} by {product.artist}
+                    </p>
+                    <div className="flex flex-row justify-evenly gap-10">
+                      <div className="text-end">
+                        <p className="italic">
+                          released in {product.releaseDate}
+                        </p>
+                        <p className="font-semibold">u$s {product.price}</p>
+                        <p className="text-xs font-light">
+                          {product.count +
+                            `${product.count > 1 ? " units" : " unit"}`}
+                        </p>
+                      </div>
+                      <div className="flex flex-row flew-wrap gap-1">
+                        <img
+                          src={getFront(product.coverImages)}
+                          className="size-16"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                    <ul className="flex flex-col gap-0.5 text-xs py-2 overflow-y-auto h-64">
+                      {product.tracklist.map((t, index) => (
+                        <li className="flex flex-row justify-between w-96">
+                          <span>
+                            {index + 1 + ". " + getShorterString(t, 25)}
+                          </span>
+                          <span>
+                            {getTrackDuration(
+                              product.extra.trackDuration[index]
+                            )}
+                          </span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
 
-                <p>{product.title}</p>
-                <p>{JSON.stringify(product.extra)}</p>
-                <p>u$s {product.price}</p>
-                <p>{product.count}</p>
-                <ul className="flex flex-col gap-0.5 text-xs py-2">
-                  {product.tracklist.map((t, index) => (
-                    <li className="flex flex-row justify-between w-96">
-                      <span>{index + 1 + ". " + getShorterString(t, 25)}</span>
-                      <span>
-                        {getTrackDuration(product.extra.trackDuration[index])}
-                      </span>
-                    </li>
-                  ))}
-                </ul>
+                <button
+                  className="btn btn-accent flex flex-row gap-5"
+                  onClick={async () => {
+                    await submit();
+                  }}
+                  disabled={!product.title}
+                >
+                  {isLoading ? (
+                    <>
+                      Loading...
+                      <span className="loading loading-dots loading-xl"></span>
+                    </>
+                  ) : (
+                    "Submit"
+                  )}
+                </button>
               </div>
             )}
           </div>

@@ -6,8 +6,9 @@ import { FaInfoCircle, FaTrashAlt, FaRegEdit } from "react-icons/fa";
 import { MdCreateNewFolder } from "react-icons/md";
 import BaseButton from "../common/BaseButton";
 import NewProductModal from "./NewProductModal";
+import DeleteProductModal from "./DeleteProductModal";
 
-const AdminPanel = ({ goToProd }) => {
+const AdminPanel = ({ goToProd, fetchData }) => {
   const [totalPages, setTotalPages] = useState(0);
   const [pages, setPages] = useState([]);
   const { products, getProductsWithPagination } = useContext(ProductContext);
@@ -18,6 +19,18 @@ const AdminPanel = ({ goToProd }) => {
   const [showEditor, setShowEditor] = useState(false);
   const [isEditor, setIsEditor] = useState(false);
   const [prodToEdit, setProdToEdit] = useState();
+
+  const [showDeleteModal, setShowDeleteModal] = useState(false);
+  const [prodToDelete, setProdToDelete] = useState({});
+
+  const [showToast, setShowToast] = useState(false);
+  const [toastMsg, setToastMsg] = useState("");
+  const [toastType, setToastType] = useState("");
+
+  const deleteProduct = (prod) => {
+    setProdToDelete(prod);
+    setShowDeleteModal(true);
+  };
 
   function showEditorModal(prod = null, isEditor = false) {
     setShowEditor((prev) => {
@@ -55,9 +68,19 @@ const AdminPanel = ({ goToProd }) => {
     setCurrentPage(page);
   }
 
-  async function deleteProd(id) {
-    return id;
-  }
+  const callUpdate = async (type, msg) => {
+    getProducts(currentPage);
+    goPage(currentPage);
+    await fetchData();
+    setShowToast(true);
+    setToastType(type);
+    setToastMsg(msg);
+    setTimeout(() => {
+      setShowToast(false);
+      setToastType("");
+      setToastMsg("");
+    }, 3000);
+  };
 
   useEffect(() => {
     const pagination = buildPagination(products.length, ITEMS_PER_PAGE);
@@ -150,8 +173,9 @@ const AdminPanel = ({ goToProd }) => {
                     <BaseButton
                       btnLabel={""}
                       btnType={"error"}
-                      btnAction={() => deleteProd(prod.id)}
+                      btnAction={() => deleteProduct(prod)}
                       tooltip={"Delete Album"}
+                      success
                       rounded={true}
                     >
                       {" "}
@@ -198,7 +222,22 @@ const AdminPanel = ({ goToProd }) => {
         isEditor={isEditor}
         prod={prodToEdit}
         showEditorModal={() => setShowEditor(false)}
+        callUpdate={callUpdate}
       />
+      <DeleteProductModal
+        isOpen={showDeleteModal}
+        prod={prodToDelete}
+        closeDelete={() => setShowDeleteModal(false)}
+        callUpdate={callUpdate}
+      />
+
+      {showToast && (
+        <div className="toast toast-bottom toast-center">
+          <div className={`alert alert-${toastType}  text-3xl`}>
+            <span>{toastMsg}</span>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

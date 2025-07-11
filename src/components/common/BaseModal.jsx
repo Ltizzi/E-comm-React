@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { AiFillCloseSquare } from "react-icons/ai";
 
-const BaseModal = ({ isOpen, onClose, title, children }) => {
+const BaseModal = ({ isOpen, onClose, title, editor, children }) => {
   useEffect(() => {
     const handleEsc = (e) => {
       if (e.key === "Escape") onClose();
@@ -26,14 +26,20 @@ const BaseModal = ({ isOpen, onClose, title, children }) => {
       onClick={onClose}
     >
       <div
-        className="bg-gradient-to-br from-base-100 via-base-200 to-base-300 rounded-lg pb-6 lg:max-w-6xl lg:min-h-4/6 lg:max-h-4/6 lg:min-w-auto w-full mx-4 text-primary-content"
+        className={`bg-gradient-to-br from-base-100 via-base-200 to-base-300 rounded-lg pb-6 ${
+          editor
+            ? "lg:max-w-6xl lg:min-h-4/6 lg:max-h-4/6 lg:min-w-auto w-full"
+            : "h-auto w-auto"
+        }  mx-4 text-primary-content`}
         onClick={(e) => e.stopPropagation()}
       >
         <div className="flex justify-between rounded-t-lg items-center mb-4 bg-secondary text-secondary-content px-10 w-auto">
-          <h2 className="text-xl font-bold px-6 py-2">{title}</h2>
+          <h2 className="text-xl font-bold px-6 py-2 text-center w-11/12">
+            {title}
+          </h2>
           <button
             onClick={onClose}
-            className="text-secondary-content text-2xl hover:text-gray-700 hover:cursor-pointer"
+            className="text-secondary-content text-2xl text-end hover:text-gray-700 hover:cursor-pointer w-1/12"
           >
             <AiFillCloseSquare />
           </button>

@@ -31,6 +31,19 @@ function App() {
 
   //NAVIGATION
 
+  const fetchData = async () => {
+    try {
+      const data = await getAllProducts();
+
+      setProducts(data);
+      setIsLoading(false);
+    } catch (err) {
+      console.error(err);
+      setHasErrors(true);
+      setIsLoading(false);
+    }
+  };
+
   function goToProd(prod) {
     setFocusProduct(prod);
     navigate(`/product/${prod.id}`);
@@ -61,7 +74,7 @@ function App() {
 
     function getIsLogged() {
       const isLoggedLocal = JSON.parse(localStorage.getItem("logged"));
-      if (isLoggedLocal && isLoggedLocal.id > 0) {
+      if (isLoggedLocal) {
         logLocalUser(isLoggedLocal);
       } else logout();
     }
@@ -115,7 +128,7 @@ function App() {
             path="/admin"
             element={
               <ProtectedRoute isAuthenticated={isLogged && isAdmin}>
-                <AdminPanel goToProd={goToProd} />
+                <AdminPanel goToProd={goToProd} fetchData={fetchData} />
               </ProtectedRoute>
             }
           />
