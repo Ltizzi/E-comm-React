@@ -3,7 +3,11 @@ import BaseModal from "../common/BaseModal";
 import StepAInfo from "./FormSteps/StepAInfo";
 import StepBTracks from "./FormSteps/StepBTracks";
 import StepCExtra from "./FormSteps/StepCExtra";
-import { getFront } from "../../utils/utils";
+import {
+  getFront,
+  getShorterString,
+  getTrackDuration,
+} from "../../utils/utils";
 
 const NewProductModal = ({ isEditor, prod, showEditor, showEditorModal }) => {
   const [product, setProduct] = useState({
@@ -12,16 +16,16 @@ const NewProductModal = ({ isEditor, prod, showEditor, showEditorModal }) => {
     title: "",
     releaseDate: "",
     coverImages: [{ url: "", types: "" }],
-    tracklist: [""],
+    tracklist: [],
     extra: {
       date: "",
       producer: "",
       format: "",
       trackCount: 0,
       duration: 0,
-      trackDuration: [0],
+      trackDuration: [],
     },
-    price: 0,
+    price: "",
     count: 0,
   });
   const [extraAlbums, setExtraAlbums] = useState([]);
@@ -81,7 +85,40 @@ const NewProductModal = ({ isEditor, prod, showEditor, showEditorModal }) => {
 
   function addAlbum(album) {
     setProduct(album);
-    setActiveTab(5);
+    setActiveTab(4);
+  }
+
+  function handleInputChange(field, value) {
+    setProduct((prev) => ({
+      ...prev,
+      [field]: value,
+    }));
+  }
+
+  function handleExtraChange(field, value) {
+    setProduct((prev) => ({
+      ...prev,
+      extra: {
+        ...prev.extra,
+        [field]: value,
+      },
+    }));
+  }
+
+  function addTracksDuration(durations) {
+    if (!durations || !Array.isArray(durations)) return;
+
+    let totalDuration = 0;
+    durations.forEach((dur) => (totalDuration += dur));
+    setProduct((prev) => ({
+      ...prev,
+      extra: {
+        ...prev.extra,
+        trackDuration: durations,
+        duration: totalDuration,
+        trackCount: durations.length,
+      },
+    }));
   }
 
   useEffect(() => {
@@ -157,7 +194,7 @@ const NewProductModal = ({ isEditor, prod, showEditor, showEditorModal }) => {
             <div className="flex flex-col gap-1 h-10/12">
               <div
                 tabIndex={0}
-                className="bg-secondary text-primary-content collapse-open  collapse w-full"
+                className="bg-secondary text-primary-content   collapse w-full"
               >
                 <div className="collapse-title font-semibold">
                   Añadiendo un nuevo album?
@@ -171,16 +208,11 @@ const NewProductModal = ({ isEditor, prod, showEditor, showEditorModal }) => {
                       estos albums. De todos modos el usuario puede crear su
                       propio album (aunque no es recomendado)
                     </p>
-                    <p>
-                      Si aún así decides crear tus propios albums, puedes optar
-                      por generar una lista de temas con distintas duraciones y
-                      completar esos campos automaticamente
-                    </p>
                   </div>
                 </div>
               </div>
 
-              <div className="flex flex-row gap-1 flex-wrap pt-1 overflow-y-auto overflow-x-clip h-100">
+              <div className="flex flex-row gap-1 flex-wrap pt-5 overflow-y-auto overflow-x-clip h-100">
                 {extraAlbums.map((album) => (
                   <div className="tooltip tooltip-bottom">
                     <div className="tooltip-content flex flex-col gap-1 py-3 px-3 z-50 justify-start text-start text-base max-w-40">
@@ -207,12 +239,41 @@ const NewProductModal = ({ isEditor, prod, showEditor, showEditorModal }) => {
           )}
           <div className="h-auto">
             {activeTab === 1 && <StepAInfo />}
-            {activeTab === 2 && <StepBTracks />}
-            {activeTab === 3 && <StepCExtra />}
+            {activeTab === 2 && (
+              <StepBTracks
+                prod={product}
+                handleInputChange={handleInputChange}
+                addTracksDuration={addTracksDuration}
+              />
+            )}
+            {activeTab === 3 && (
+              <StepCExtra
+                prod={product}
+                handleExtraChange={handleExtraChange}
+                handleInputChange={handleInputChange}
+              />
+            )}
             {activeTab === 4 && (
               <div>
                 <h1>Finish</h1>
+                <button className="btn btn-accent" onClick={submit}>
+                  Submit
+                </button>
+
                 <p>{product.title}</p>
+                <p>{JSON.stringify(product.extra)}</p>
+                <p>u$s {product.price}</p>
+                <p>{product.count}</p>
+                <ul className="flex flex-col gap-0.5 text-xs py-2">
+                  {product.tracklist.map((t, index) => (
+                    <li className="flex flex-row justify-between w-96">
+                      <span>{index + 1 + ". " + getShorterString(t, 25)}</span>
+                      <span>
+                        {getTrackDuration(product.extra.trackDuration[index])}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
               </div>
             )}
           </div>

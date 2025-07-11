@@ -61,7 +61,7 @@ function App() {
 
     function getIsLogged() {
       const isLoggedLocal = JSON.parse(localStorage.getItem("logged"));
-      if (isLoggedLocal) {
+      if (isLoggedLocal && isLoggedLocal.id > 0) {
         logLocalUser(isLoggedLocal);
       } else logout();
     }

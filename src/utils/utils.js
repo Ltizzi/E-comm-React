@@ -44,6 +44,12 @@ export function getTrackDuration(time) {
   return `${minutes}:${seconds < 10 ? "0" + seconds : seconds}`;
 }
 
+export function getShorterString(string, maxLength) {
+  return string.length > maxLength
+    ? string.slice(0, maxLength) + "(...)"
+    : string;
+}
+
 //NOTE: UPLOAD TO MOCKAPI CODE (used in nav as a button)
 // const [count, setCount] = useState(0);
 // const [showModal, setShowModal] = useState(false);

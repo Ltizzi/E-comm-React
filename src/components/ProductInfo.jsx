@@ -26,6 +26,7 @@ const ProductInfo = (props) => {
 
   const { id } = useParams();
 
+  //TODO: REMOVE IT
   function getTrackDuration(time) {
     const totalSeconds = Math.floor(time / 1000);
     const minutes = Math.floor(totalSeconds / 60);

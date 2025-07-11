@@ -55,6 +55,10 @@ const AdminPanel = ({ goToProd }) => {
     setCurrentPage(page);
   }
 
+  async function deleteProd(id) {
+    return id;
+  }
+
   useEffect(() => {
     const pagination = buildPagination(products.length, ITEMS_PER_PAGE);
     setTotalPages(pagination.totalPages);
