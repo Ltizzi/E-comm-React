@@ -5,7 +5,9 @@ export const AppContext = createContext();
 
 export function AppProvider({ children }) {
   const [cart, setCart] = useState([]);
-  const [isMobile, setIsMobile] = useState(false);
+  const [isMobile, setIsMobile] = useState(
+    () => typeof window !== "undefined" && window.innerWidth < 768
+  );
 
   //CART
   function addProductToCart(prod, count) {
