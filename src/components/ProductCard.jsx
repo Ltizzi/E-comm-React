@@ -33,8 +33,9 @@ const ProductCard = (props) => {
         onMouseEnter={() => setIsHover(true)}
         onMouseLeave={() => setIsHover(false)}
         onTouchStart={() => setIsHover(true)}
-        // onTouchEnd={() => setIsHover(false)}
+        onTouchEnd={() => setIsHover(false)}
         onTouchCancel={() => setIsHover(false)}
+        onTouchMoveCapture={() => setIsHover(false)}
       >
         {isHover && (
           <div>
