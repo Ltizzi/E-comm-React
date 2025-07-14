@@ -35,7 +35,7 @@ const DeleteProductModal = ({ prod, isOpen, closeDelete, callUpdate }) => {
         title={"Delete"}
         editor={false}
       >
-        <div className="flex flex-col justify-center gap-5 text-base-content w-fit">
+        <div className="flex flex-col justify-center gap-5 text-base-content w-fit max-w-screen">
           <h1 className="text-center text-sm lg:text-lg font-bold">
             You are about to delete {prod.title} by {prod.artist} with id nº
             {prod.id},

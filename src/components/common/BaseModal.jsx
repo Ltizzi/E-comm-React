@@ -29,7 +29,7 @@ const BaseModal = ({ isOpen, onClose, title, editor, children }) => {
         className={`bg-gradient-to-br from-base-100 via-base-200 to-base-300 rounded-lg pb-6 ${
           editor
             ? "lg:max-w-6xl lg:min-h-4/6 lg:max-h-4/6 lg:min-w-auto w-screen"
-            : "h-auto w-auto"
+            : "h-auto w-auto max-w-screen"
         }  mx-4 text-primary-content`}
         onClick={(e) => e.stopPropagation()}
       >

@@ -17,7 +17,7 @@ const ProductList = (props) => {
     );
   }
   return (
-    <div className="flex flex-row gap-5 2xl:gap-y-5 gap-y-10 justify-center items-center  mx-20 align-middle w-fit flex-wrap py-12">
+    <div className="flex flex-row gap-5 2xl:gap-y-5 gap-y-10 justify-center items-center mx-5 lg:mx-20 align-middle w-fit flex-wrap py-12">
       {products.map((p) => (
         <ProductCard
           prod={p}
