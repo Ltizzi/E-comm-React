@@ -135,7 +135,7 @@ const NewProductModal = ({
       onClose={onClose}
       editor={true}
     >
-      <div className="flex flex-col justify-between items-center h-fit gap-3 relative">
+      <div className="flex flex-col justify-between w-screen lg:w-auto items-center h-fit gap-3 relative">
         <ul className="steps text-xs  w-3/4 text-base-content h-1/6">
           {!isEditor && (
             <li
@@ -179,7 +179,7 @@ const NewProductModal = ({
             Finish
           </li>
         </ul>
-        <div className="w-full   h-4/6 min-h-140 lg:min-h-140 flex flex-col justify-center items-center align-top text-base-content gap-4">
+        <div className="w-fit   h-4/6 min-h-140 lg:min-h-140 flex flex-col justify-center items-center align-top text-base-content gap-4">
           {!isEditor && activeTab === 0 && (
             <div className="flex flex-col gap-1 h-10/12">
               success

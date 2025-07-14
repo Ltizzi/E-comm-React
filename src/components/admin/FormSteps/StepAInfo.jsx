@@ -98,8 +98,8 @@ const StepAInfo = ({ prod, handleInputChange }) => {
   }, [prod, images]);
 
   return (
-    <div className="flex flex-col justify-center items-center align-top h-full lg:-mt-10 gap-5 w-full">
-      <fieldset className="fieldset flex flex-row flex-wrap gap-5">
+    <div className="flex flex-col justify-center items-center align-top h-full lg:-mt-10 gap-5 w-fit">
+      <fieldset className="fieldset flex flex-col flex-nowrap lg:flex-row lg:flex-wrap gap-5">
         <div>
           <legend className="fieldset-legend">Album title:</legend>
           <input

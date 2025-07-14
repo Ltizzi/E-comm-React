@@ -78,6 +78,26 @@ export function getShorterString(string, maxLength) {
 //   return new Promise((resolve) => setTimeout(resolve, ms));
 // }
 
+{
+  /* </div>
+        <div>
+          <BaseButton
+            btnLabel={"UPLOAD"}
+            btnAction={postProducts}
+            btnType={"success"}
+          />
+          {showModal && (
+            <div className="w-screen h-screen bg-black/50 absolute top-0 left-0">
+              <div className="bg-white rounded-2xl py-5 px-5 absolute top-1/2 left-1/2 text-black">
+                <p>
+                  Count: {count} / {products.length}
+                </p>
+                <p>Errors: {errorAlbums.length}</p>
+              </div>
+            </div>
+          )} */
+}
+
 //NOTE:function used to upload fetched album data stored in albums.json to mockAPI
 // async function postProducts() {
 //   setShowModal(true);

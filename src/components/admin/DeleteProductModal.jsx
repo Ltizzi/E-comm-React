@@ -35,12 +35,14 @@ const DeleteProductModal = ({ prod, isOpen, closeDelete, callUpdate }) => {
         title={"Delete"}
         editor={false}
       >
-        <div className="flex flex-col justify-center gap-5 text-base-content">
-          <h1 className="text-center text-lg font-bold">
+        <div className="flex flex-col justify-center gap-5 text-base-content w-fit">
+          <h1 className="text-center text-sm lg:text-lg font-bold">
             You are about to delete {prod.title} by {prod.artist} with id nº
             {prod.id},
           </h1>
-          <h2 className="text-center text-lg font-semibold">Are you sure?</h2>
+          <h2 className="text-center text-sm lg:text-lg font-semibold">
+            Are you sure?
+          </h2>
 
           <div className="flex flex-row justify-center items-center gap-5">
             <BaseButton

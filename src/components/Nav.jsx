@@ -35,7 +35,7 @@ const Nav = (props) => {
           >
             <p className={`btn btn-ghost ${isMobile ? "text-sm" : "text-lg"}`}>
               <FaShop />
-              E-Commerce
+              {isMobile ? "" : "E-Commerce"}
             </p>
           </div>
         </Link>
@@ -52,23 +52,6 @@ const Nav = (props) => {
         />
         <div>
           <ThemeSelector />
-          {/* </div>
-        <div>
-          <BaseButton
-            btnLabel={"UPLOAD"}
-            btnAction={postProducts}
-            btnType={"success"}
-          />
-          {showModal && (
-            <div className="w-screen h-screen bg-black/50 absolute top-0 left-0">
-              <div className="bg-white rounded-2xl py-5 px-5 absolute top-1/2 left-1/2 text-black">
-                <p>
-                  Count: {count} / {products.length}
-                </p>
-                <p>Errors: {errorAlbums.length}</p>
-              </div>
-            </div>
-          )} */}
         </div>
         <div className="dropdown dropdown-end">
           <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
@@ -138,7 +121,7 @@ const Nav = (props) => {
                 role="button"
                 className="btn btn-ghost btn-circle avatar"
               >
-                <div className="w-5 lg:w-10 rounded-full">
+                <div className="w-3 lg:w-10 rounded-full">
                   <img alt="" src={user.avatar} />
                 </div>
               </div>
