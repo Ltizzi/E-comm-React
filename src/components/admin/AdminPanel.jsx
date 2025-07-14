@@ -97,7 +97,7 @@ const AdminPanel = ({ goToProd, fetchData }) => {
 
   return (
     <div className="w-screen min-h-screen flex flex-col justify-center items-center">
-      <div className="flex flex-col justify-center max-w-full lg:max-w-2/3 lg:min-w-2/3 bg-base-300/85 py-5 px-7 rounded-lg min-h-5/6 max-h-5/6 relative pt-20">
+      <div className="flex flex-col justify-center max-w-full lg:max-w-2/3 lg:min-w-2/3 bg-base-300/97 py-5 px-7 rounded-lg min-h-5/6 max-h-5/6 relative pt-20">
         <h1 className="text-3xl font-bold pb-5 absolute top-5">Admin panel</h1>
         <div className="w-40">
           <BaseButton
@@ -132,13 +132,13 @@ const AdminPanel = ({ goToProd, fetchData }) => {
                   <td className="max-w-3/6 min-w-3/6">
                     <div>
                       <div className="font-bold">{prod.title}</div>
-                      <div className="text-sm opacity-50">{prod.artist}</div>
+                      <div className="text-sm opacity-85">{prod.artist}</div>
                     </div>
                   </td>
                   <td>
                     <div>
-                      <div className="text-sm opacity-85">u$s {prod.price}</div>
-                      <div className="text-xs pt-2 opacity-65">
+                      <div className="text-sm opacity-95">u$s {prod.price}</div>
+                      <div className="text-xs pt-2 opacity-85">
                         {prod.count > 0 ? prod.count : ""}
                         {prod.count > 1
                           ? " units"
@@ -199,7 +199,7 @@ const AdminPanel = ({ goToProd, fetchData }) => {
               <button
                 className={`${
                   currentPage == page ? "btn-active bg-primary" : ""
-                } join-item btn hover:cursor-pointer btn-sm.
+                } join-item btn hover:cursor-pointer btn-sm
                       `}
                 onClick={() => goPage(page)}
               >

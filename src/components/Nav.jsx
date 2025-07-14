@@ -115,7 +115,9 @@ const Nav = (props) => {
                   />
                 ))}
               </div>
-              <span className="text-info">Subtotal: u$s{getTotal(cart)}</span>
+              <span className="text-info font-bold">
+                Subtotal: u$s{getTotal(cart)}
+              </span>
 
               <div className="card-actions">
                 <Link to="/cart">
