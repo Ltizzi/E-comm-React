@@ -238,7 +238,7 @@ const NewProductModal = ({
                 addTracksDuration={addTracksDuration}
               />
             )}
-            success
+
             {activeTab === 3 && (
               <StepCExtra
                 prod={product}
@@ -274,7 +274,10 @@ const NewProductModal = ({
                     </div>
                     <ul className="flex flex-col gap-0.5 text-xs py-2 overflow-y-auto h-64">
                       {product.tracklist.map((t, index) => (
-                        <li className="flex flex-row justify-between w-96">
+                        <li
+                          className="flex flex-row justify-between w-96"
+                          key={index}
+                        >
                           <span>
                             {index + 1 + ". " + getShorterString(t, 25)}
                           </span>

@@ -109,7 +109,14 @@ function App() {
               )
             }
           />
-          <Route path="/cart" element={<Cart goToProd={goToProd} />} />
+          <Route
+            path="/cart"
+            element={
+              <ProtectedRoute isAuthenticated={isLogged}>
+                <Cart goToProd={goToProd} />
+              </ProtectedRoute>
+            }
+          />
           <Route
             path="/product/:id"
             element={<ProductInfo goToProd={goToProd} />}

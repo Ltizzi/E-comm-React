@@ -129,18 +129,26 @@ const Register = () => {
 
         <div>
           <label className="label">Repeat password</label>
-          <div className="flex flex-row items-center gap-2">
+          <div className="flex flex-col items-start gap-2">
             <input
               type="password"
-              className="input input-primary w-58 validator"
+              className={`input input-primary ${
+                passwordMatch ? "input-success" : "input-error"
+              } w-58  `}
               placeholder="Repeat Password"
               value={controlPassword}
               required
               minLength="5"
               maxLength="12"
               pattern="^[\x20-\x7E]+$"
-              onChange={(e) => setControlPassword(e.target.value)}
+              onChange={(e) => {
+                setControlPassword(e.target.value);
+                setPasswordMatch(controlPassword === password);
+              }}
             />
+            <p className="text-sm text-error flex flex-col justify-start">
+              {!passwordMatch && "Password doesn't match"}
+            </p>
           </div>
         </div>
 

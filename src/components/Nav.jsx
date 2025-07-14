@@ -182,6 +182,11 @@ const Nav = (props) => {
                     <p>Login</p>
                   </Link>
                 </li>
+                <li className="hover:cursor-pointer">
+                  <Link to="/signup">
+                    <p>Register</p>
+                  </Link>
+                </li>
               </ul>
             </div>
           )}

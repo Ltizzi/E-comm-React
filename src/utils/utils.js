@@ -3,7 +3,7 @@ export const ALBUM_TEMPLATE = {
   artist: "",
   title: "",
   releaseDate: "",
-  coverImages: [{ url: "", types: "" }],
+  coverImages: [],
   tracklist: [],
   extra: {
     date: "",

@@ -69,9 +69,9 @@ const AdminPanel = ({ goToProd, fetchData }) => {
   }
 
   const callUpdate = async (type, msg) => {
+    await fetchData();
     getProducts(currentPage);
     goPage(currentPage);
-    await fetchData();
     setShowToast(true);
     setToastType(type);
     setToastMsg(msg);
