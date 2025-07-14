@@ -62,7 +62,10 @@ export function ProductProvider({ children }) {
   function addNewProduct(prod) {
     return fetch(`${API_URL}`, {
       method: "POST",
-      body: prod,
+      body: JSON.stringify(prod),
+      headers: {
+        "Content-Type": "application/json",
+      },
     })
       .then((res) => {
         if (!res.ok)
@@ -72,20 +75,22 @@ export function ProductProvider({ children }) {
         return res.json();
       })
       .then((data) => {
-        console.log(data);
         getAllProducts();
-        return "Product added!";
+        return true;
       })
       .catch((err) => {
         console.error(err);
-        return err;
+        return false;
       });
   }
 
   function updateProduct(id, prod) {
     return fetch(`${API_URL}/${id}`, {
       method: "PUT",
-      body: prod,
+      body: JSON.stringify(prod),
+      headers: {
+        "Content-Type": "application/json",
+      },
     })
       .then((res) => {
         if (!res.ok)
@@ -93,7 +98,7 @@ export function ProductProvider({ children }) {
         return res.json();
       })
       .then((data) => {
-        console.log(data);
+        //console.log(data);
         getAllProducts();
         return "Product updated!";
       })

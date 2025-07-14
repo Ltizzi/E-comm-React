@@ -58,14 +58,21 @@ export function AuthProvider({ children }) {
   }
 
   function registerUser(formUser) {
+    let lastId = JSON.parse(localStorage.getItem("eComUserLastId"));
+    if (lastId) {
+      localStorage.setItem("eComUserLastId", JSON.stringify(lastId + 1));
+      lastId += 1;
+    } else lastId = 3;
+
     const user = {
+      id: lastId,
       email: formUser.email,
       password: formUser.password,
       name: formUser.email.split("@")[0],
       lastname: "",
       nickname: formUser.email.split("@")[0],
       isAdmin: false,
-      avatar: "https://avatar.iran.liara.run/public",
+      avatar: "https://i.pravatar.cc/300",
     };
     const users = getRegisteredLocalUsers();
     users.push(user);
@@ -87,10 +94,14 @@ export function AuthProvider({ children }) {
   }
 
   function logLocalUser(obj) {
-    setUser(obj);
-    setIsLogged(true);
-    setIsAdmin(obj.isAdmin);
-    localStorage.setItem("isAdmin", JSON.stringify(isAdmin));
+    const local = JSON.parse(localStorage.getItem("logged"));
+    if (local.id === obj.id) {
+      setUser(obj);
+      setIsLogged(true);
+      setIsAdmin(obj.isAdmin);
+
+      localStorage.setItem("isAdmin", JSON.stringify(isAdmin));
+    }
   }
 
   function logout() {

@@ -39,7 +39,7 @@ const NewProductModal = ({
 
   const submit = async () => {
     setIsLoading(true);
-    if (isEditor) product.id = getLastId();
+    if (!isEditor) product.id = getLastId();
     const HTTP_METHOD = isEditor ? "PUT" : "POST";
     const URL = API_URL + (isEditor ? `/${product.id}` : "");
     fetch(URL, {

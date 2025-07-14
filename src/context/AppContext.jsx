@@ -1,4 +1,5 @@
 import React, { createContext, useState } from "react";
+import { AuthContext } from "./AuthContext";
 
 export const AppContext = createContext();
 
@@ -62,6 +63,7 @@ export function AppProvider({ children }) {
         removeOne,
         setIsMobile,
         isMobile,
+        setCart,
       }}
     >
       {children}

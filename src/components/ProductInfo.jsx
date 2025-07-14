@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import { getFront } from "../utils/utils";
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import BaseButton from "./common/BaseButton";
 import { AppContext } from "../context/AppContext";
 import { ProductContext } from "../context/ProductContext";
@@ -9,7 +9,7 @@ import { FaCartPlus } from "react-icons/fa";
 const ProductInfo = (props) => {
   const { goToProd } = props;
 
-  const { addProductToCart, removeProdFromCart } = useContext(AppContext);
+  const { addProductToCart } = useContext(AppContext);
   const {
     getProductById,
     getOtherAlbumsByArtist,
@@ -26,7 +26,6 @@ const ProductInfo = (props) => {
 
   const { id } = useParams();
 
-  //TODO: REMOVE IT
   function getTrackDuration(time) {
     const totalSeconds = Math.floor(time / 1000);
     const minutes = Math.floor(totalSeconds / 60);
@@ -68,7 +67,14 @@ const ProductInfo = (props) => {
     loadProduct();
     const frontImg = getFront(productToShow.coverImages);
     setPictureToShow(frontImg);
-  }, [focusProduct, id, productToShow]);
+  }, [
+    focusProduct,
+    id,
+    productToShow,
+    getOtherAlbumsByArtist,
+    getProductById,
+    setFocusProduct,
+  ]);
 
   return (
     <div className=" flex flex-col justify-center h-auto items-center">
@@ -123,21 +129,35 @@ const ProductInfo = (props) => {
               <div className="bg-success text-success-content py-0.5 px-2 rounded-2xl w-28 text-center font-mono font-semibold">
                 <p>u$s {productToShow.price}</p>
               </div>
-              <div className="flex flex-row justify-start">
+              <div>
+                <p className="text-base font-extrabold py-2">
+                  {productToShow.count > 0
+                    ? `${
+                        "Stock: " +
+                        productToShow.count +
+                        (productToShow.count > 1 ? " units" : " unit")
+                      }`
+                    : " Without stock"}
+                </p>
+              </div>
+              <div className="flex flex-row justify-start gap-5">
                 <div className="flex flex-col justify-start">
                   <input
                     type="number"
-                    className="input validator input-primary input-md w-20 text-base-content bg-base-300"
+                    className="input validator input-primary input-md w-auto text-base-content bg-base-300"
                     required
                     placeholder="1"
                     min="1"
-                    max="10"
+                    max={productToShow.count}
                     title="Must be greater than 1"
                     value={total}
                     onChange={handleChange}
                   />
-                  <p className="validator-hint">Must be greater than 1</p>
+                  <p className="validator-hint">
+                    Must be greater than 1 / lesser than stock
+                  </p>
                 </div>
+
                 <BaseButton
                   btnLabel={""}
                   btnAction={addToCart}
