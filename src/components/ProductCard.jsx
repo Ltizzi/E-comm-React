@@ -32,6 +32,8 @@ const ProductCard = (props) => {
         className="w-full h-full  flex flex-col justify-center items-center text-center align-middle hover:bg-slate-950/70 transition-all duration-300 ease-in-out"
         onMouseEnter={() => setIsHover(true)}
         onMouseLeave={() => setIsHover(false)}
+        onTouchStart={() => setIsHover(true)}
+        onTouchCancelCapture={() => setIsHover(false)}
       >
         {isHover && (
           <div>
