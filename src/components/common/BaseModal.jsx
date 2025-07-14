@@ -28,7 +28,7 @@ const BaseModal = ({ isOpen, onClose, title, editor, children }) => {
       <div
         className={`bg-gradient-to-br from-base-100 via-base-200 to-base-300 rounded-lg max-w-screen pb-6 ${
           editor
-            ? "lg:max-w-6xl lg:min-h-4/6 lg:max-h-4/6 lg:min-w-auto w-screen "
+            ? "lg:max-w-6xl lg:min-h-4/6 lg:max-h-4/6 lg:min-w-auto max-w-11/12 "
             : "h-auto w-auto "
         }  mx-4 text-primary-content`}
         onClick={(e) => e.stopPropagation()}
