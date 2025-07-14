@@ -22,7 +22,7 @@ const BaseModal = ({ isOpen, onClose, title, editor, children }) => {
 
   return (
     <div
-      className="fixed inset-0 bg-black/50 flex items-start lg:items-center justify-center z-40"
+      className="fixed inset-0 bg-black/50 flex items-start lg:items-center justify-start lg:justify-center z-40"
       onClick={onClose}
     >
       <div
@@ -33,7 +33,7 @@ const BaseModal = ({ isOpen, onClose, title, editor, children }) => {
         }  mx-4 text-primary-content`}
         onClick={(e) => e.stopPropagation()}
       >
-        <div className="flex justify-between rounded-t-lg items-center mb-4 bg-secondary text-secondary-content px-1 lg:px-10 w-fit">
+        <div className="flex justify-between rounded-t-lg items-center mb-4 bg-secondary text-secondary-content px-1 lg:px-10 w-full">
           <h2 className="text-xl font-bold px-6 py-2 text-center w-11/12">
             {title}
           </h2>

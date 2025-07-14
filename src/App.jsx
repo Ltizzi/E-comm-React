@@ -91,7 +91,7 @@ function App() {
       <Nav search={search} />
       {isLoading && <BaseLoading />}
       <div
-        className="bg-gradient-to-br from-base-200 to-base-300 min-h-screen pt-10 w-full"
+        className="bg-gradient-to-br from-base-200 to-base-300 min-h-screen pt-10 w-full max-w-screen"
         style={{
           backgroundImage: `url(/img/bg2.png)`,
         }}

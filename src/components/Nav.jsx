@@ -121,7 +121,7 @@ const Nav = (props) => {
                 role="button"
                 className="btn btn-ghost btn-circle avatar"
               >
-                <div className="w-3 lg:w-10 rounded-full">
+                <div className="w-5 lg:w-10 rounded-full">
                   <img alt="" src={user.avatar} />
                 </div>
               </div>

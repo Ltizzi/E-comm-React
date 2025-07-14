@@ -7,7 +7,7 @@ const UserProfile = () => {
   const { user } = useContext(AuthContext);
   return (
     <div className="flex flex-col justify-center items-center align-middle h-screen">
-      <div className="flex flex-col justify-center text-center items-center gap-4 w-1/3 rounded-xl py-10 px-7 bg-base-100/80 text-base-content">
+      <div className="flex flex-col justify-center text-center items-center gap-4 w-full lg:w-1/3 rounded-xl py-10 px-7 bg-base-100/80 text-base-content">
         <h1 className=" text-5xl font-bold">{user.nickname} profile</h1>
         <img src={user.avatar} className="rounded-full w-40" alt="" />
         <p className="text-3xl font-light">{user.name + " " + user.lastname}</p>
