@@ -31,9 +31,11 @@ const Footer = () => {
         <Link to="/">
           <h6 className="footer-title">Home</h6>
         </Link>
-        <Link to="/cart">
-          <p className="link link-hover">Cart</p>
-        </Link>
+        {isLogged && (
+          <Link to="/cart">
+            <p className="link link-hover">Cart</p>
+          </Link>
+        )}
 
         {isLogged && (
           <Link to="/profile">

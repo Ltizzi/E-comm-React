@@ -181,8 +181,7 @@ const NewProductModal = ({
         </ul>
         <div className="w-fit   h-4/6 min-h-140 lg:min-h-140 flex flex-col justify-center items-center align-top text-base-content gap-4">
           {!isEditor && activeTab === 0 && (
-            <div className="flex flex-col gap-1 h-10/12">
-              success
+            <div className="flex flex-col gap-1 h-10/12 2xl:h-10/12 lg:h-8/12">
               <div
                 tabIndex={0}
                 className="bg-accent text-accent-content focus:bg-warning   collapse w-full"
@@ -202,7 +201,7 @@ const NewProductModal = ({
                   </div>
                 </div>
               </div>
-              <div className="flex flex-row gap-1 flex-wrap pt-5 overflow-y-auto overflow-x-clip h-100">
+              <div className="flex flex-row gap-1 flex-wrap pt-5 overflow-y-auto overflow-x-clip h-100 2xl:h-100 lg:h-90">
                 {extraAlbums.map((album) => (
                   <div className="tooltip tooltip-bottom">
                     <div className="tooltip-content flex flex-col gap-1 py-3 px-3 z-50 justify-start text-start text-base max-w-40">
@@ -312,15 +311,15 @@ const NewProductModal = ({
             )}
           </div>
         </div>
-        <div className="join grid grid-cols-2  w-full h-1/6">
+        <div className="join grid grid-cols-2  w-full h-1/6 lg:h-10 2xl:h-1/6">
           <button
-            className="join-item btn btn-outline btn-secondary "
+            className="join-item btn btn-outline btn-secondary xl:btn-xs 2xl:btn-md"
             onClick={goPrev}
           >
             Previous page
           </button>
           <button
-            className="join-item btn btn-secondary btn-outline"
+            className="join-item btn btn-secondary btn-outline xl:btn-xs 2xl:btn-md"
             onClick={goNext}
           >
             Next

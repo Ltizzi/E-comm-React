@@ -75,8 +75,8 @@ const StepBTracks = ({ prod, addTracksDuration, handleInputChange }) => {
         <p>Click on track's duration to update it</p>
       </div>
 
-      <div className="flex flex-col gap-2 justify-center overflow-y-auto h-auto max-h-96 w-full">
-        <div className="overflow-x-auto">
+      <div className="flex flex-col gap-2 justify-center overflow-y-auto h-auto max-h-96 lg:max-h-80 2xl:max-h-96 w-full">
+        <div className="overflow-x-auto overflow-y-auto">
           <table className="table">
             <thead>
               <tr>

@@ -28,13 +28,13 @@ const BaseModal = ({ isOpen, onClose, title, editor, children }) => {
       <div
         className={`bg-gradient-to-br from-base-100 via-base-200 to-base-300 rounded-lg max-w-screen pb-6 ${
           editor
-            ? "lg:max-w-6xl lg:min-h-4/6 lg:max-h-4/6 lg:min-w-auto max-w-11/12 "
+            ? "lg:max-w-6xl lg:min-h-5/6 lg:max-h-full 2xl:min-h-4/6 2xl:max-h-4/6 lg:min-w-5/6 2xl:min-w-auto max-w-11/12 "
             : "h-auto w-auto "
         }  mx-4 text-primary-content`}
         onClick={(e) => e.stopPropagation()}
       >
         <div className="flex justify-between rounded-t-lg items-center mb-4 bg-secondary text-secondary-content px-1 lg:px-10 w-full">
-          <h2 className="text-xl font-bold px-6 py-2 text-center w-11/12">
+          <h2 className="text-xl 2xl:text-xl lg:text-base font-bold px-6 py-2 text-center w-11/12">
             {title}
           </h2>
           <button
@@ -44,7 +44,7 @@ const BaseModal = ({ isOpen, onClose, title, editor, children }) => {
             <AiFillCloseSquare />
           </button>
         </div>
-        <div className="px-2 lg:px-8">{children}</div>
+        <div className="px-2 2xl:px-8 lg:px-2.5">{children}</div>
       </div>
     </div>
   );
