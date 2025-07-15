@@ -79,25 +79,6 @@ const StepCExtra = ({ prod, handleInputChange, handleExtraChange }) => {
           />
           <div className="validator-hint">Stock count is required</div>
         </div>
-
-        <div className="flex flex-col items-end h-full">
-          {/* <div>
-            <legend className="fieldset-legend">Cover images:</legend>
-            <input
-              type="text"
-              className="input validator"
-              required
-              placeholder="Paste URL here"
-              onChange={(e) => addImage(e.target.value)}
-            />
-            <div className="validator-hint">Enter valid email address</div>
-          </div>
-          <div className="flex flex-row flex-wrap gap-3 justify-start w-full pb-5">
-            {images.map((img) => (
-              <img src={img} className="size-16" />
-            ))}
-          </div> */}
-        </div>
       </fieldset>
     </div>
   );

@@ -113,8 +113,6 @@ const StepBTracks = ({ prod, addTracksDuration, handleInputChange }) => {
                       required
                       placeholder="Track duration"
                       onKeyDown={(e) => handleEnterPress(e, "dur", index)}
-                      // onChange={(e) => setTrackDuration(e.target.value)}
-                      // value={trackDuration}
                       disabled={
                         tracksDuration[index] > 0 && durationToEdit != index
                       }
@@ -125,15 +123,6 @@ const StepBTracks = ({ prod, addTracksDuration, handleInputChange }) => {
             </tbody>
           </table>
         </div>
-        {/* {tracks.map((song, index) => (
-          <div className="flex flex-row justify-between align-middle items-center gap-5 border-2 border-secondary">
-            <p>
-              {index + 1} - {song}
-            </p>
-            <p></p>
-            <div></div>
-          </div>
-        ))} */}
       </div>
     </div>
   );

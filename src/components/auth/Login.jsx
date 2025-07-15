@@ -3,7 +3,6 @@ import { useNavigate, Link } from "react-router-dom";
 import { AuthContext } from "../../context/AuthContext";
 
 const Login = () => {
-  // const { login } = props;
   const [mail, setMail] = useState("");
   const [password, setPassword] = useState("");
 
