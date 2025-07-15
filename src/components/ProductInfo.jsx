@@ -170,7 +170,7 @@ const ProductInfo = (props) => {
             </div>
           </div>
 
-          <div className="flex flex-row flex-wrap lg:flex-nowrap overflow-x-scroll justify-center lg:justify-start w-full gap-3 h-1/6 mb-10 lg:mb-20  2xl:mb-0">
+          <div className="flex flex-row flex-wrap lg:flex-nowrap overflow-x-scroll justify-center lg:justify-start w-full gap-3 h-1/6 mb-10 lg:mb-20  2xl:mb-10">
             {otherAlbums.map((album, index) => (
               <img
                 src={getFront(album.coverImages)}
